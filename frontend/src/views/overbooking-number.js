@@ -21,7 +21,6 @@ function OverbookingNumber() {
   const seats = firstRound.totalSeats;
   const pricePerSeat = 400;
   const revenue = value * pricePerSeat + seats * pricePerSeat;
-  const suggestedOverbooking = 3;
 
   const bulletPosition = (value / seats) * 77 + "%";
 

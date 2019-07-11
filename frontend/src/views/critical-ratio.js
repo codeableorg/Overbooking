@@ -3,7 +3,10 @@ import React from "react";
 import { jsx } from "@emotion/core";
 import plane from "../images/plane.png";
 import { useRound } from "../selectors";
-import { useAddCriticalRatio } from "../action-hooks";
+import {
+  useAddCriticalRatio,
+  useSuggestOverbookingNumber
+} from "../action-hooks";
 import { Button } from "../components/ui";
 import { navigate } from "@reach/router";
 
@@ -12,6 +15,7 @@ function CriticalRatio() {
   const [isEnabled, setIsEnabled] = React.useState(false);
 
   const addCriticalRatio = useAddCriticalRatio();
+  const suggestOverbooking = useSuggestOverbookingNumber();
 
   const state = useRound();
 
@@ -69,6 +73,7 @@ function CriticalRatio() {
   function handleSubmit(event) {
     event.preventDefault();
     addCriticalRatio(criticalRatio * 1);
+    suggestOverbooking(criticalRatio * 1);
     navigate("/overbooking");
   }
   return (
@@ -97,6 +102,9 @@ function CriticalRatio() {
         placeholder="Enter The Critical Ratio"
         onChange={onChangeInputCriticalRatio}
         value={criticalRatio}
+        step="any"
+        min="0"
+        max="1"
       />
       <Button type="submit" disabled={!isEnabled}>
         Set Critical Ratio
