@@ -5,7 +5,9 @@ const initialState = {
   underageCost: 300,
   overbookingCost: 600,
   criticalRatio: 0.3333,
-  suggestedOverbooking: 3
+  suggestedOverbooking: 3,
+  myCriticalRatio: 0,
+  overbookingNumber: 0
 };
 
 function reducer(state = initialState, action = {}) {

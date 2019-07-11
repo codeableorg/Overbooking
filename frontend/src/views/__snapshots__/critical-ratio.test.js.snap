@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CriticalRatio component 1`] = `
+<DocumentFragment>
+  <form
+    class="css-1gf3fd4-CriticalRatio"
+  >
+    <img
+      alt="plane"
+      class="css-1d6aglg-CriticalRatio"
+      src="plane.png"
+    />
+    <div
+      class="css-1pgmn93-CriticalRatio"
+    >
+      Flight PDR456
+    </div>
+    <div
+      class="css-bgusvs-CriticalRatio"
+    >
+      <div
+        class="css-miwez1-CriticalRatio"
+      >
+        Cost of Overbooking
+        <p>
+          600
+        </p>
+      </div>
+      <div
+        class="css-miwez1-CriticalRatio"
+      >
+        Underage Cost
+        <p>
+          300
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-1pgmn93-CriticalRatio"
+    >
+      Calculate the Critical Ratio
+    </div>
+    <input
+      aria-label="enter critical ratio"
+      autocomplete="off"
+      class="css-7j0mhv-CriticalRatio"
+      id="critical-ratio"
+      name="critical-ratio"
+      placeholder="enter the critical ratio"
+      required=""
+      type="number"
+      value=""
+    />
+    <button
+      class="css-1kbyqv2-CriticalRatio"
+      disabled=""
+      type="submit"
+    >
+      Set Critical Ratio
+    </button>
+  </form>
+</DocumentFragment>
+`;
