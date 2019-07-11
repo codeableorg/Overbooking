@@ -5,6 +5,7 @@ import { useRound } from "../selectors";
 import { useAddOverbookingNumber, useSetTotalRevenue } from "../action-hooks";
 import { Button } from "../components/ui";
 import airplane from "./../images/airplane.png";
+import { navigate } from "@reach/router";
 
 function OverbookingNumber() {
   const [value, setValue] = React.useState(0);
@@ -28,6 +29,7 @@ function OverbookingNumber() {
     event.preventDefault();
     addOverbookingNumber(parseInt(value));
     setTotalRevenue(revenue);
+    navigate("/cancellations");
   }
 
   const containerCSS = {
@@ -110,10 +112,8 @@ function OverbookingNumber() {
         alt="airplane"
         css={{ marginBottom: 15, height: 180 }}
       />
-      {/* <p>Critical Ratio: {firstRound.myCriticalRatio}</p> */}
-      <p>Critical Ratio: 0.4</p>
-      {/* <p>Suggested Overbooking: {firstRound.suggestedOverbooking}</p> */}
-      <p>Suggested Overbooking: {suggestedOverbooking}</p>
+      <p>Critical Ratio: {firstRound.myCriticalRatio}</p>
+      <p>Suggested Overbooking: {firstRound.suggestedOverbooking}</p>
       <p css={{ fontWeight: "bolder", marginTop: 25 }}>
         Total Revenue: $ {revenue}
       </p>

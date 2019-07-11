@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core";
 import React from "react";
 import airplane from "../images/airplane.png";
 import { Button } from "../components/ui";
+import { Link } from "@reach/router";
 
 function FlightDetails() {
   return (
@@ -15,7 +16,9 @@ function FlightDetails() {
         <li>Origin: LIMA</li>
         <li>Destination: SAO PAULO</li>
       </ul>
-      <Button>Start</Button>
+      <Link to="/critical-ratio">
+        <Button>Start</Button>
+      </Link>
     </div>
   );
 }
