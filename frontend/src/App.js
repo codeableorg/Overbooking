@@ -2,9 +2,12 @@
 import emotionReset from "emotion-reset";
 import { jsx, Global, css } from "@emotion/core";
 import React from "react";
+import { Router } from "@reach/router";
+
 import FlightDetails from "./views/flight-details";
 import CriticalRatio from "./views/critical-ratio";
 import OverbookingNumber from "./views/overbooking-number";
+import Cancellations from "./views/cancellations";
 
 function App() {
   const cssWrapper = {
@@ -39,9 +42,12 @@ function App() {
             alignItems: "center"
           }}
         >
-          <CriticalRatio />
-          <FlightDetails />
-          <OverbookingNumber />
+          <Router>
+            <FlightDetails path="/" />
+            <CriticalRatio path="/critical-ratio" />
+            <OverbookingNumber path="/overbooking" />
+            <Cancellations path="/cancellations" />
+          </Router>
         </div>
       </div>
     </>

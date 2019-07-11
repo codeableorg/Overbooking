@@ -5,6 +5,7 @@ import plane from "../images/plane.png";
 import { useRound } from "../selectors";
 import { useAddCriticalRatio } from "../action-hooks";
 import { Button } from "../components/ui";
+import { navigate } from "@reach/router";
 
 function CriticalRatio() {
   const [criticalRatio, setCriticalRatio] = React.useState("");
@@ -68,6 +69,7 @@ function CriticalRatio() {
   function handleSubmit(event) {
     event.preventDefault();
     addCriticalRatio(criticalRatio * 1);
+    navigate("/overbooking");
   }
   return (
     <form css={containerCss} onSubmit={handleSubmit}>
