@@ -4,8 +4,7 @@ import { jsx, Global, css } from "@emotion/core";
 import React from "react";
 import FlightDetails from "./views/flight-details";
 import CriticalRatio from "./views/critical-ratio";
-import { Provider } from "react-redux";
-import store from "./store";
+import OverbookingNumber from "./views/overbooking-number";
 
 function App() {
   const cssWrapper = {
@@ -40,9 +39,9 @@ function App() {
             alignItems: "center"
           }}
         >
-          <Provider store={store}>
-            <CriticalRatio />
-          </Provider>
+          <CriticalRatio />
+          <FlightDetails />
+          <OverbookingNumber />
         </div>
       </div>
     </>

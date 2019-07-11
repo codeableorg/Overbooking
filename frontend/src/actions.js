@@ -9,6 +9,13 @@ function addCriticalRatio(criticalRatio) {
   };
 }
 
+function suggestOverbookingNumber(criticalRatio) {
+  return {
+    type: "SUGGEST_OVERBOOKING",
+    payload: criticalRatio
+  };
+}
+
 function addOverbookingNumber(overbookingNumber) {
   return {
     type: "ADD_OVERBOOKING_NUMBER",
@@ -16,4 +23,17 @@ function addOverbookingNumber(overbookingNumber) {
   };
 }
 
-export { reset, addCriticalRatio, addOverbookingNumber };
+function setTotalRevenue(totalRevenue) {
+  return {
+    type: "SET_TOTAL_REVENUE",
+    payload: totalRevenue
+  };
+}
+
+export {
+  reset,
+  addCriticalRatio,
+  suggestOverbookingNumber,
+  addOverbookingNumber,
+  setTotalRevenue
+};
