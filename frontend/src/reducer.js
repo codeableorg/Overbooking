@@ -1,6 +1,7 @@
 const initialState = {
   destination: "domestic",
   totalSeats: 75,
+  pricePerSeat: 200,
   demandFactor: 2,
   underageCost: 300,
   overbookingCost: 600,
