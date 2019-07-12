@@ -7,11 +7,22 @@ import ValueCancelation from "../components/value-cancelation";
 import { useRound } from "../selectors";
 
 function FlightDetails() {
+  // TODO: WIP animation of values
   const game = useRound();
-  const cancelation = 0;
-  const [oCost, setOCost] = React.useState(0);
-  const [uCost, setUCost] = React.useState(0);
-  const [netRevenue, setNetRevenue] = React.useState(0);
+  const seatsStatus = game.cancellations - game.overbookingNumber;
+  const totalRevenue = game.totalRevenue / 1000;
+  const [cancellation, setCancellations] = React.useState(game.cancellations);
+  const [overbookingCost, setOverbookingCost] = React.useState(
+    seatsStatus < 0 ? (seatsStatus * game.overbookingCost) / -1000 : 0
+  );
+  const [underageCost, setUnderageCost] = React.useState(
+    seatsStatus > 0 ? (seatsStatus * game.underageCost) / 1000 : 0
+  );
+  const [netRevenue, setNetRevenue] = React.useState(
+    totalRevenue - overbookingCost - underageCost
+  );
+
+  React.useEffect(() => {}, [cancellation]);
 
   return (
     <div>
@@ -22,9 +33,7 @@ function FlightDetails() {
       <div css={{ textAlign: "center", marginBottom: 40 }}>
         <p>Overbooked seats: {game.overbookingNumber}</p>
         <p>Total cancellatioms</p>
-        <span css={{ fontSize: 56, fontWeight: "bold" }}>
-          {game.cancellations}
-        </span>
+        <span css={{ fontSize: 56, fontWeight: "bold" }}>{cancellation}</span>
       </div>
       <div
         css={{
@@ -33,13 +42,10 @@ function FlightDetails() {
           marginBottom: 40
         }}
       >
-        <ValueCancelation value={game.totalRevenue} label="Total revenue" />
-        <ValueCancelation
-          value={game.overbookingNumber}
-          label="Overbooking cost"
-        />
-        <ValueCancelation value="3" label="Underage cost" />
-        <ValueCancelation value="13" label="Net revenue" />
+        <ValueCancelation value={totalRevenue} label="Total revenue" />
+        <ValueCancelation value={overbookingCost} label="Overbooking cost" />
+        <ValueCancelation value={underageCost} label="Underage cost" />
+        <ValueCancelation value={netRevenue} label="Net revenue" />
       </div>
       <Button>Again</Button>
     </div>
