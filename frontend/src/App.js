@@ -1,25 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsx jsx */
+import emotionReset from "emotion-reset";
+import { jsx, Global, css } from "@emotion/core";
+import React from "react";
+import { Router } from "@reach/router";
+
+import FlightDetails from "./views/flight-details";
+import CriticalRatio from "./views/critical-ratio";
+import OverbookingNumber from "./views/overbooking-number";
+import Cancellations from "./views/cancellations";
 
 function App() {
+  const cssWrapper = {
+    backgroundColor: "lightgray",
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Global
+        styles={css`
+          ${emotionReset};
+          body {
+            font-family: "Roboto", sans-serif;
+            line-height: 1.5;
+          }
+        `}
+      />
+      <div css={cssWrapper}>
+        <div
+          css={{
+            maxWidth: 678,
+            height: "90vh",
+            backgroundColor: "white",
+            width: "100%",
+            padding: 24,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Router>
+            <FlightDetails path="/" />
+            <CriticalRatio path="/critical-ratio" />
+            <OverbookingNumber path="/overbooking" />
+            <Cancellations path="/cancellations" />
+          </Router>
+        </div>
+      </div>
+    </>
   );
 }
 
