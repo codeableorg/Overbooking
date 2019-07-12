@@ -29,6 +29,7 @@ function FlightDetails() {
       <img
         src={airplane}
         css={{ margin: "auto", display: "block", marginBottom: 20 }}
+        alt="airplane"
       />
       <div css={{ textAlign: "center", marginBottom: 40 }}>
         <p>Overbooked seats: {game.overbookingNumber}</p>
@@ -45,7 +46,7 @@ function FlightDetails() {
         <ValueCancelation value={totalRevenue} label="Total revenue" />
         <ValueCancelation value={overbookingCost} label="Overbooking cost" />
         <ValueCancelation value={underageCost} label="Underage cost" />
-        <ValueCancelation value={netRevenue} label="Net revenue" />
+        <ValueCancelation value={netRevenue.toFixed(1)} label="Net revenue" />
       </div>
       <Button>Again</Button>
     </div>
