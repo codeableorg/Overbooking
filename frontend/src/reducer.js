@@ -9,7 +9,7 @@ const initialState = {
   suggestedOverbooking: 3,
   myCriticalRatio: 0,
   overbookingNumber: 0,
-  cancellations: 0,
+  cancellations: 3,
   totalRevenue: 0
 };
 
