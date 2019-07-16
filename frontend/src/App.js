@@ -43,7 +43,7 @@ function App() {
           }}
         >
           <Router>
-            <FlightDetails path="/" />
+            <FlightDetails path="/flight-details" />
             <CriticalRatio path="/critical-ratio" />
             <OverbookingNumber path="/overbooking" />
             <Cancellations path="/cancellations" />

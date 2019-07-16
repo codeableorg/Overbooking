@@ -12,7 +12,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 8,
       totalRevenue: 0
     },
     2: {
@@ -26,7 +26,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 6,
       totalRevenue: 0
     },
     3: {
@@ -40,7 +40,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 2,
       totalRevenue: 0
     },
     4: {
@@ -54,7 +54,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 0,
       totalRevenue: 0
     },
     5: {
@@ -68,7 +68,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 6,
       totalRevenue: 0
     },
     6: {
@@ -82,7 +82,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 8,
       totalRevenue: 0
     },
     7: {
@@ -96,7 +96,7 @@ const initialState = {
       suggestedOverbooking: 3,
       myCriticalRatio: 0,
       overbookingNumber: 0,
-      cancellations: 3,
+      cancellations: 8,
       totalRevenue: 0
     }
   }

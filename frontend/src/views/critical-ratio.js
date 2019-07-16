@@ -18,7 +18,8 @@ function CriticalRatio() {
   const addCriticalRatio = useAddCriticalRatio();
   const suggestOverbooking = useSuggestOverbookingNumber();
 
-  const state = useRound();
+  const game = useRound();
+  const { overbookingCost, underageCost } = game.games[game.currentGame];
 
   const styleInputCss = {
     margin: "10px auto",
@@ -85,10 +86,11 @@ function CriticalRatio() {
         <p css={labelCss}>Flight PDR456</p>
         <div css={dataBoxCss}>
           <p css={fieldSetCss}>
-            Cost of Overbooking<b>{state.overbookingCost}</b>
+            Cost of Overbooking
+            <b>{overbookingCost}</b>
           </p>
           <p css={fieldSetCss}>
-            Underage Cost<b>{state.underageCost}</b>
+            Underage Cost<b>{underageCost}</b>
           </p>
         </div>
         <label css={labelCss} htmlFor="critical-ratio">
@@ -108,6 +110,7 @@ function CriticalRatio() {
           step="any"
           min="0"
           max="1"
+          autoFocus
         />
         <Button type="submit" disabled={!isEnabled}>
           Set Critical Ratio
