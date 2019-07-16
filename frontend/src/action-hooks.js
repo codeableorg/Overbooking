@@ -7,7 +7,8 @@ import {
   addOverbookingNumber,
   suggestOverbookingNumber,
   setTotalRevenue,
-  setCurrentGame
+  setCurrentGame,
+  submitScore
 } from "./actions";
 
 export function useReset() {
@@ -53,4 +54,9 @@ export function useSetTotalRevenue() {
     totalRevenue => dispatch(setTotalRevenue(totalRevenue)),
     [dispatch]
   );
+}
+
+export function useSubmitScore() {
+  const dispatch = useDispatch();
+  return React.useCallback(user => dispatch(submitScore(user)), [dispatch]);
 }
