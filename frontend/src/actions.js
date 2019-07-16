@@ -22,7 +22,12 @@ function addOverbookingNumber(overbookingNumber) {
     payload: overbookingNumber
   };
 }
-
+function setCurrentGame(currentGame) {
+  return {
+    type: "SET_CURRENT_GAME",
+    payload: currentGame
+  };
+}
 function setTotalRevenue(totalRevenue) {
   return {
     type: "SET_TOTAL_REVENUE",
@@ -35,5 +40,6 @@ export {
   addCriticalRatio,
   suggestOverbookingNumber,
   addOverbookingNumber,
-  setTotalRevenue
+  setTotalRevenue,
+  setCurrentGame
 };

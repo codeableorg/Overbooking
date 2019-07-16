@@ -1,16 +1,105 @@
 const initialState = {
-  destination: "domestic",
-  totalSeats: 75,
-  pricePerSeat: 200,
-  demandFactor: 2,
-  underageCost: 300,
-  overbookingCost: 600,
-  criticalRatio: 0.3333,
-  suggestedOverbooking: 3,
-  myCriticalRatio: 0,
-  overbookingNumber: 0,
-  cancellations: 3,
-  totalRevenue: 0
+  currentGame: 1,
+  games: {
+    1: {
+      destination: "domestic",
+      totalSeats: 75,
+      pricePerSeat: 200,
+      demandFactor: 2,
+      underageCost: 300,
+      overbookingCost: 600,
+      criticalRatio: 0.3333,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    },
+    2: {
+      destination: "domestic",
+      totalSeats: 75,
+      pricePerSeat: 200,
+      demandFactor: 1.0,
+      underageCost: 200,
+      overbookingCost: 200,
+      criticalRatio: 0.5,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    },
+    3: {
+      destination: "domestic",
+      totalSeats: 75,
+      pricePerSeat: 200,
+      demandFactor: 1.2,
+      underageCost: 250,
+      overbookingCost: 300,
+      criticalRatio: 0.4545,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    },
+    4: {
+      destination: "Domestic",
+      totalSeats: 150,
+      pricePerSeat: 200,
+      demandFactor: 1.3,
+      underageCost: 275,
+      overbookingCost: 358,
+      criticalRatio: 0.4348,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    },
+    5: {
+      destination: "International",
+      totalSeats: 150,
+      pricePerSeat: 200,
+      demandFactor: 1.5,
+      underageCost: 600,
+      overbookingCost: 900,
+      criticalRatio: 0.4,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    },
+    6: {
+      destination: "International",
+      totalSeats: 150,
+      pricePerSeat: 200,
+      demandFactor: 1.1,
+      underageCost: 450,
+      overbookingCost: 495,
+      criticalRatio: 0.4762,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    },
+    7: {
+      destination: "International",
+      totalSeats: 75,
+      pricePerSeat: 200,
+      demandFactor: 1.4,
+      underageCost: 550,
+      overbookingCost: 770,
+      criticalRatio: 0.4167,
+      suggestedOverbooking: 3,
+      myCriticalRatio: 0,
+      overbookingNumber: 0,
+      cancellations: 3,
+      totalRevenue: 0
+    }
+  }
 };
 
 const ratios = [
@@ -41,19 +130,43 @@ function reducer(state = initialState, action = {}) {
     case "ADD_CRITICAL_RATIO": {
       return {
         ...state,
-        myCriticalRatio: action.payload
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            myCriticalRatio: action.payload
+          }
+        }
       };
     }
     case "ADD_OVERBOOKING_NUMBER": {
       return {
         ...state,
-        overbookingNumber: action.payload
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            overbookingNumber: action.payload
+          }
+        }
       };
     }
     case "SET_TOTAL_REVENUE": {
       return {
         ...state,
-        totalRevenue: action.payload
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            totalRevenue: action.payload
+          }
+        }
+      };
+    }
+    case "SET_CURRENT_GAME": {
+      return {
+        ...state,
+        currentGame: action.payload
       };
     }
     case "SUGGEST_OVERBOOKING": {
@@ -67,7 +180,13 @@ function reducer(state = initialState, action = {}) {
 
       return {
         ...state,
-        suggestedOverbooking: suggested
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            suggestedOverbooking: suggested
+          }
+        }
       };
     }
     case "RESET": {

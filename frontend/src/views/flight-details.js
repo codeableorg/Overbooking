@@ -4,10 +4,12 @@ import React from "react";
 import airplane from "../images/airplane.png";
 import { Button } from "../components/ui";
 import { Link } from "@reach/router";
+import Header from "../components/header";
 
 function FlightDetails() {
   return (
     <div>
+      <Header />
       <img src={airplane} css={{ margin: "auto", display: "block" }} />
       <ul css={{ padding: "1em", border: "1px solid black", margin: "1em 0" }}>
         <li>Fliht number: 311</li>

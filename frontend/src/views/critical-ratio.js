@@ -9,6 +9,7 @@ import {
 } from "../action-hooks";
 import { Button } from "../components/ui";
 import { navigate } from "@reach/router";
+import Header from "../components/header";
 
 function CriticalRatio() {
   const [criticalRatio, setCriticalRatio] = React.useState("");
@@ -77,39 +78,42 @@ function CriticalRatio() {
     navigate("/overbooking");
   }
   return (
-    <form css={containerCss} onSubmit={handleSubmit}>
-      <img css={imageCss} src={plane} alt="plane" />
-      <p css={labelCss}>Flight PDR456</p>
-      <div css={dataBoxCss}>
-        <p css={fieldSetCss}>
-          Cost of Overbooking<b>{state.overbookingCost}</b>
-        </p>
-        <p css={fieldSetCss}>
-          Underage Cost<b>{state.underageCost}</b>
-        </p>
-      </div>
-      <label css={labelCss} htmlFor="critical-ratio">
-        Calculate the Critical Ratio
-      </label>
-      <input
-        css={styleInputCss}
-        aria-label="enter critical ratio"
-        id="critical-ratio"
-        name="critical-ratio"
-        required="required"
-        autoComplete="off"
-        type="number"
-        placeholder="Enter The Critical Ratio"
-        onChange={onChangeInputCriticalRatio}
-        value={criticalRatio}
-        step="any"
-        min="0"
-        max="1"
-      />
-      <Button type="submit" disabled={!isEnabled}>
-        Set Critical Ratio
-      </Button>
-    </form>
+    <>
+      <Header />
+      <form css={containerCss} onSubmit={handleSubmit}>
+        <img css={imageCss} src={plane} alt="plane" />
+        <p css={labelCss}>Flight PDR456</p>
+        <div css={dataBoxCss}>
+          <p css={fieldSetCss}>
+            Cost of Overbooking<b>{state.overbookingCost}</b>
+          </p>
+          <p css={fieldSetCss}>
+            Underage Cost<b>{state.underageCost}</b>
+          </p>
+        </div>
+        <label css={labelCss} htmlFor="critical-ratio">
+          Calculate the Critical Ratio
+        </label>
+        <input
+          css={styleInputCss}
+          aria-label="enter critical ratio"
+          id="critical-ratio"
+          name="critical-ratio"
+          required="required"
+          autoComplete="off"
+          type="number"
+          placeholder="Enter The Critical Ratio"
+          onChange={onChangeInputCriticalRatio}
+          value={criticalRatio}
+          step="any"
+          min="0"
+          max="1"
+        />
+        <Button type="submit" disabled={!isEnabled}>
+          Set Critical Ratio
+        </Button>
+      </form>
+    </>
   );
 }
 

@@ -6,7 +6,8 @@ import {
   addCriticalRatio,
   addOverbookingNumber,
   suggestOverbookingNumber,
-  setTotalRevenue
+  setTotalRevenue,
+  setCurrentGame
 } from "./actions";
 
 export function useReset() {
@@ -18,6 +19,14 @@ export function useAddCriticalRatio() {
   const dispatch = useDispatch();
   return React.useCallback(
     criticalRatio => dispatch(addCriticalRatio(criticalRatio)),
+    [dispatch]
+  );
+}
+
+export function useSetCurrentGame() {
+  const dispatch = useDispatch();
+  return React.useCallback(
+    currentGame => dispatch(setCurrentGame(currentGame)),
     [dispatch]
   );
 }

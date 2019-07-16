@@ -5,6 +5,10 @@ import airplane from "../images/airplane.png";
 import { Button } from "../components/ui";
 import ValueCancelation from "../components/value-cancelation";
 import { useRound } from "../selectors";
+import { navigate } from "@reach/router";
+import Header from "../components/header";
+import { useSetCurrentGame } from "../action-hooks";
+import { Link } from "@reach/router";
 
 function FlightDetails() {
   // TODO: WIP animation of values
@@ -22,10 +26,18 @@ function FlightDetails() {
     totalRevenue - overbookingCost - underageCost
   );
 
+  const setCurrentGame = useSetCurrentGame();
+
   React.useEffect(() => {}, [cancellation]);
 
+  function changeCurrentGame(event) {
+    event.preventDefault();
+    setCurrentGame(game.currentGame + 1);
+    navigate("/");
+  }
   return (
-    <div>
+    <form onSubmit={changeCurrentGame}>
+      <Header />
       <img
         src={airplane}
         css={{ margin: "auto", display: "block", marginBottom: 20 }}
@@ -48,8 +60,12 @@ function FlightDetails() {
         <ValueCancelation value={underageCost} label="Underage cost" />
         <ValueCancelation value={netRevenue.toFixed(1)} label="Net revenue" />
       </div>
-      <Button>Again</Button>
-    </div>
+      {game.currentGame < 8 ? (
+        <Button>Next Flight {game.currentGame}/7</Button>
+      ) : (
+        <Button>My Score</Button>
+      )}
+    </form>
   );
 }
 

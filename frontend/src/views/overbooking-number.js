@@ -6,6 +6,7 @@ import { useAddOverbookingNumber, useSetTotalRevenue } from "../action-hooks";
 import { Button } from "../components/ui";
 import airplane from "./../images/airplane.png";
 import { navigate } from "@reach/router";
+import Header from "../components/header";
 
 function OverbookingNumber() {
   const [value, setValue] = React.useState(0);
@@ -106,6 +107,7 @@ function OverbookingNumber() {
 
   return (
     <section css={containerCSS}>
+      <Header />
       <img
         src={airplane}
         alt="airplane"
