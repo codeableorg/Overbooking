@@ -7,7 +7,7 @@ import ValueCancelation from "../components/value-cancelation";
 import { useRound } from "../selectors";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
-import { useSetCurrentGame } from "../action-hooks";
+import { useSetCurrentGame, useAddNetRevenue } from "../action-hooks";
 
 function FlightDetails() {
   // TODO: WIP animation of values
@@ -33,15 +33,18 @@ function FlightDetails() {
   );
 
   const setCurrentGame = useSetCurrentGame();
+  const addNetRevenue = useAddNetRevenue();
 
   React.useEffect(() => {}, [cancellation]);
 
   function changeCurrentGame(event) {
+    addNetRevenue(netRevenue.toFixed(1) * 1);
     setCurrentGame(++game.currentGame);
     navigate("/flight-details");
   }
 
   function goToScore(event) {
+    addNetRevenue(netRevenue.toFixed(1) * 1);
     setCurrentGame(1);
     navigate("/score");
   }

@@ -13,7 +13,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 8,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     },
     2: {
       destination: "domestic",
@@ -27,7 +28,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 6,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     },
     3: {
       destination: "domestic",
@@ -41,7 +43,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 2,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     },
     4: {
       destination: "Domestic",
@@ -55,7 +58,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 0,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     },
     5: {
       destination: "International",
@@ -69,7 +73,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 6,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     },
     6: {
       destination: "International",
@@ -83,7 +88,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 8,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     },
     7: {
       destination: "International",
@@ -97,7 +103,8 @@ const initialState = {
       myCriticalRatio: 0,
       overbookingNumber: 0,
       cancellations: 8,
-      totalRevenue: 0
+      totalRevenue: 0,
+      netRevenue: 0
     }
   }
 };
@@ -135,6 +142,18 @@ function reducer(state = initialState, action = {}) {
           [state.currentGame]: {
             ...state.games[state.currentGame],
             myCriticalRatio: action.payload
+          }
+        }
+      };
+    }
+    case "ADD_NET_REVENUE": {
+      return {
+        ...state,
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            netRevenue: action.payload
           }
         }
       };
