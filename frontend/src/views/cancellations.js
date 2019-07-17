@@ -44,8 +44,7 @@ function FlightDetails() {
 
   function goToScore(event) {
     setCurrentGame(1);
-    // TODO: we will update the route to the score view
-    navigate("/");
+    navigate("/score");
   }
 
   return (

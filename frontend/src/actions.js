@@ -35,11 +35,24 @@ function setTotalRevenue(totalRevenue) {
   };
 }
 
+function submitScore(user) {
+  return async dispatch => {
+    await fetch("http://localhost:4000/api/users", {
+      method: "POST",
+      body: user ? JSON.stringify(user) : "{}",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+  };
+}
+
 export {
   reset,
   addCriticalRatio,
   suggestOverbookingNumber,
   addOverbookingNumber,
   setTotalRevenue,
-  setCurrentGame
+  setCurrentGame,
+  submitScore
 };
