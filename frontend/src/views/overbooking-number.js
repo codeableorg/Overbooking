@@ -6,10 +6,17 @@ import { useAddOverbookingNumber, useSetTotalRevenue } from "../action-hooks";
 import { Button } from "../components/ui";
 import airplane from "./../images/airplane.png";
 import { navigate } from "@reach/router";
+import Header from "../components/header";
 
 function OverbookingNumber() {
   const [value, setValue] = React.useState(0);
-  const firstRound = useRound();
+  const game = useRound();
+  const {
+    suggestedOverbooking,
+    myCriticalRatio,
+    pricePerSeat,
+    totalSeats
+  } = game.games[game.currentGame];
   const addOverbookingNumber = useAddOverbookingNumber();
   const setTotalRevenue = useSetTotalRevenue();
 
@@ -18,11 +25,9 @@ function OverbookingNumber() {
     const data = event.target.value;
     setValue(data);
   }
-  const seats = firstRound.totalSeats;
-  const pricePerSeat = firstRound.pricePerSeat;
-  const revenue = value * pricePerSeat + seats * pricePerSeat;
+  const revenue = value * pricePerSeat + totalSeats * pricePerSeat;
 
-  const bulletPosition = (value / seats) * 77 + "%";
+  const bulletPosition = (value / totalSeats) * 77 + "%";
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -106,13 +111,14 @@ function OverbookingNumber() {
 
   return (
     <section css={containerCSS}>
+      <Header />
       <img
         src={airplane}
         alt="airplane"
         css={{ marginBottom: 15, height: 180 }}
       />
-      <p>Critical Ratio: {firstRound.myCriticalRatio}</p>
-      <p>Suggested Overbooking: {firstRound.suggestedOverbooking}</p>
+      <p>Critical Ratio: {myCriticalRatio}</p>
+      <p>Suggested Overbooking: {suggestedOverbooking}</p>
       <p css={{ fontWeight: "bolder", marginTop: 25 }}>
         Total Revenue: $ {revenue}
       </p>
@@ -132,7 +138,7 @@ function OverbookingNumber() {
           id="rs-range-line"
           type="range"
           min="0"
-          max={seats}
+          max={totalSeats}
           value={value}
           onChange={handleChange}
           css={sliderCSS}
