@@ -8,6 +8,7 @@ import FlightDetails from "./views/flight-details";
 import CriticalRatio from "./views/critical-ratio";
 import OverbookingNumber from "./views/overbooking-number";
 import Cancellations from "./views/cancellations";
+import Score from "./views/score";
 
 function App() {
   const cssWrapper = {
@@ -47,6 +48,7 @@ function App() {
             <CriticalRatio path="/critical-ratio" />
             <OverbookingNumber path="/overbooking" />
             <Cancellations path="/cancellations" />
+            <Score path="/score" />
           </Router>
         </div>
       </div>
