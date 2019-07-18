@@ -9,6 +9,13 @@ function addCriticalRatio(criticalRatio) {
   };
 }
 
+function addNetRevenue(netRevenue) {
+  return {
+    type: "ADD_NET_REVENUE",
+    payload: netRevenue
+  };
+}
+
 function suggestOverbookingNumber(criticalRatio) {
   return {
     type: "SUGGEST_OVERBOOKING",
@@ -54,5 +61,6 @@ export {
   addOverbookingNumber,
   setTotalRevenue,
   setCurrentGame,
-  submitScore
+  submitScore,
+  addNetRevenue
 };

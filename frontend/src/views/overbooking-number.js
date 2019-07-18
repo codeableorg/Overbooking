@@ -7,6 +7,10 @@ import { Button } from "../components/ui";
 import airplane from "./../images/airplane.png";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
+import { Dialog, DialogOverlay, DialogContent } from "@reach/dialog";
+import "@reach/dialog/styles.css";
+
+import { createPortal } from "react-dom";
 
 function OverbookingNumber() {
   const [value, setValue] = React.useState(0);
@@ -20,6 +24,10 @@ function OverbookingNumber() {
   const addOverbookingNumber = useAddOverbookingNumber();
   const setTotalRevenue = useSetTotalRevenue();
 
+  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
+
+  const $portal = React.useMemo(() => document.getElementById("portal"), []);
+
   function handleChange(event) {
     event.preventDefault();
     const data = event.target.value;
@@ -31,11 +39,19 @@ function OverbookingNumber() {
 
   function handleSubmit(event) {
     event.preventDefault();
+  }
+
+  function handleCloseModal(event) {
+    setIsDialogOpen(false);
+  }
+  function handleOpenModal(event) {
+    setIsDialogOpen(true);
+  }
+  function saveData() {
     addOverbookingNumber(parseInt(value));
     setTotalRevenue(revenue);
     navigate("/cancellations");
   }
-
   const containerCSS = {
     display: "flex",
     justifyContent: "center",
@@ -108,6 +124,23 @@ function OverbookingNumber() {
     fontSize: "28px",
     left: bulletPosition
   };
+  const titleCss = {
+    display: "flex",
+    justifyContent: "center",
+    fontSize: "25px",
+    padding: "20px"
+  };
+
+  const dialogContent = {
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    width: "100%",
+    height: "30%",
+    boxSizing: "border-box",
+    margin: 0
+  };
 
   return (
     <section css={containerCSS}>
@@ -144,9 +177,33 @@ function OverbookingNumber() {
           css={sliderCSS}
         />
         <p css={{ fontSize: 14, marginTop: 15 }}>Choose your overbooking</p>
-        <Button css={{ marginTop: 35 }} type="submit">
+        <Button css={{ marginTop: 35 }} type="submit" onClick={handleOpenModal}>
           Set overbooking
         </Button>
+
+        {createPortal(
+          <DialogOverlay isOpen={isDialogOpen} onDismiss={handleCloseModal}>
+            <Dialog
+              isOpen={isDialogOpen}
+              onDismiss={handleCloseModal}
+              css={dialogContent}
+            >
+              <h1 css={titleCss}>
+                You Are setting {value} seats for overbooking
+              </h1>
+              <div
+                css={{
+                  display: "flex",
+                  padding: "10px"
+                }}
+              >
+                <Button onClick={handleCloseModal}>Cancel</Button>
+                <Button onClick={saveData}>Confirm</Button>
+              </div>
+            </Dialog>
+          </DialogOverlay>,
+          $portal
+        )}
       </form>
     </section>
   );
