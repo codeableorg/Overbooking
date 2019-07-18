@@ -10,17 +10,6 @@ function Score() {
   const [username, setUsername] = React.useState("");
   const game = useRound();
   const submitScore = useSubmitScore();
-  const dataToSend = {
-    user: {
-      games_attributes: Object.values(game.games)
-    }
-  };
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    Object.assign(dataToSend.user, { name: username });
-    submitScore(dataToSend);
-  }
 
   function handleChange(event) {
     event.preventDefault();
@@ -41,6 +30,23 @@ function Score() {
     }
     return correct;
   });
+
+  const dataToSend = {
+    user: {
+      games_attributes: Object.values(game.games),
+      scores_attributes: [
+        {
+          totalRevenue: (total * 1000).toFixed(0)
+        }
+      ]
+    }
+  };
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    Object.assign(dataToSend.user, { name: username });
+    submitScore(dataToSend);
+  }
 
   const styleInputCss = {
     margin: "10px auto",
@@ -103,7 +109,9 @@ function Score() {
       >
         <section css={scoresCss}>
           <span css={{ width: "max-content" }}>TOTAL REVENUE</span>
-          <span css={{ width: "max-content", fontSize: 18 }}>$ {total}</span>
+          <span css={{ width: "max-content", fontSize: 18 }}>
+            $ {(total * 1000).toFixed(0)}
+          </span>
         </section>
         <section css={scoresCss}>
           <span css={{ width: "max-content" }}>ACCURACY (C.R.)</span>
