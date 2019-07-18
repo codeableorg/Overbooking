@@ -1,8 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import React from "react";
-import airplane from "../images/airplane.png";
-import { Button } from "../components/ui";
 import ValueCancelation from "../components/value-cancelation";
 import { useRound } from "../selectors";
 import { navigate } from "@reach/router";
@@ -12,6 +10,16 @@ import {
   useAddNetRevenue,
   useAddFeedback
 } from "../action-hooks";
+
+import {
+  Button,
+  Row,
+  TitleView,
+  Card,
+  LabelValue,
+  Center,
+  WhisperText
+} from "../components/ui";
 
 function FlightDetails() {
   // TODO: WIP animation of values
@@ -56,14 +64,26 @@ function FlightDetails() {
   }
 
   return (
-    <div>
+    <>
       <Header />
-      <h1 css={{ display: "flex", justifyContent: "center" }}>Cancellations</h1>
-      <div css={{ textAlign: "center", marginBottom: 40 }}>
-        <p>Overbooked seats: {overbookingNumber}</p>
-        <p>Total cancellatioms</p>
-        <span css={{ fontSize: 56, fontWeight: "bold" }}>{cancellation}</span>
-      </div>
+      <TitleView styles={{ marginTop: 72 }}>
+        <h1>Cancellations</h1>
+      </TitleView>
+
+      <Card styles={{ marginBottom: 48 }}>
+        <Row>
+          <LabelValue
+            label="Overbooked seats"
+            value={overbookingNumber}
+            border="Right"
+          />
+          <LabelValue
+            label="Total cancellations"
+            value={cancellation}
+            border="Right"
+          />
+        </Row>
+      </Card>
       <div
         css={{
           display: "flex",
@@ -79,16 +99,27 @@ function FlightDetails() {
         <ValueCancelation value={currentUnderageCost} label="Underage cost" />
         <ValueCancelation value={netRevenue.toFixed(1)} label="Net revenue" />
       </div>
-      <div>
-        <h2>Feedback</h2>
-        <p>{feedback}</p>
-      </div>
-      {game.currentGame < 7 ? (
-        <Button onClick={changeCurrentGame}>Next Flight</Button>
-      ) : (
-        <Button onClick={goToScore}>My Score</Button>
-      )}
-    </div>
+
+      <Card>
+        <div>
+          <h2>Feedback</h2>
+          <p>{feedback}</p>
+        </div>
+        {game.currentGame < 7 ? (
+          <Button onClick={changeCurrentGame}>Next Flight</Button>
+        ) : (
+          <Button onClick={goToScore}>My Score</Button>
+        )}
+      </Card>
+
+      <Center>
+        {game.currentGame < 7 ? (
+          <Button onClick={changeCurrentGame}>Next Flight</Button>
+        ) : (
+          <Button onClick={goToScore}>My Score</Button>
+        )}
+      </Center>
+    </>
   );
 }
 

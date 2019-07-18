@@ -9,11 +9,20 @@ function ValueCancelation({ value, label }) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        margin: "0 16px"
+        textAlign: "center",
+        flex: "1 1 0"
       }}
     >
-      <span css={{ fontSize: 40 }}>{value}k</span>
-      <span>{label}</span>
+      <span css={{ fontSize: 24 }}>{value}k</span>
+      <span
+        css={{
+          fontSize: 11,
+          textTransform: "uppercase",
+          wordSpacing: 100
+        }}
+      >
+        {label}
+      </span>
     </div>
   );
 }

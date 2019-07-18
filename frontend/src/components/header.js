@@ -11,7 +11,11 @@ function Header() {
       css={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        position: "absolute",
+        top: 0,
+        right: 2,
+        left: 0
       }}
     >
       <div>home</div>
