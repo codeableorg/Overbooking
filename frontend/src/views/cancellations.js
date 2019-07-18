@@ -37,8 +37,7 @@ function FlightDetails() {
   React.useEffect(() => {}, [cancellation]);
 
   function changeCurrentGame(event) {
-    event.preventDefault();
-    setCurrentGame(game.currentGame + 1);
+    setCurrentGame(++game.currentGame);
     navigate("/flight-details");
   }
 
