@@ -14,7 +14,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 8,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     },
     2: {
       destination: "domestic",
@@ -29,7 +30,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 6,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     },
     3: {
       destination: "domestic",
@@ -44,7 +46,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 2,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     },
     4: {
       destination: "Domestic",
@@ -59,7 +62,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 0,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     },
     5: {
       destination: "International",
@@ -74,7 +78,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 6,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     },
     6: {
       destination: "International",
@@ -89,7 +94,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 8,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     },
     7: {
       destination: "International",
@@ -104,7 +110,8 @@ const initialState = {
       overbookingNumber: 0,
       cancellations: 8,
       totalRevenue: 0,
-      netRevenue: 0
+      netRevenue: 0,
+      feedback: ""
     }
   }
 };
@@ -142,6 +149,18 @@ function reducer(state = initialState, action = {}) {
           [state.currentGame]: {
             ...state.games[state.currentGame],
             myCriticalRatio: action.payload
+          }
+        }
+      };
+    }
+    case "ADD_FEEDBACK": {
+      return {
+        ...state,
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            feedback: action.payload
           }
         }
       };
