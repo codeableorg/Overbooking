@@ -4,18 +4,21 @@ import { jsx, Global, css } from "@emotion/core";
 import React from "react";
 import { Router } from "@reach/router";
 
+import UiComponents from "./views/ui-components";
+import Instructions from "./views/instructions";
 import FlightDetails from "./views/flight-details";
 import CriticalRatio from "./views/critical-ratio";
 import OverbookingNumber from "./views/overbooking-number";
 import Cancellations from "./views/cancellations";
+import Score from "./views/score";
 
 function App() {
   const cssWrapper = {
-    backgroundColor: "lightgray",
     height: "100vh",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: "#ffffff"
   };
 
   return (
@@ -24,31 +27,30 @@ function App() {
         styles={css`
           ${emotionReset};
           body {
-            font-family: "Roboto", sans-serif;
-            line-height: 1.5;
+            font-family: "Rubik", sans-serif;
+            line-height: 1.25;
           }
         `}
       />
       <div css={cssWrapper}>
-        <div
+        <Router
           css={{
-            maxWidth: 678,
-            height: "90vh",
-            backgroundColor: "white",
-            width: "100%",
-            padding: 24,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
+            width: 375,
+            height: 667,
+            padding: 16,
+            boxSizing: "border-box",
+            position: "relative",
+            background: "linear-gradient(180deg, #F8FAFB 0%, #E7EAF1 100%)"
           }}
         >
-          <Router>
-            <FlightDetails path="/" />
-            <CriticalRatio path="/critical-ratio" />
-            <OverbookingNumber path="/overbooking" />
-            <Cancellations path="/cancellations" />
-          </Router>
-        </div>
+          <UiComponents path="/" />
+          <Instructions path="/instructions" />
+          <FlightDetails path="/flight-details" />
+          <CriticalRatio path="/critical-ratio" />
+          <OverbookingNumber path="/overbooking" />
+          <Cancellations path="/cancellations" />
+          <Score path="/score" />
+        </Router>
       </div>
     </>
   );

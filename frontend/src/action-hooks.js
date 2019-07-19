@@ -6,7 +6,11 @@ import {
   addCriticalRatio,
   addOverbookingNumber,
   suggestOverbookingNumber,
-  setTotalRevenue
+  setTotalRevenue,
+  setCurrentGame,
+  submitScore,
+  addNetRevenue,
+  addFeedback
 } from "./actions";
 
 export function useReset() {
@@ -18,6 +22,14 @@ export function useAddCriticalRatio() {
   const dispatch = useDispatch();
   return React.useCallback(
     criticalRatio => dispatch(addCriticalRatio(criticalRatio)),
+    [dispatch]
+  );
+}
+
+export function useSetCurrentGame() {
+  const dispatch = useDispatch();
+  return React.useCallback(
+    currentGame => dispatch(setCurrentGame(currentGame)),
     [dispatch]
   );
 }
@@ -38,10 +50,28 @@ export function useAddOverbookingNumber() {
   );
 }
 
+export function useAddNetRevenue() {
+  const dispatch = useDispatch();
+  return React.useCallback(netRevenue => dispatch(addNetRevenue(netRevenue)), [
+    dispatch
+  ]);
+}
+
+export function useAddFeedback() {
+  const dispatch = useDispatch();
+  return React.useCallback(feedback => dispatch(addFeedback(feedback)), [
+    dispatch
+  ]);
+}
 export function useSetTotalRevenue() {
   const dispatch = useDispatch();
   return React.useCallback(
     totalRevenue => dispatch(setTotalRevenue(totalRevenue)),
     [dispatch]
   );
+}
+
+export function useSubmitScore() {
+  const dispatch = useDispatch();
+  return React.useCallback(user => dispatch(submitScore(user)), [dispatch]);
 }

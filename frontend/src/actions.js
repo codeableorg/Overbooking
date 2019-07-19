@@ -9,6 +9,13 @@ function addCriticalRatio(criticalRatio) {
   };
 }
 
+function addNetRevenue(netRevenue) {
+  return {
+    type: "ADD_NET_REVENUE",
+    payload: netRevenue
+  };
+}
+
 function suggestOverbookingNumber(criticalRatio) {
   return {
     type: "SUGGEST_OVERBOOKING",
@@ -22,11 +29,34 @@ function addOverbookingNumber(overbookingNumber) {
     payload: overbookingNumber
   };
 }
-
+function setCurrentGame(currentGame) {
+  return {
+    type: "SET_CURRENT_GAME",
+    payload: currentGame
+  };
+}
+function addFeedback(feedback) {
+  return {
+    type: "ADD_FEEDBACK",
+    payload: feedback
+  };
+}
 function setTotalRevenue(totalRevenue) {
   return {
     type: "SET_TOTAL_REVENUE",
     payload: totalRevenue
+  };
+}
+
+function submitScore(user) {
+  return async dispatch => {
+    await fetch("http://localhost:4000/api/users", {
+      method: "POST",
+      body: user ? JSON.stringify(user) : "{}",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
   };
 }
 
@@ -35,5 +65,9 @@ export {
   addCriticalRatio,
   suggestOverbookingNumber,
   addOverbookingNumber,
-  setTotalRevenue
+  setTotalRevenue,
+  setCurrentGame,
+  submitScore,
+  addNetRevenue,
+  addFeedback
 };
