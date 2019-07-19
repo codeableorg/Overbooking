@@ -35,6 +35,12 @@ function setCurrentGame(currentGame) {
     payload: currentGame
   };
 }
+function addFeedback(feedback) {
+  return {
+    type: "ADD_FEEDBACK",
+    payload: feedback
+  };
+}
 function setTotalRevenue(totalRevenue) {
   return {
     type: "SET_TOTAL_REVENUE",
@@ -62,5 +68,6 @@ export {
   setTotalRevenue,
   setCurrentGame,
   submitScore,
-  addNetRevenue
+  addNetRevenue,
+  addFeedback
 };
