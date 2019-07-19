@@ -100,16 +100,19 @@ function FlightDetails() {
         <ValueCancelation value={netRevenue.toFixed(1)} label="Net revenue" />
       </div>
 
-      <Card>
-        <div>
-          <h2>Feedback</h2>
-          <p>{feedback}</p>
-        </div>
-        {game.currentGame < 7 ? (
-          <Button onClick={changeCurrentGame}>Next Flight</Button>
-        ) : (
-          <Button onClick={goToScore}>My Score</Button>
-        )}
+      <Card styles={{ marginBottom: 40 }}>
+        <p
+          css={{
+            padding: 16,
+            fontSize: 16,
+            lineHeight: 1.5,
+            textAlign: "center",
+            maxWidth: 295,
+            margin: "auto"
+          }}
+        >
+          {feedback}
+        </p>
       </Card>
 
       <Center>
