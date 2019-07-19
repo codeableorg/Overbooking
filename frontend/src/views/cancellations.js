@@ -7,7 +7,11 @@ import ValueCancelation from "../components/value-cancelation";
 import { useRound } from "../selectors";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
-import { useSetCurrentGame, useAddNetRevenue } from "../action-hooks";
+import {
+  useSetCurrentGame,
+  useAddNetRevenue,
+  useAddFeedback
+} from "../action-hooks";
 
 function FlightDetails() {
   // TODO: WIP animation of values
@@ -17,7 +21,8 @@ function FlightDetails() {
     overbookingNumber,
     totalRevenue,
     overbookingCost,
-    underageCost
+    underageCost,
+    feedback
   } = game.games[game.currentGame];
   const seatsStatus = cancellations - overbookingNumber;
   const currentTotalRevenue = totalRevenue / 1000;
@@ -34,6 +39,7 @@ function FlightDetails() {
 
   const setCurrentGame = useSetCurrentGame();
   const addNetRevenue = useAddNetRevenue();
+  const addFeedback = useAddFeedback();
 
   React.useEffect(() => {}, [cancellation]);
 
@@ -52,11 +58,7 @@ function FlightDetails() {
   return (
     <div>
       <Header />
-      <img
-        src={airplane}
-        css={{ margin: "auto", display: "block", marginBottom: 20 }}
-        alt="airplane"
-      />
+      <h1 css={{ display: "flex", justifyContent: "center" }}>Cancellations</h1>
       <div css={{ textAlign: "center", marginBottom: 40 }}>
         <p>Overbooked seats: {overbookingNumber}</p>
         <p>Total cancellatioms</p>
@@ -76,6 +78,10 @@ function FlightDetails() {
         />
         <ValueCancelation value={currentUnderageCost} label="Underage cost" />
         <ValueCancelation value={netRevenue.toFixed(1)} label="Net revenue" />
+      </div>
+      <div>
+        <h2>Feedback</h2>
+        <p>{feedback}</p>
       </div>
       {game.currentGame < 7 ? (
         <Button onClick={changeCurrentGame}>Next Flight</Button>

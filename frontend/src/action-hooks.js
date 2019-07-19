@@ -9,7 +9,8 @@ import {
   setTotalRevenue,
   setCurrentGame,
   submitScore,
-  addNetRevenue
+  addNetRevenue,
+  addFeedback
 } from "./actions";
 
 export function useReset() {
@@ -56,6 +57,12 @@ export function useAddNetRevenue() {
   ]);
 }
 
+export function useAddFeedback() {
+  const dispatch = useDispatch();
+  return React.useCallback(feedback => dispatch(addFeedback(feedback)), [
+    dispatch
+  ]);
+}
 export function useSetTotalRevenue() {
   const dispatch = useDispatch();
   return React.useCallback(
