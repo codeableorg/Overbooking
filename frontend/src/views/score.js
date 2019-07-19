@@ -2,9 +2,17 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 import { useSubmitScore } from "../action-hooks";
-import { Button } from "../components/ui";
 import { useRound } from "../selectors";
 import { Link } from "@reach/router";
+import {
+  Button,
+  LabelValue,
+  Card,
+  Row,
+  TitleView,
+  Center,
+  Input
+} from "../components/ui";
 
 function Score() {
   const [username, setUsername] = React.useState("");
@@ -72,58 +80,44 @@ function Score() {
     alignItems: "center"
   };
 
-  const titleCss = {
-    fontWeight: "bolder",
-    fontSize: 30,
-    textAlign: "center",
-    marginBottom: "5%",
-    marginTop: "20%"
-  };
-
   const bottomButtonsCss = {
     width: "100%",
     display: "flex",
     justifyContent: "space-around",
-    margin: "20% 0"
+    marginTop: 25
   };
 
-  const scoresCss = {
-    display: "flex",
-    flexDirection: "column",
-    width: "max-content",
-    margin: 0,
-    alignItems: "center",
-    fontSize: 14
-  };
+  const totalAmount = `$ ${(total * 1000).toFixed(0)}`;
+  const accuracyNumber = `${correct}/7`;
 
   return (
     <main css={{ width: "100%" }}>
-      <h1 css={titleCss}>Final Score</h1>
-      <div
-        css={{
-          marginBottom: "40%",
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-around"
-        }}
-      >
-        <section css={scoresCss}>
-          <span css={{ width: "max-content" }}>TOTAL REVENUE</span>
-          <span css={{ width: "max-content", fontSize: 18 }}>
-            $ {(total * 1000).toFixed(0)}
-          </span>
-        </section>
-        <section css={scoresCss}>
-          <span css={{ width: "max-content" }}>ACCURACY (C.R.)</span>
-          <span css={{ width: "max-content", fontSize: 18 }}>{correct}/7</span>
-        </section>
-      </div>
+      <TitleView>
+        <h1 css={{ marginTop: 18 }}>Final Score</h1>
+      </TitleView>
+
+      <Card>
+        <Row>
+          <LabelValue
+            label="TOTAL REVENUE"
+            value={totalAmount}
+            border="Right"
+            css={{ margin: "10px 0px" }}
+          />
+          <LabelValue
+            label="ACCURACY (C.R.)"
+            value={accuracyNumber}
+            border="Right"
+          />
+        </Row>
+      </Card>
       <form
         onSubmit={handleSubmit}
         css={{
           display: "flex",
           flexDirection: "column",
-          textAlign: "center"
+          textAlign: "center",
+          marginTop: "40%"
         }}
       >
         <section
@@ -136,35 +130,75 @@ function Score() {
         >
           Save your score and see your position in the leaderboard
         </section>
-        <label htmlFor="username" css={{ margin: "0 auto" }}>
-          Name
-        </label>
-        <input
-          css={styleInputCss}
-          type="text"
-          autoComplete="off"
-          name="username"
-          id="username"
-          aria-label="Enter your name"
-          onChange={handleChange}
-          required
-        />
-        <Button type="submit">SAVE MY SCORE</Button>
+        <Card styles={{ marginBottom: 24 }}>
+          <div css={{ display: "flex", flexDirection: "column", padding: 16 }}>
+            <label
+              htmlFor="critical-ratio"
+              css={{
+                fontSize: 11,
+                color: "#7e879a",
+                textTransform: "uppercase",
+                textAlign: "center",
+                marginBottom: 8
+              }}
+            >
+              Name
+            </label>
+            <Input
+              aria-label="Enter your name"
+              id="username"
+              name="username"
+              required
+              autoComplete="off"
+              type="text"
+              onChange={handleChange}
+              autoFocus
+            />
+          </div>
+        </Card>
+
+        <Center>
+          <Button css={{ marginTop: 24 }} type="submit">
+            SAVE MY SCORE
+          </Button>
+        </Center>
       </form>
       <div css={bottomButtonsCss}>
         <div css={buttonLabelCss}>
-          <Link to="/">
-            <Button css={{ width: 50, height: 50, borderRadius: "50%" }}>
-              <i class="fas fa-redo fa-2x" />
-            </Button>
+          <Link
+            to="/"
+            css={{
+              background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)",
+              width: 48,
+              height: 48,
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "white"
+            }}
+          >
+            <i class="fas fa-redo fa-lg" />
           </Link>
           <span css={{ flexShrink: 1 }}>Play again</span>
         </div>
         <div css={buttonLabelCss}>
-          <Link to="/ranking">
-            <Button css={{ width: 50, height: 50, borderRadius: "50%" }}>
-              <i class="fas fa-list fa-2x" />
-            </Button>
+          <Link
+            to="/ranking"
+            css={{
+              background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)",
+              width: 48,
+              height: 48,
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "white"
+            }}
+          >
+            <i class="fas fa-list fa-lg" />
           </Link>
           <span css={{ flexShrink: 1 }}>Leaderboard</span>
         </div>
