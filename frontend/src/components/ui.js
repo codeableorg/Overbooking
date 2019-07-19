@@ -23,7 +23,7 @@ const buttonStyles = {
   boxSizing: "border-box",
   cursor: "pointer",
   "&:hover": {
-    background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
+    // background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
   },
   "&:focus": {
     outline: "none"
