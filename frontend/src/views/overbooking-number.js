@@ -18,9 +18,9 @@ import {
   TitleView,
   Card,
   LabelValue,
-  Center,
   WhisperText,
-  ColumnEvenly
+  ColumnEvenly,
+  Center
 } from "../components/ui";
 
 import { createPortal } from "react-dom";
@@ -291,22 +291,55 @@ function OverbookingNumber() {
       </form>
 
       {createPortal(
-        <DialogOverlay isOpen={isDialogOpen} onDismiss={handleCloseModal}>
+        <DialogOverlay
+          isOpen={isDialogOpen}
+          onDismiss={handleCloseModal}
+          css={{
+            display: "flex",
+            backgroundColor: "rgba(239, 245, 255, 0.75)"
+          }}
+        >
           <Dialog
             isOpen={isDialogOpen}
             onDismiss={handleCloseModal}
-            css={dialogContent}
+            css={{
+              ...dialogContent,
+              width: 343,
+              margin: "auto",
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
+              borderRadius: 8,
+              overflow: "hidden"
+            }}
           >
-            <h1 css={titleCss}>
-              You Are setting {value} seats for overbooking
-            </h1>
-            <div
+            <p
               css={{
-                display: "flex",
-                padding: "10px"
+                fontSize: 18,
+                lineHeight: 1.5,
+                textAlign: "center",
+                maxWidth: 295,
+                marginBottom: 24
               }}
             >
-              <Button onClick={handleCloseModal}>Cancel</Button>
+              You Are setting {value} seats for overbooking
+            </p>
+
+            <div css={{ display: "flex", padding: "10px" }}>
+              <Button
+                onClick={handleCloseModal}
+                styles={{
+                  background: "white",
+                  color: "black",
+                  textTransform: "capitalize",
+                  fontSize: 16,
+                  boxShadow: "none",
+                  fontWeight: 400
+                }}
+              >
+                Cancel
+              </Button>
               <Button onClick={saveData}>Confirm</Button>
             </div>
           </Dialog>
