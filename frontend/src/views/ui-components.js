@@ -2,7 +2,7 @@
 import { jsx } from "@emotion/core";
 import React from "react";
 import { Button, LabelValue, Card, Row, TitleView } from "./../components/ui";
-import PictureBoss from "./../components/picture-boos";
+import PictureBoss from "./../components/picture-boss";
 import PicturePlane from "./../components/picture-plane";
 
 function UiComponents() {
