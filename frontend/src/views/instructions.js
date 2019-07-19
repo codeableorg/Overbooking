@@ -3,7 +3,7 @@ import { jsx } from "@emotion/core";
 import React from "react";
 import { Link } from "@reach/router";
 import Header from "../components/header";
-import PictureBoss from "./../components/picture-boos";
+import PictureBoss from "./../components/picture-boss";
 
 import {
   buttonStyles,
