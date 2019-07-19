@@ -7,12 +7,21 @@ import {
   useSetTotalRevenue,
   useAddFeedback
 } from "../action-hooks";
-import { Button } from "../components/ui";
-import airplane from "./../images/airplane.png";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
 import { Dialog, DialogOverlay, DialogContent } from "@reach/dialog";
 import "@reach/dialog/styles.css";
+import PicturePlane from "./../components/picture-plane";
+import {
+  Button,
+  Row,
+  TitleView,
+  Card,
+  LabelValue,
+  Center,
+  WhisperText,
+  ColumnEvenly
+} from "../components/ui";
 
 import { createPortal } from "react-dom";
 // TODO: to refactor messages
@@ -149,16 +158,9 @@ function OverbookingNumber() {
     addFeedback(adviceOne() + adviceTwo(parseInt(value)));
     navigate("/cancellations");
   }
-  const containerCSS = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column",
-    height: "100vh"
-  };
 
   const sliderCSS = {
-    marginTop: "29px",
+    marginTop: "16px",
     width: "80%",
     "&::-webkit-slider-runnable-track": {
       width: "100%",
@@ -178,7 +180,6 @@ function OverbookingNumber() {
       borderRadius: "0px",
       border: "0px solid #010101"
     },
-
     "&::-webkit-slider-thumb": {
       border: "0px solid black",
       boxShadow: "0px 10px 10px rgba(0, 0, 0, 0.25)",
@@ -201,26 +202,6 @@ function OverbookingNumber() {
     }
   };
 
-  const labelCSS = {
-    position: "relative",
-    transformOrigin: "center center",
-    display: "flex",
-    width: "48px",
-    height: "48px",
-    background: "transparent",
-    borderRadius: "50%",
-    alignItems: "center",
-    justifyContent: "center",
-    fontWeight: "bold",
-    boxSizing: "border-box",
-    border: "2px solid black",
-    marginTop: "20px",
-    marginRight: "77%",
-    color: "black",
-    lineHeight: "normal",
-    fontSize: "28px",
-    left: bulletPosition
-  };
   const titleCss = {
     display: "flex",
     justifyContent: "center",
@@ -240,69 +221,99 @@ function OverbookingNumber() {
   };
 
   return (
-    <section css={containerCSS}>
+    <>
       <Header />
-      <img
-        src={airplane}
-        alt="airplane"
-        css={{ marginBottom: 15, height: 180 }}
-      />
-      <p>Critical Ratio: {myCriticalRatio}</p>
-      <p>Suggested Overbooking: {suggestedOverbooking}</p>
-      <p css={{ fontWeight: "bolder", marginTop: 25 }}>
-        Total Revenue: $ {revenue}
-      </p>
       <form
         onSubmit={handleSubmit}
         css={{
           width: "100%",
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column"
+          height: "100%"
         }}
       >
-        <span id="rs-bullet" css={labelCSS}>
-          {value}
-        </span>
-        <input
-          id="rs-range-line"
-          type="range"
-          min="0"
-          max={totalSeats}
-          value={value}
-          onChange={handleChange}
-          css={sliderCSS}
-        />
-        <p css={{ fontSize: 14, marginTop: 15 }}>Choose your overbooking</p>
-        <Button css={{ marginTop: 35 }} type="submit" onClick={handleOpenModal}>
-          Set overbooking
-        </Button>
+        <ColumnEvenly>
+          <PicturePlane />
+          <div css={{ width: "100%" }}>
+            <TitleView>
+              <h1>Overbooking</h1>
+            </TitleView>
+            <Card styles={{ marginBottom: 16 }}>
+              <Row>
+                <LabelValue
+                  label="Critical Ratio"
+                  value={myCriticalRatio}
+                  border="Right"
+                />
+                <LabelValue
+                  label="Suggested Overbooking"
+                  value={suggestedOverbooking}
+                  border="Right"
+                />
+              </Row>
+            </Card>
+            <Card>
+              <LabelValue
+                label="Total Revenue"
+                value={`$ ${revenue}`}
+                border="Right"
+              />
+            </Card>
+          </div>
+          <div
+            css={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column"
+            }}
+          >
+            <span id="rs-bullet" css={{ fontSize: 32 }}>
+              {value}
+            </span>
 
-        {createPortal(
-          <DialogOverlay isOpen={isDialogOpen} onDismiss={handleCloseModal}>
-            <Dialog
-              isOpen={isDialogOpen}
-              onDismiss={handleCloseModal}
-              css={dialogContent}
-            >
-              <h1 css={titleCss}>
-                You Are setting {value} seats for overbooking
-              </h1>
-              <div
-                css={{
-                  display: "flex",
-                  padding: "10px"
-                }}
-              >
-                <Button onClick={handleCloseModal}>Cancel</Button>
-                <Button onClick={saveData}>Confirm</Button>
-              </div>
-            </Dialog>
-          </DialogOverlay>,
-          $portal
-        )}
+            <input
+              id="rs-range-line"
+              type="range"
+              min="0"
+              max={totalSeats}
+              value={value}
+              onChange={handleChange}
+              css={{ marginBottom: 8, ...sliderCSS }}
+            />
+            <WhisperText>Choose your overbooking</WhisperText>
+          </div>
+
+          <Center>
+            <Button type="submit" onClick={handleOpenModal}>
+              Set overbooking
+            </Button>
+          </Center>
+        </ColumnEvenly>
       </form>
-    </section>
+
+      {createPortal(
+        <DialogOverlay isOpen={isDialogOpen} onDismiss={handleCloseModal}>
+          <Dialog
+            isOpen={isDialogOpen}
+            onDismiss={handleCloseModal}
+            css={dialogContent}
+          >
+            <h1 css={titleCss}>
+              You Are setting {value} seats for overbooking
+            </h1>
+            <div
+              css={{
+                display: "flex",
+                padding: "10px"
+              }}
+            >
+              <Button onClick={handleCloseModal}>Cancel</Button>
+              <Button onClick={saveData}>Confirm</Button>
+            </div>
+          </Dialog>
+        </DialogOverlay>,
+        $portal
+      )}
+    </>
   );
 }
 
