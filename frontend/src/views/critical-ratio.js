@@ -17,7 +17,8 @@ import {
   LabelValue,
   Center,
   WhisperText,
-  ColumnEvenly
+  ColumnEvenly,
+  Input
 } from "../components/ui";
 
 function CriticalRatio() {
@@ -46,7 +47,7 @@ function CriticalRatio() {
         <Header />
         <PicturePlane />
 
-        <div>
+        <div css={{ width: "100%" }}>
           <TitleView>
             <h1>Critial Ratio</h1>
           </TitleView>
@@ -66,24 +67,37 @@ function CriticalRatio() {
           </Card>
 
           <Card styles={{ marginBottom: 24 }}>
-            <label htmlFor="critical-ratio">
-              Calculate the Critical Ratio*
-            </label>
-            <input
-              aria-label="enter critical ratio"
-              id="critical-ratio"
-              name="critical-ratio"
-              required="required"
-              autoComplete="off"
-              type="number"
-              placeholder="Enter The Critical Ratio"
-              onChange={onChangeInputCriticalRatio}
-              value={criticalRatio}
-              step="any"
-              min="0"
-              max="1"
-              autoFocus
-            />
+            <div
+              css={{ display: "flex", flexDirection: "column", padding: 16 }}
+            >
+              <label
+                htmlFor="critical-ratio"
+                css={{
+                  fontSize: 11,
+                  color: "#7e879a",
+                  textTransform: "uppercase",
+                  textAlign: "center",
+                  marginBottom: 8
+                }}
+              >
+                Calculate the Critical Ratio*
+              </label>
+              <Input
+                aria-label="enter critical ratio"
+                id="critical-ratio"
+                name="critical-ratio"
+                required="required"
+                autoComplete="off"
+                type="number"
+                placeholder="0.0"
+                onChange={onChangeInputCriticalRatio}
+                value={criticalRatio}
+                step="any"
+                min="0"
+                max="1"
+                autoFocus
+              />
+            </div>
           </Card>
         </div>
 

@@ -2,11 +2,11 @@
 import { jsx } from "@emotion/core";
 import React from "react";
 import { Link } from "@reach/router";
+import { useRound } from "../selectors";
 import Header from "../components/header";
 import PicturePlane from "./../components/picture-plane";
 import {
   buttonStyles,
-  Button,
   Card,
   TitleView,
   LabelValue,
@@ -15,20 +15,30 @@ import {
 } from "../components/ui";
 
 function FlightDetails() {
+  const game = useRound();
+  const current = game.currentGame;
   return (
     <ColumnEvenly>
       <Header />
       <PicturePlane />
       <div css={{ width: "100%" }}>
         <TitleView>
-          <h1>Flight 1</h1>
+          <h1>Flight {game.currentGame}</h1>
         </TitleView>
         <Card>
-          <LabelValue label="Destination" value="Domestic" border="Bottom" />
-          <LabelValue label="Capacity" value="120" border="Bottom" />
+          <LabelValue
+            label="Destination"
+            value={game.games[current].destination}
+            border="Bottom"
+          />
+          <LabelValue
+            label="Capacity"
+            value={game.games[current].totalSeats}
+            border="Bottom"
+          />
           <LabelValue
             label="Date"
-            value="Monday, Jul. 15th 2019"
+            value={game.games[current].dateFlight}
             border="Bottom"
           />
         </Card>

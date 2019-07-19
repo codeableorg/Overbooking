@@ -24,6 +24,9 @@ const buttonStyles = {
   cursor: "pointer",
   "&:hover": {
     background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
+  },
+  "&:focus": {
+    outline: "none"
   }
 };
 
@@ -45,7 +48,11 @@ function LabelValue({ styles, children, ...props }) {
       <div css={{ fontSize: 11, textTransform: "uppercase", color: "#7E879A" }}>
         {props.label}
       </div>
-      <div css={{ fontSize: 18, color: "#211F1F" }}>{props.value}</div>
+      <div
+        css={{ fontSize: 18, color: "#211F1F", textTransform: "capitalize" }}
+      >
+        {props.value}
+      </div>
     </div>
   );
 }
@@ -149,8 +156,23 @@ function WhisperText({ children, styles }) {
   );
 }
 
-function MainGrid({ children, styles }) {
-  return <div css={{ display: "grid" }}>{children}</div>;
+function Input({ children, styles, ...props }) {
+  return (
+    <input
+      {...props}
+      css={{
+        border: 0,
+        borderBottom: "1px solid #e7eaf1",
+        fontSize: 32,
+        textAlign: "center",
+        "&:focus": {
+          outline: "none",
+          borderBottom: "1px solid #0074ff"
+        },
+        ...styles
+      }}
+    />
+  );
 }
 
 export {
@@ -163,5 +185,6 @@ export {
   Center,
   ColumnEvenly,
   WhisperText,
-  ColumnSpaceBetween
+  ColumnSpaceBetween,
+  Input
 };

@@ -15,7 +15,8 @@ const initialState = {
       cancellations: 8,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Monday, Aug 1st 2019"
     },
     2: {
       destination: "domestic",
@@ -31,7 +32,8 @@ const initialState = {
       cancellations: 6,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Tuesday, Aug 2nd 2019"
     },
     3: {
       destination: "domestic",
@@ -47,7 +49,8 @@ const initialState = {
       cancellations: 2,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Wednesday, Aug 3rd 2019"
     },
     4: {
       destination: "Domestic",
@@ -63,7 +66,8 @@ const initialState = {
       cancellations: 0,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Thursday, Aug 4th 2019"
     },
     5: {
       destination: "International",
@@ -79,7 +83,8 @@ const initialState = {
       cancellations: 6,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Friday, Aug 5th 2019"
     },
     6: {
       destination: "International",
@@ -95,7 +100,8 @@ const initialState = {
       cancellations: 8,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Saturday, Aug 6th 2019"
     },
     7: {
       destination: "International",
@@ -111,7 +117,8 @@ const initialState = {
       cancellations: 8,
       totalRevenue: 0,
       netRevenue: 0,
-      feedback: ""
+      feedback: "",
+      dateFlight: "Sunday, Aug 7th 2019"
     }
   }
 };
