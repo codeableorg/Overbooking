@@ -44,7 +44,7 @@ function CriticalRatio() {
   return (
     <form onSubmit={handleSubmit} css={{ width: "100%", height: "100%" }}>
       <ColumnEvenly>
-        <Header />
+        <Header show={true} />
         <PicturePlane />
 
         <div css={{ width: "100%" }}>

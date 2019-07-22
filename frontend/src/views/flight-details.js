@@ -19,7 +19,7 @@ function FlightDetails() {
   const current = game.currentGame;
   return (
     <ColumnEvenly>
-      <Header />
+      <Header show={true} />
       <PicturePlane />
       <div css={{ width: "100%" }}>
         <TitleView>

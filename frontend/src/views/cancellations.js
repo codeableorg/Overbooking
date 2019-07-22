@@ -65,7 +65,7 @@ function FlightDetails() {
 
   return (
     <>
-      <Header />
+      <Header show={true} />
       <TitleView styles={{ marginTop: 72 }}>
         <h1>Cancellations</h1>
       </TitleView>
