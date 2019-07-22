@@ -9,7 +9,7 @@ import {
 } from "../action-hooks";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
-import { Dialog, DialogOverlay, DialogContent } from "@reach/dialog";
+import { Dialog, DialogOverlay } from "@reach/dialog";
 import "@reach/dialog/styles.css";
 import PicturePlane from "./../components/picture-plane";
 import {
@@ -24,47 +24,39 @@ import {
 } from "../components/ui";
 
 import { createPortal } from "react-dom";
-// TODO: to refactor messages
+
 function OverbookingNumber() {
-  const messages = {
-    criticalRatio: {
-      right: "Great job! You calculated the critical ratio correctly. ",
-      wrong: "It looks like your critical ratio calculation was a little off. "
+  const msgRatio = {
+    right: "Great job! You calculated the critical ratio correctly. ",
+    wrong: "It looks like your critical ratio calculation was a little off. "
+  };
+
+  // message after compared my overbooking with suggested overbooking
+  const msgOverBooking = {
+    0: "You utilized the suggested overbooking ",
+    1: "You gambled ",
+    2: "You played it safe "
+  };
+
+  // message after compared cancellations with own overbooking
+  const msgCancellations = {
+    equal: {
+      0: "which matched cancellations and optimized revenue. Good job!",
+      1: "but there were more cancellations than expected. Too bad.",
+      2: "but you were simply unlucky as cancellations did not materialize."
     },
-    overBooking: {
-      equalToSuggested: {
-        message: "You utilized the suggested overbooking ",
-        cancelations: {
-          equalToOverbooking:
-            "which matched cancellations and optimized revenue. Good job!",
-          greatherThanOverbooking:
-            "but there were more cancellations than expected. Too bad.",
-          lowerThanOverbooking:
-            "but you were simply unlucky as cancellations did not materialize."
-        }
-      },
-      greatherThanSuggested: {
-        message: "You gambled ",
-        cancelations: {
-          equalToOverbooking: "and won. Congrats!",
-          greatherThanOverbooking:
-            "but there were still more cancellations than expected. That's just unlucky.",
-          lowerThanOverbooking:
-            "and lost. Let's hope those overbooking costs don't come out of your budget!"
-        }
-      },
-      lowerThanSuggested: {
-        message: "You played it safe ",
-        cancelations: {
-          equalToOverbooking: "and won. Congrats!",
-          greatherThanOverbooking:
-            "but in this case fortune favored the bold and you left money on the table.",
-          lowerThanOverbooking:
-            "but apparently not safe enough. Better luck next time."
-        }
-      }
+    greater: {
+      0: "and won. Congrats!",
+      1: "but there were still more cancellations than expected. That's just unlucky.",
+      2: "and lost. Let's hope those overbooking costs don't come out of your budget!"
+    },
+    lower: {
+      0: "and won. Congrats!",
+      1: "but in this case fortune favored the bold and you left money on the table.",
+      2: "but apparently not safe enough. Better luck next time."
     }
   };
+
   const [value, setValue] = React.useState(0);
   const game = useRound();
   const {
@@ -72,7 +64,6 @@ function OverbookingNumber() {
     myCriticalRatio,
     pricePerSeat,
     totalSeats,
-    overbookingNumber,
     criticalRatio,
     cancellations
   } = game.games[game.currentGame];
@@ -84,53 +75,57 @@ function OverbookingNumber() {
 
   const $portal = React.useMemo(() => document.getElementById("portal"), []);
 
-  function adviceOne() {
-    if (criticalRatio === myCriticalRatio) {
-      return messages.criticalRatio.right;
+  function firstAdvice() {
+    return criticalRatio === myCriticalRatio ? msgRatio.right : msgRatio.wrong;
+  }
+
+  function sign(a, b) {
+    if (a === b) {
+      return 0;
+    } else if (a > b) {
+      return 1;
     } else {
-      return messages.criticalRatio.wrong;
+      return 2;
     }
   }
 
-  function adviceTwo(overbookingNumber) {
-    let messageCancellation = "";
-    if (overbookingNumber === suggestedOverbooking) {
-      let optEqual = messages.overBooking.equalToSuggested.cancelations;
-      if (cancellations === overbookingNumber) {
-        messageCancellation = optEqual.equalToOverbooking;
-      } else if (cancellations > overbookingNumber) {
-        messageCancellation = optEqual.greatherThanOverbooking;
-      } else {
-        messageCancellation = optEqual.lowerThanOverbooking;
-      }
-      return (
-        messages.overBooking.equalToSuggested.message + messageCancellation
-      );
-    } else if (overbookingNumber > suggestedOverbooking) {
-      let optGreather = messages.overBooking.greatherThanSuggested.cancelations;
-      if (cancellations === overbookingNumber) {
-        messageCancellation = optGreather.equalToOverbooking;
-      } else if (cancellations > overbookingNumber) {
-        messageCancellation = optGreather.greatherThanOverbooking;
-      } else {
-        messageCancellation = optGreather.lowerThanOverbooking;
-      }
-      return (
-        messages.overBooking.greatherThanSuggested.message + messageCancellation
-      );
-    } else {
-      let optLower = messages.overBooking.lowerThanSuggested.cancelations;
-      if (cancellations === overbookingNumber) {
-        messageCancellation = optLower.equalToOverbooking;
-      } else if (cancellations > overbookingNumber) {
-        messageCancellation = optLower.greatherThanOverbooking;
-      } else {
-        messageCancellation = optLower.lowerThanOverbooking;
-      }
-      return (
-        messages.overBooking.lowerThanSuggested.message + messageCancellation
-      );
+  function secondAdvice(overbookingNumber) {
+    let booking = sign(overbookingNumber, suggestedOverbooking);
+    let cancels = sign(cancellations, overbookingNumber);
+    let values = Object.values(msgCancellations);
+    let msg = "";
+    switch ("" + booking + cancels) {
+      case "00":
+        msg = msgOverBooking[0] + values[0][0];
+        break;
+      case "01":
+        msg = msgOverBooking[0] + values[0][1];
+        break;
+      case "02":
+        msg = msgOverBooking[0] + values[0][2];
+        break;
+      case "10":
+        msg = msgOverBooking[1] + values[1][0];
+        break;
+      case "11":
+        msg = msgOverBooking[1] + values[1][1];
+        break;
+      case "12":
+        msg = msgOverBooking[1] + values[1][2];
+        break;
+      case "20":
+        msg = msgOverBooking[2] + values[2][0];
+        break;
+      case "21":
+        msg = msgOverBooking[2] + values[2][1];
+        break;
+      case "22":
+        msg = msgOverBooking[2] + values[2][2];
+        break;
+      default:
+        break;
     }
+    return msg;
   }
 
   function handleChange(event) {
@@ -155,7 +150,7 @@ function OverbookingNumber() {
   function saveData() {
     addOverbookingNumber(parseInt(value));
     setTotalRevenue(revenue);
-    addFeedback(adviceOne() + adviceTwo(parseInt(value)));
+    addFeedback(firstAdvice() + secondAdvice(parseInt(value)));
     navigate("/cancellations");
   }
 
@@ -200,13 +195,6 @@ function OverbookingNumber() {
       cursor: "pointer",
       marginTop: "-10px"
     }
-  };
-
-  const titleCss = {
-    display: "flex",
-    justifyContent: "center",
-    fontSize: "25px",
-    padding: "20px"
   };
 
   const dialogContent = {
