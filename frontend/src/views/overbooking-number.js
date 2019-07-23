@@ -135,8 +135,6 @@ function OverbookingNumber() {
   }
   const revenue = value * pricePerSeat + totalSeats * pricePerSeat;
 
-  const bulletPosition = (value / totalSeats) * 77 + "%";
-
   function handleSubmit(event) {
     event.preventDefault();
   }
