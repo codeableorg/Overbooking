@@ -20,6 +20,6 @@ class Api::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:id, :name, games_attributes: [:destination, :totalSeats, :pricePerSeat, :demandFactor, :underageCost, :overbookingCost, :criticalRatio, :suggestedOverbooking, :myCriticalRatio, :overbookingNumber, :cancellations, :totalRevenue, :netRevenue], scores_attributes: [:totalRevenue])
+    params.require(:user).permit(:id, :name, games_attributes: [:destination, :totalSeats, :pricePerSeat, :demandFactor, :underageCost, :overbookingCost, :criticalRatio, :suggestedOverbooking, :myCriticalRatio, :overbookingNumber, :cancellations, :totalRevenue, :netRevenue, :feedback], scores_attributes: [:totalRevenue])
   end
 end
