@@ -2,7 +2,7 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 import { useSubmitScore } from "../action-hooks";
-import { useRound } from "../selectors";
+import { useGame, useGames, useCurrentGame } from "../selectors";
 import { Link } from "@reach/router";
 import {
   Button,
@@ -17,7 +17,9 @@ import Header from "../components/header";
 
 function Score() {
   const [username, setUsername] = React.useState("");
-  const game = useRound();
+  const current = useCurrentGame();
+  const game = useGame(current);
+  const games = useGames();
   const submitScore = useSubmitScore();
 
   function handleChange(event) {
@@ -25,7 +27,7 @@ function Score() {
     setUsername(event.target.value);
   }
 
-  const gamesArray = Object.values(game.games);
+  const gamesArray = Object.values(games);
 
   const total = gamesArray.reduce((acc, round) => {
     return acc + round.netRevenue;
@@ -42,7 +44,7 @@ function Score() {
 
   const dataToSend = {
     user: {
-      games_attributes: Object.values(game.games),
+      games_attributes: Object.values(games),
       scores_attributes: [
         {
           totalRevenue: (total * 1000).toFixed(0)

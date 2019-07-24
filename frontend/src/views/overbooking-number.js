@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react";
 import { jsx } from "@emotion/core";
-import { useRound } from "../selectors";
+import { useCurrentGame, useGame } from "../selectors";
 import {
   useAddOverbookingNumber,
   useSetTotalRevenue,
@@ -58,7 +58,8 @@ function OverbookingNumber() {
   };
 
   const [value, setValue] = React.useState(0);
-  const game = useRound();
+  const current = useCurrentGame();
+  const game = useGame(current);
   const {
     suggestedOverbooking,
     myCriticalRatio,
@@ -66,7 +67,7 @@ function OverbookingNumber() {
     totalSeats,
     criticalRatio,
     cancellations
-  } = game.games[game.currentGame];
+  } = game;
   const addOverbookingNumber = useAddOverbookingNumber();
   const setTotalRevenue = useSetTotalRevenue();
   const addFeedback = useAddFeedback();
