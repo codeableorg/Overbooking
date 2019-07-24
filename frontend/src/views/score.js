@@ -57,23 +57,6 @@ function Score() {
     submitScore(dataToSend);
   }
 
-  const styleInputCss = {
-    margin: "10px auto",
-    background: "none",
-    border: "1px solid black",
-    borderRadius: ".25rem",
-    boxSizing: "border-box",
-    display: "block",
-    fontSize: "1rem",
-    padding: ".5rem",
-    color: "#34495e",
-    width: "100%",
-    "&:focus": {
-      outline: "none",
-      borderColor: "rgba(242, 107, 117, 0.5)"
-    }
-  };
-
   const buttonLabelCss = {
     display: "flex",
     flexDirection: "column",
