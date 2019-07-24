@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import React from "react";
-import { useRound } from "../selectors";
+import { useCurrentGame } from "../selectors";
 import { Dialog, DialogOverlay } from "@reach/dialog";
 import { createPortal } from "react-dom";
 import { Button } from "./ui";
@@ -9,7 +9,7 @@ import { navigate } from "@reach/router";
 import { useReset } from "../action-hooks";
 
 function Header({ show }) {
-  const game = useRound();
+  const current = useCurrentGame();
 
   const [shouldShow, setShouldShow] = React.useState(true);
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
@@ -100,7 +100,7 @@ function Header({ show }) {
                 color: "#000000"
               }}
             >
-              Flight {game.currentGame}/7
+              Flight {current}/7
             </label>
           </div>
         ) : (
