@@ -1,5 +1,6 @@
 /* eslint-disable no-fallthrough */
 const initialState = {
+  lastGameComplete: {},
   currentGame: 1,
   games: {
     1: {
@@ -171,6 +172,12 @@ function reducer(state = initialState, action = {}) {
             feedback: action.payload
           }
         }
+      };
+    }
+    case "ADD_LAST_GAME": {
+      return {
+        ...state,
+        lastGameComplete: action.payload
       };
     }
     case "ADD_NET_REVENUE": {

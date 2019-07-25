@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import React from "react";
 import { jsx } from "@emotion/core";
-import { useSubmitScore } from "../action-hooks";
+import { useSubmitScore, useAddLastGameComplete } from "../action-hooks";
 import { useGame, useGames, useCurrentGame } from "../selectors";
-import { Link } from "@reach/router";
+import { Link, navigate } from "@reach/router";
 import {
   Button,
   LabelValue,
@@ -21,6 +21,7 @@ function Score() {
   const game = useGame(current);
   const games = useGames();
   const submitScore = useSubmitScore();
+  const addLastGameComplete = useAddLastGameComplete();
 
   function handleChange(event) {
     event.preventDefault();
@@ -53,10 +54,12 @@ function Score() {
     }
   };
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     Object.assign(dataToSend.user, { name: username });
-    submitScore(dataToSend);
+    const lastGame = await submitScore(dataToSend);
+    addLastGameComplete(lastGame);
+    navigate(`ranking/${lastGame.id}`);
   }
 
   const buttonLabelCss = {
@@ -169,7 +172,7 @@ function Score() {
                 color: "white"
               }}
             >
-              <i class="fas fa-redo fa-lg" />
+              <i className="fas fa-redo fa-lg" />
             </Link>
             <span css={{ flexShrink: 1 }}>Play again</span>
           </div>
@@ -188,7 +191,7 @@ function Score() {
                 color: "white"
               }}
             >
-              <i class="fas fa-list fa-lg" />
+              <i className="fas fa-list fa-lg" />
             </Link>
             <span css={{ flexShrink: 1 }}>Leaderboard</span>
           </div>

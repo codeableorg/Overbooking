@@ -70,7 +70,7 @@ function Header({ show }) {
             borderRadius: 18
           }}
         >
-          <i class="fas fa-home" onClick={handleOpenModal} />
+          <i className="fas fa-home" onClick={handleOpenModal} />
         </div>
         {shouldShow ? (
           <div

@@ -12,4 +12,8 @@ function useGame(param) {
   return useSelector(state => state.games[param], shallowEqual);
 }
 
-export { useGames, useCurrentGame, useGame };
+function useLastGame() {
+  return useSelector(state => state.lastGameComplete, shallowEqual);
+}
+
+export { useGames, useCurrentGame, useGame, useLastGame };
