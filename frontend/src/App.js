@@ -10,6 +10,7 @@ import CriticalRatio from "./views/critical-ratio";
 import OverbookingNumber from "./views/overbooking-number";
 import Cancellations from "./views/cancellations";
 import Score from "./views/score";
+import Ranking from "./views/ranking";
 import Home from "./views/home";
 
 function App() {
@@ -50,6 +51,8 @@ function App() {
           <OverbookingNumber path="/overbooking" />
           <Cancellations path="/cancellations" />
           <Score path="/score" />
+          <Ranking path="/ranking" />
+          <Ranking path="/ranking/:id" />
         </Router>
       </div>
     </>

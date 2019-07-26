@@ -10,12 +10,21 @@ import {
   setCurrentGame,
   submitScore,
   addNetRevenue,
-  addFeedback
+  addFeedback,
+  addLastGameComplete
 } from "./actions";
 
 export function useReset() {
   const dispatch = useDispatch();
   return React.useCallback(() => dispatch(reset()), [dispatch]);
+}
+
+export function useAddLastGameComplete() {
+  const dispatch = useDispatch();
+  return React.useCallback(
+    lastGame => dispatch(addLastGameComplete(lastGame)),
+    [dispatch]
+  );
 }
 
 export function useAddCriticalRatio() {

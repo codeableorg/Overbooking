@@ -16,6 +16,13 @@ function addNetRevenue(netRevenue) {
   };
 }
 
+function addLastGameComplete(lastgame) {
+  return {
+    type: "ADD_LAST_GAME",
+    payload: lastgame
+  };
+}
+
 function suggestOverbookingNumber(criticalRatio) {
   return {
     type: "SUGGEST_OVERBOOKING",
@@ -50,13 +57,14 @@ function setTotalRevenue(totalRevenue) {
 
 function submitScore(user) {
   return async dispatch => {
-    await fetch("http://localhost:4000/api/users", {
+    const postUser = await fetch("http://localhost:4000/api/users", {
       method: "POST",
       body: user ? JSON.stringify(user) : "{}",
       headers: {
         "Content-Type": "application/json"
       }
-    });
+    }).then(response => response.json());
+    return postUser;
   };
 }
 
@@ -69,5 +77,6 @@ export {
   setCurrentGame,
   submitScore,
   addNetRevenue,
-  addFeedback
+  addFeedback,
+  addLastGameComplete
 };
