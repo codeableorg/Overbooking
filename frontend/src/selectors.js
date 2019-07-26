@@ -8,12 +8,8 @@ function useCurrentGame() {
   return useSelector(state => state.currentGame, shallowEqual);
 }
 
-function useRound() {
-  return useSelector(state => state, shallowEqual);
-}
-
 function useGame(param) {
   return useSelector(state => state.games[param], shallowEqual);
 }
 
-export { useGames, useCurrentGame, useRound, useGame };
+export { useGames, useCurrentGame, useGame };
