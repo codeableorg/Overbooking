@@ -2,6 +2,7 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 import { Card, Center } from "../components/ui";
+import CurrencyFormat from "react-currency-format";
 
 function RankingItem({ factorColor, index, user, resalt }) {
   const toneColor = 165 - factorColor * index;
@@ -93,7 +94,12 @@ function RankingItem({ factorColor, index, user, resalt }) {
             padding: 16
           }}
         >
-          {user.totalRevenue}
+          <CurrencyFormat
+            value={user.totalRevenue}
+            displayType={"text"}
+            thousandSeparator={true}
+            prefix={"$"}
+          />
         </span>
       </Card>
     );

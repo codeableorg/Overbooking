@@ -14,6 +14,7 @@ import {
   Input
 } from "../components/ui";
 import Header from "../components/header";
+import CurrencyFormat from "react-currency-format";
 
 function Score() {
   const [username, setUsername] = React.useState("");
@@ -76,7 +77,14 @@ function Score() {
     marginTop: 25
   };
 
-  const totalAmount = `$ ${(total * 1000).toFixed(0)}`;
+  const totalAmount = (
+    <CurrencyFormat
+      value={(total * 1000).toFixed(0)}
+      displayType={"text"}
+      thousandSeparator={true}
+      prefix={"$"}
+    />
+  );
   const accuracyNumber = `${correct}/7`;
 
   return (
