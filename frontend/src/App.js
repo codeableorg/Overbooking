@@ -4,13 +4,14 @@ import { jsx, Global, css } from "@emotion/core";
 import React from "react";
 import { Router } from "@reach/router";
 
-import UiComponents from "./views/ui-components";
 import Instructions from "./views/instructions";
 import FlightDetails from "./views/flight-details";
 import CriticalRatio from "./views/critical-ratio";
 import OverbookingNumber from "./views/overbooking-number";
 import Cancellations from "./views/cancellations";
 import Score from "./views/score";
+import Ranking from "./views/ranking";
+import Home from "./views/home";
 
 function App() {
   const cssWrapper = {
@@ -43,13 +44,15 @@ function App() {
             background: "linear-gradient(180deg, #F8FAFB 0%, #E7EAF1 100%)"
           }}
         >
-          <UiComponents path="/" />
+          <Home path="/" />
           <Instructions path="/instructions" />
           <FlightDetails path="/flight-details" />
           <CriticalRatio path="/critical-ratio" />
           <OverbookingNumber path="/overbooking" />
           <Cancellations path="/cancellations" />
           <Score path="/score" />
+          <Ranking path="/ranking" />
+          <Ranking path="/ranking/:id" />
         </Router>
       </div>
     </>

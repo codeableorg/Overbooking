@@ -35,6 +35,7 @@ function Button({ styles, ...props }) {
 }
 
 function LabelValue({ styles, children, ...props }) {
+  // props required = label, value
   const border = `border${props.border}`;
   const cssItems = {
     [border]: "1px solid #E7EAF1",
@@ -44,7 +45,7 @@ function LabelValue({ styles, children, ...props }) {
   };
 
   return (
-    <div css={{ ...cssItems, padding: 16 }}>
+    <div css={{ ...cssItems, padding: 16, ...styles }}>
       <div css={{ fontSize: 11, textTransform: "uppercase", color: "#7E879A" }}>
         {props.label}
       </div>

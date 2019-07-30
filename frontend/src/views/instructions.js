@@ -15,7 +15,7 @@ import {
 function Instructions() {
   return (
     <ColumnEvenly>
-      <Header />
+      <Header show={true} />
       <PictureBoss />
       <div>
         <TitleView>

@@ -2,7 +2,7 @@
 import { jsx } from "@emotion/core";
 import React from "react";
 import { Link } from "@reach/router";
-import { useRound } from "../selectors";
+import { useGame, useCurrentGame } from "../selectors";
 import Header from "../components/header";
 import PicturePlane from "./../components/picture-plane";
 import {
@@ -15,32 +15,28 @@ import {
 } from "../components/ui";
 
 function FlightDetails() {
-  const game = useRound();
-  const current = game.currentGame;
+  const current = useCurrentGame();
+  const game = useGame(current);
   return (
     <ColumnEvenly>
-      <Header />
+      <Header show={true} />
       <PicturePlane />
       <div css={{ width: "100%" }}>
         <TitleView>
-          <h1>Flight {game.currentGame}</h1>
+          <h1>Flight {current}</h1>
         </TitleView>
         <Card>
           <LabelValue
             label="Destination"
-            value={game.games[current].destination}
+            value={game.destination}
             border="Bottom"
           />
           <LabelValue
             label="Capacity"
-            value={game.games[current].totalSeats}
+            value={game.totalSeats}
             border="Bottom"
           />
-          <LabelValue
-            label="Date"
-            value={game.games[current].dateFlight}
-            border="Bottom"
-          />
+          <LabelValue label="Date" value={game.dateFlight} border="Bottom" />
         </Card>
       </div>
       <Center>

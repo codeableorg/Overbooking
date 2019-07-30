@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react";
 import { jsx } from "@emotion/core";
-import { useRound } from "../selectors";
+import { useGame, useCurrentGame } from "../selectors";
 import {
   useAddCriticalRatio,
   useSuggestOverbookingNumber
@@ -28,8 +28,9 @@ function CriticalRatio() {
   const addCriticalRatio = useAddCriticalRatio();
   const suggestOverbooking = useSuggestOverbookingNumber();
 
-  const game = useRound();
-  const { overbookingCost, underageCost } = game.games[game.currentGame];
+  const current = useCurrentGame();
+  const game = useGame(current);
+  const { overbookingCost, underageCost } = game;
 
   function onChangeInputCriticalRatio(event) {
     setCriticalRatio(event.target.value);
@@ -44,7 +45,7 @@ function CriticalRatio() {
   return (
     <form onSubmit={handleSubmit} css={{ width: "100%", height: "100%" }}>
       <ColumnEvenly>
-        <Header />
+        <Header show={true} />
         <PicturePlane />
 
         <div css={{ width: "100%" }}>

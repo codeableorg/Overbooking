@@ -1,4 +1,6 @@
+/* eslint-disable no-fallthrough */
 const initialState = {
+  lastGameComplete: {},
   currentGame: 1,
   games: {
     1: {
@@ -172,6 +174,12 @@ function reducer(state = initialState, action = {}) {
         }
       };
     }
+    case "ADD_LAST_GAME": {
+      return {
+        ...state,
+        lastGameComplete: action.payload
+      };
+    }
     case "ADD_NET_REVENUE": {
       return {
         ...state,
@@ -215,24 +223,21 @@ function reducer(state = initialState, action = {}) {
       };
     }
     case "SUGGEST_OVERBOOKING": {
-      let closest = ratios.reduce(function(prev, curr) {
-        return Math.abs(curr - action.payload) < Math.abs(prev - action.payload)
-          ? curr
-          : prev;
-      });
-
-      const suggested = ratios.findIndex(ratio => ratio === closest);
-
-      return {
-        ...state,
-        games: {
-          ...state.games,
-          [state.currentGame]: {
-            ...state.games[state.currentGame],
-            suggestedOverbooking: suggested
-          }
+      for (let i = 0; i < ratios.length; i++) {
+        if (ratios[i] >= action.payload) {
+          const suggested = ratios.findIndex(ratio => ratio === ratios[i]);
+          return {
+            ...state,
+            games: {
+              ...state.games,
+              [state.currentGame]: {
+                ...state.games[state.currentGame],
+                suggestedOverbooking: suggested
+              }
+            }
+          };
         }
-      };
+      }
     }
     case "RESET": {
       return initialState;
