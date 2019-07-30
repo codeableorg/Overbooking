@@ -79,7 +79,7 @@ function Home() {
             fontWeight: "bold"
           }}
         >
-          <h1>OVERBOOKING GAME</h1>
+          <h1>OVERBOOKING</h1>
         </TitleView>
         <Link
           to="/instructions"
