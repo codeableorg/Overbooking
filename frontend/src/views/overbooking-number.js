@@ -221,7 +221,7 @@ function OverbookingNumber() {
           <PicturePlane />
           <div css={{ width: "100%" }}>
             <TitleView>
-              <h1>Overbooking</h1>
+              <h1>Set Overbooking Target</h1>
             </TitleView>
             <Card styles={{ marginBottom: 16 }}>
               <Row>
@@ -266,7 +266,7 @@ function OverbookingNumber() {
               onChange={handleChange}
               css={{ marginBottom: 8, ...sliderCSS }}
             />
-            <WhisperText>Choose your overbooking</WhisperText>
+            <WhisperText>Number of Seats Overbooked</WhisperText>
           </div>
 
           <Center>
@@ -310,7 +310,7 @@ function OverbookingNumber() {
                 marginBottom: 24
               }}
             >
-              You Are setting {value} seats for overbooking
+              You will overbook {value} seats on this flight
             </p>
 
             <div css={{ display: "flex", padding: "10px" }}>

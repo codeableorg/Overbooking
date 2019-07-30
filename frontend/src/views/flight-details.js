@@ -32,7 +32,7 @@ function FlightDetails() {
             border="Bottom"
           />
           <LabelValue
-            label="Capacity"
+            label="Seat Capacity"
             value={game.totalSeats}
             border="Bottom"
           />
