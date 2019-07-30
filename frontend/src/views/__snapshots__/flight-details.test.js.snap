@@ -2,35 +2,302 @@
 
 exports[`FlightDetails component 1`] = `
 <DocumentFragment>
-  <div>
-    <img
-      class="css-ogmi5w-FlightDetails"
-      src="airplane.png"
-    />
-    <ul
-      class="css-1xrdt2g-FlightDetails"
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-4 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-17 {
+  width: 100%;
+}
+
+.emotion-6 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-16 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-9 {
+  border-bottom: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-9:last-child {
+  border-right: none;
+}
+
+.emotion-7 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-8 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-18 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-18:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-3"
     >
-      <li>
-        Fliht number: 311
-      </li>
-      <li>
-        Capacity: 100
-      </li>
-      <li>
-        Date: Monday, July 15th 2019
-      </li>
-      <li>
-        Origin: LIMA
-      </li>
-      <li>
-        Destination: SAO PAULO
-      </li>
-    </ul>
-    <button
-      class="css-549gpy-Button"
+      <div
+        class="emotion-0"
+      >
+        <i
+          class="fas fa-home"
+        />
+      </div>
+      <div
+        class="emotion-2"
+        id="divFlight"
+      >
+        <label
+          class="emotion-1"
+        >
+          Flight 1/7
+        </label>
+      </div>
+    </div>
+    <div
+      class="emotion-5"
     >
-      Start
-    </button>
+      <img
+        alt="airplane"
+        class="emotion-4"
+        height="140"
+        src="plane.png"
+        width="140"
+      />
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-6"
+      >
+        <h1>
+          Flight 1
+        </h1>
+      </div>
+      <div
+        class="emotion-16"
+      >
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Destination
+          </div>
+          <div
+            class="emotion-8"
+          >
+            domestic
+          </div>
+        </div>
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Capacity
+          </div>
+          <div
+            class="emotion-8"
+          >
+            75
+          </div>
+        </div>
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Date
+          </div>
+          <div
+            class="emotion-8"
+          >
+            Monday, Aug 1st 2019
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-19"
+    >
+      <a
+        class="emotion-18"
+        href="/critical-ratio"
+      >
+        Start
+      </a>
+    </div>
   </div>
 </DocumentFragment>
 `;

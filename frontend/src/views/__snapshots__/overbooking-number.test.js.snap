@@ -2,58 +2,436 @@
 
 exports[`CriticalRatio component 1`] = `
 <DocumentFragment>
-  <section
-    class="css-1bdv45e-OverbookingNumber"
+  .emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+<div
+    class="emotion-3"
   >
-    <img
-      alt="airplane"
-      class="css-19bmys6-OverbookingNumber"
-      src="airplane.png"
-    />
-    <p
-      class="css-1j7e321-OverbookingNumber"
+    <div
+      class="emotion-0"
     >
-      Critical Ratio: 0.4
-    </p>
-    <p
-      class="css-1j7e321-OverbookingNumber"
-    >
-      Suggested Overbooking: 3
-    </p>
-    <p
-      class="css-1b4lnb1-OverbookingNumber"
-    >
-      Total Revenue: $ 30000
-    </p>
-    <form
-      class="css-1utjrzx-OverbookingNumber"
-    >
-      <span
-        class="css-11iy7qm-OverbookingNumber"
-        id="rs-bullet"
-      >
-        0
-      </span>
-      <input
-        class="css-rblfwm-OverbookingNumber"
-        id="rs-range-line"
-        max="75"
-        min="0"
-        type="range"
-        value="0"
+      <i
+        class="fas fa-home"
       />
-      <p
-        class="css-urqw8c-OverbookingNumber"
+    </div>
+    <div
+      class="emotion-2"
+      id="divFlight"
+    >
+      <label
+        class="emotion-1"
       >
-        Choose your overbooking
-      </p>
-      <button
-        class="css-r4z6bh-OverbookingNumber"
-        type="submit"
+        Flight 1/7
+      </label>
+    </div>
+  </div>
+  .emotion-23 {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-0 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-15 {
+  width: 100%;
+}
+
+.emotion-2 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-10 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-5 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-5:last-child {
+  border-right: none;
+}
+
+.emotion-3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-4 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-16 {
+  font-size: 32px;
+}
+
+.emotion-17 {
+  margin-bottom: 8px;
+  margin-top: 16px;
+  width: 80%;
+}
+
+.emotion-17::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: black;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.emotion-17::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: black;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.emotion-17::-webkit-slider-thumb {
+  border: 0px solid black;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.emotion-17::-moz-range-thumb {
+  border: 0px solid black;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.emotion-18 {
+  font-size: 13px;
+  text-align: center;
+  color: #70798B;
+}
+
+.emotion-21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-20 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-20:focus {
+  outline: none;
+}
+
+<form
+    class="emotion-23"
+  >
+    <div
+      class="emotion-22"
+    >
+      <div
+        class="emotion-1"
       >
-        Set overbooking
-      </button>
-    </form>
-  </section>
+        <img
+          alt="airplane"
+          class="emotion-0"
+          height="140"
+          src="plane.png"
+          width="140"
+        />
+      </div>
+      <div
+        class="emotion-15"
+      >
+        <div
+          class="emotion-2"
+        >
+          <h1>
+            Overbooking
+          </h1>
+        </div>
+        <div
+          class="emotion-10"
+        >
+          <div
+            class="emotion-9"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                Critical Ratio
+              </div>
+              <div
+                class="emotion-4"
+              >
+                0
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                Suggested Overbooking
+              </div>
+              <div
+                class="emotion-4"
+              >
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-5"
+          >
+            <div
+              class="emotion-3"
+            >
+              Total Revenue
+            </div>
+            <div
+              class="emotion-4"
+            >
+              $ 15000
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-19"
+      >
+        <span
+          class="emotion-16"
+          id="rs-bullet"
+        >
+          0
+        </span>
+        <input
+          class="emotion-17"
+          id="rs-range-line"
+          max="75"
+          min="0"
+          type="range"
+          value="0"
+        />
+        <p
+          class="emotion-18"
+        >
+          Choose your overbooking
+        </p>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <button
+          class="emotion-20"
+          type="submit"
+        >
+          Set overbooking
+        </button>
+      </div>
+    </div>
+  </form>
 </DocumentFragment>
 `;

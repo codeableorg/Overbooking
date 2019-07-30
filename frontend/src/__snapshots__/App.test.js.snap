@@ -1,0 +1,4725 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App 1`] = `
+<DocumentFragment>
+  .emotion-8 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 1.65%;
+  left: 45.33%;
+}
+
+.emotion-1 {
+  position: absolute;
+  top: 18.14%;
+  right: 80.27%;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 42.88%;
+  right: 82.2%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 16.04%;
+  left: 79.73%;
+}
+
+.emotion-7 {
+  padding-top: 168px;
+}
+
+.emotion-4 {
+  font-weight: bold;
+  font-size: 37px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.emotion-5 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 135px;
+}
+
+.emotion-5:focus {
+  outline: none;
+}
+
+.emotion-6 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.emotion-6:focus {
+  outline: none;
+}
+
+<main
+    class="emotion-8"
+  >
+    <svg
+      class="emotion-0"
+      fill="none"
+      height="47"
+      viewBox="0 0 102 47"
+      width="102"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M93.5 0H34C29.308 0 25.5 3.82836 25.5 8.54545C25.5 13.2625 29.308 17.0909 34 17.0909H42.5V17.1037C45.9552 17.1806 48.7433 20.0092 48.7433 23.5C48.7433 26.9951 45.9595 29.8236 42.5 29.8963V29.9091H8.5C3.808 29.9091 0 33.7375 0 38.4545C0 43.1716 3.808 47 8.5 47H72.25C76.942 47 80.75 43.1716 80.75 38.4545C80.75 33.7375 76.942 29.9091 72.25 29.9091C68.731 29.9091 65.875 27.0378 65.875 23.5C65.875 19.9622 68.731 17.0909 72.25 17.0909H93.5C98.192 17.0909 102 13.2625 102 8.54545C102 3.82836 98.192 0 93.5 0Z"
+        fill="white"
+        opacity="0.15"
+      />
+    </svg>
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="20"
+      viewBox="0 0 22 20"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+        fill="white"
+      />
+    </svg>
+    <svg
+      class="emotion-2"
+      fill="none"
+      height="47"
+      viewBox="0 0 66 47"
+      width="66"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M-27.5 47L32 47C36.692 47 40.5 43.1716 40.5 38.4545C40.5 33.7375 36.692 29.9091 32 29.9091L23.5 29.9091L23.5 29.8963C20.0448 29.8194 17.2567 26.9908 17.2567 23.5C17.2567 20.0049 20.0405 17.1764 23.5 17.1037L23.5 17.0909L57.5 17.0909C62.192 17.0909 66 13.2625 66 8.54545C66 3.82836 62.192 -3.32906e-07 57.5 -7.43094e-07L-6.25 -6.3163e-06C-10.942 -6.72648e-06 -14.75 3.82835 -14.75 8.54545C-14.75 13.2625 -10.942 17.0909 -6.25 17.0909C-2.731 17.0909 0.125002 19.9622 0.125002 23.5C0.125002 27.0378 -2.731 29.9091 -6.25 29.9091L-27.5 29.9091C-32.192 29.9091 -36 33.7374 -36 38.4545C-36 43.1716 -32.192 47 -27.5 47Z"
+        fill="white"
+        opacity="0.15"
+      />
+    </svg>
+    <svg
+      class="emotion-3"
+      fill="none"
+      height="89"
+      viewBox="0 0 76 89"
+      width="76"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M76 0H21.28C16.5814 0 12.768 3.79733 12.768 8.47619C12.768 13.155 16.5814 16.9524 21.28 16.9524H46.816C50.34 16.9524 53.2 19.7961 53.2 23.3095C53.2 26.8187 50.34 29.6667 46.816 29.6667H40.432C34.5545 29.6667 29.792 34.4091 29.792 40.2619C29.792 46.1147 34.5545 50.8571 40.432 50.8571H59.584C63.108 50.8571 65.968 53.7051 65.968 57.2143C65.968 60.7234 63.108 63.5714 59.584 63.5714H12.768C5.71581 63.5714 0 69.2674 0 76.2857C0 83.3082 5.71581 89 12.768 89H76V0Z"
+        fill="white"
+        opacity="0.15"
+      />
+    </svg>
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-4"
+      >
+        <h1>
+          OVERBOOKING GAME
+        </h1>
+      </div>
+      <a
+        class="emotion-5"
+        href="/instructions"
+      >
+        NEW GAME
+      </a>
+      <a
+        class="emotion-6"
+        href="/ranking"
+      >
+        Leaderboard
+      </a>
+    </div>
+  </main>
+  .emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.emotion-5 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 295px;
+  margin: auto;
+}
+
+.emotion-8 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-7 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-7:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-9"
+  >
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-0"
+      >
+        <i
+          class="fas fa-home"
+        />
+      </div>
+      <div
+        class="emotion-2"
+        id="divFlight"
+      >
+        <label
+          class="emotion-1"
+        >
+          Flight 1/7
+        </label>
+      </div>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <img
+        alt="operator"
+        height="140"
+        src="boss.png"
+        width="140"
+      />
+    </div>
+    <div>
+      <div
+        class="emotion-5"
+      >
+        <h1>
+          Welcome
+        </h1>
+      </div>
+      <p
+        class="emotion-6"
+      >
+        Today you have to program the next 7 flights. Please make sure to do it well. Your decisions could make a lot of money for the company, but it could also make the company lose lots of money. Choose carefully.
+      </p>
+    </div>
+    <div
+      class="emotion-8"
+    >
+      <a
+        class="emotion-7"
+        href="/flight-details"
+      >
+        Next
+      </a>
+    </div>
+  </div>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-6 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-4 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-17 {
+  width: 100%;
+}
+
+.emotion-16 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-9 {
+  border-bottom: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-9:last-child {
+  border-right: none;
+}
+
+.emotion-7 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-8 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-18 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-18:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-0"
+      >
+        <i
+          class="fas fa-home"
+        />
+      </div>
+      <div
+        class="emotion-2"
+        id="divFlight"
+      >
+        <label
+          class="emotion-1"
+        >
+          Flight 1/7
+        </label>
+      </div>
+    </div>
+    <div
+      class="emotion-5"
+    >
+      <img
+        alt="airplane"
+        class="emotion-4"
+        height="140"
+        src="plane.png"
+        width="140"
+      />
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-6"
+      >
+        <h1>
+          Flight 1
+        </h1>
+      </div>
+      <div
+        class="emotion-16"
+      >
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Destination
+          </div>
+          <div
+            class="emotion-8"
+          >
+            domestic
+          </div>
+        </div>
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Capacity
+          </div>
+          <div
+            class="emotion-8"
+          >
+            75
+          </div>
+        </div>
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Date
+          </div>
+          <div
+            class="emotion-8"
+          >
+            Monday, Aug 1st 2019
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-19"
+    >
+      <a
+        class="emotion-18"
+        href="/critical-ratio"
+      >
+        Start
+      </a>
+    </div>
+  </div>
+  .emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-6 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-4 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-7 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-8 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-24 {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-19 {
+  width: 100%;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-13 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-9 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-9:last-child {
+  border-right: none;
+}
+
+.emotion-18 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.emotion-15 {
+  font-size: 11px;
+  color: #7e879a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.emotion-16 {
+  border: 0;
+  border-bottom: 1px solid #e7eaf1;
+  font-size: 32px;
+  text-align: center;
+}
+
+.emotion-16:focus {
+  outline: none;
+  border-bottom: 1px solid #0074ff;
+}
+
+.emotion-20 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-20:focus {
+  outline: none;
+}
+
+.emotion-22 {
+  font-size: 13px;
+  text-align: center;
+  color: #70798B;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+<form
+    class="emotion-24"
+  >
+    <div
+      class="emotion-23"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-0"
+        >
+          <i
+            class="fas fa-home"
+          />
+        </div>
+        <div
+          class="emotion-2"
+          id="divFlight"
+        >
+          <label
+            class="emotion-1"
+          >
+            Flight 1/7
+          </label>
+        </div>
+      </div>
+      <div
+        class="emotion-5"
+      >
+        <img
+          alt="airplane"
+          class="emotion-4"
+          height="140"
+          src="plane.png"
+          width="140"
+        />
+      </div>
+      <div
+        class="emotion-19"
+      >
+        <div
+          class="emotion-6"
+        >
+          <h1>
+            Critial Ratio
+          </h1>
+        </div>
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-13"
+          >
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-7"
+              >
+                Cost of Overbooking
+              </div>
+              <div
+                class="emotion-8"
+              >
+                600
+              </div>
+            </div>
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-7"
+              >
+                Underage Cost
+              </div>
+              <div
+                class="emotion-8"
+              >
+                300
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-18"
+        >
+          <div
+            class="emotion-17"
+          >
+            <label
+              class="emotion-15"
+              for="critical-ratio"
+            >
+              Calculate the Critical Ratio*
+            </label>
+            <input
+              aria-label="enter critical ratio"
+              autocomplete="off"
+              class="emotion-16"
+              id="critical-ratio"
+              max="1"
+              min="0"
+              name="critical-ratio"
+              placeholder="0.0"
+              required=""
+              step="any"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <button
+          class="emotion-20"
+          disabled=""
+          type="submit"
+        >
+          Set Critical Ratio
+        </button>
+      </div>
+      <p
+        class="emotion-22"
+      >
+        *Should be greater than 0 and less than 1
+      </p>
+    </div>
+  </form>
+  .emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      <i
+        class="fas fa-home"
+      />
+    </div>
+    <div
+      class="emotion-2"
+      id="divFlight"
+    >
+      <label
+        class="emotion-1"
+      >
+        Flight 1/7
+      </label>
+    </div>
+  </div>
+  .emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-4 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-5 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-5:last-child {
+  border-right: none;
+}
+
+.emotion-20 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-20:focus {
+  outline: none;
+}
+
+.emotion-23 {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-15 {
+  width: 100%;
+}
+
+.emotion-19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-16 {
+  font-size: 32px;
+}
+
+.emotion-17 {
+  margin-bottom: 8px;
+  margin-top: 16px;
+  width: 80%;
+}
+
+.emotion-17::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: black;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.emotion-17::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: black;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.emotion-17::-webkit-slider-thumb {
+  border: 0px solid black;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.emotion-17::-moz-range-thumb {
+  border: 0px solid black;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.emotion-18 {
+  font-size: 13px;
+  text-align: center;
+  color: #70798B;
+}
+
+<form
+    class="emotion-23"
+  >
+    <div
+      class="emotion-22"
+    >
+      <div
+        class="emotion-1"
+      >
+        <img
+          alt="airplane"
+          class="emotion-0"
+          height="140"
+          src="plane.png"
+          width="140"
+        />
+      </div>
+      <div
+        class="emotion-15"
+      >
+        <div
+          class="emotion-2"
+        >
+          <h1>
+            Overbooking
+          </h1>
+        </div>
+        <div
+          class="emotion-10"
+        >
+          <div
+            class="emotion-9"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                Critical Ratio
+              </div>
+              <div
+                class="emotion-4"
+              >
+                0
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                Suggested Overbooking
+              </div>
+              <div
+                class="emotion-4"
+              >
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-5"
+          >
+            <div
+              class="emotion-3"
+            >
+              Total Revenue
+            </div>
+            <div
+              class="emotion-4"
+            >
+              $ 15000
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-19"
+      >
+        <span
+          class="emotion-16"
+          id="rs-bullet"
+        >
+          0
+        </span>
+        <input
+          class="emotion-17"
+          id="rs-range-line"
+          max="75"
+          min="0"
+          type="range"
+          value="0"
+        />
+        <p
+          class="emotion-18"
+        >
+          Choose your overbooking
+        </p>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <button
+          class="emotion-20"
+          type="submit"
+        >
+          Set overbooking
+        </button>
+      </div>
+    </div>
+  </form>
+  .emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      <i
+        class="fas fa-home"
+      />
+    </div>
+    <div
+      class="emotion-2"
+      id="divFlight"
+    >
+      <label
+        class="emotion-1"
+      >
+        Flight 1/7
+      </label>
+    </div>
+  </div>
+  .emotion-0 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 72px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <h1>
+      Cancellations
+    </h1>
+  </div>
+  .emotion-0 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-1 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-2 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-2:last-child {
+  border-right: none;
+}
+
+.emotion-7 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+<div
+    class="emotion-7"
+  >
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-0"
+        >
+          Overbooked seats
+        </div>
+        <div
+          class="emotion-1"
+        >
+          0
+        </div>
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-0"
+        >
+          Total cancellations
+        </div>
+        <div
+          class="emotion-1"
+        >
+          8
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-0 {
+  font-size: 24px;
+}
+
+.emotion-1 {
+  font-size: 11px;
+  text-transform: uppercase;
+  word-spacing: 100px;
+}
+
+<div
+    class="emotion-12"
+  >
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        0k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Total revenue
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        0.0k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Overbooking cost
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        2.4k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Underage cost
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        -2.4k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Net revenue
+      </span>
+    </div>
+  </div>
+  .emotion-1 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.emotion-0 {
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 295px;
+  margin: auto;
+}
+
+<div
+    class="emotion-1"
+  >
+    <p
+      class="emotion-0"
+    />
+  </div>
+  .emotion-1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-1"
+  >
+    <button
+      class="emotion-0"
+    >
+      Next Flight
+    </button>
+  </div>
+  .emotion-1 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      <i
+        class="fas fa-home"
+      />
+    </div>
+  </div>
+  .emotion-1 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-16 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-9 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-3 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-4 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-4:last-child {
+  border-right: none;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.emotion-12 {
+  border: 0;
+  border-bottom: 1px solid #e7eaf1;
+  font-size: 32px;
+  text-align: center;
+}
+
+.emotion-12:focus {
+  outline: none;
+  border-bottom: 1px solid #0074ff;
+}
+
+.emotion-25 {
+  width: 100%;
+}
+
+.emotion-0 {
+  margin-top: 18px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40%;
+}
+
+.emotion-10 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.emotion-11 {
+  font-size: 11px;
+  color: #7e879a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.emotion-15 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.emotion-15:focus {
+  outline: none;
+}
+
+.emotion-24 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-18 {
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+.emotion-19 {
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+<main
+    class="emotion-25"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h1
+        class="emotion-0"
+      >
+        Final Score
+      </h1>
+    </div>
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-8"
+      >
+        <div
+          class="emotion-4"
+        >
+          <div
+            class="emotion-2"
+          >
+            TOTAL REVENUE
+          </div>
+          <div
+            class="emotion-3"
+          >
+            $ 0
+          </div>
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <div
+            class="emotion-2"
+          >
+            ACCURACY (C.R.)
+          </div>
+          <div
+            class="emotion-3"
+          >
+            0/7
+          </div>
+        </div>
+      </div>
+    </div>
+    <form
+      class="emotion-17"
+    >
+      <section
+        class="emotion-10"
+      >
+        Save your score and see your position in the leaderboard
+      </section>
+      <div
+        class="emotion-14"
+      >
+        <div
+          class="emotion-13"
+        >
+          <label
+            class="emotion-11"
+            for="critical-ratio"
+          >
+            Name
+          </label>
+          <input
+            aria-label="Enter your name"
+            autocomplete="off"
+            class="emotion-12"
+            id="username"
+            name="username"
+            required=""
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-16"
+      >
+        <button
+          class="emotion-15"
+          type="submit"
+        >
+          SAVE MY SCORE
+        </button>
+      </div>
+    </form>
+    <div
+      class="emotion-24"
+    >
+      <div
+        class="emotion-20"
+      >
+        <a
+          aria-current="page"
+          class="emotion-18"
+          href="/"
+        >
+          <i
+            class="fas fa-redo fa-lg"
+          />
+        </a>
+        <span
+          class="emotion-19"
+        >
+          Play again
+        </span>
+      </div>
+      <div
+        class="emotion-20"
+      >
+        <a
+          class="emotion-18"
+          href="/ranking"
+        >
+          <i
+            class="fas fa-list fa-lg"
+          />
+        </a>
+        <span
+          class="emotion-19"
+        >
+          Leaderboard
+        </span>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`App snapshot 1`] = `
+<DocumentFragment>
+  .emotion-8 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 1.65%;
+  left: 45.33%;
+}
+
+.emotion-1 {
+  position: absolute;
+  top: 18.14%;
+  right: 80.27%;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 42.88%;
+  right: 82.2%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 16.04%;
+  left: 79.73%;
+}
+
+.emotion-7 {
+  padding-top: 168px;
+}
+
+.emotion-4 {
+  font-weight: bold;
+  font-size: 37px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.emotion-5 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 135px;
+}
+
+.emotion-5:focus {
+  outline: none;
+}
+
+.emotion-6 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.emotion-6:focus {
+  outline: none;
+}
+
+<main
+    class="emotion-8"
+  >
+    <svg
+      class="emotion-0"
+      fill="none"
+      height="47"
+      viewBox="0 0 102 47"
+      width="102"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M93.5 0H34C29.308 0 25.5 3.82836 25.5 8.54545C25.5 13.2625 29.308 17.0909 34 17.0909H42.5V17.1037C45.9552 17.1806 48.7433 20.0092 48.7433 23.5C48.7433 26.9951 45.9595 29.8236 42.5 29.8963V29.9091H8.5C3.808 29.9091 0 33.7375 0 38.4545C0 43.1716 3.808 47 8.5 47H72.25C76.942 47 80.75 43.1716 80.75 38.4545C80.75 33.7375 76.942 29.9091 72.25 29.9091C68.731 29.9091 65.875 27.0378 65.875 23.5C65.875 19.9622 68.731 17.0909 72.25 17.0909H93.5C98.192 17.0909 102 13.2625 102 8.54545C102 3.82836 98.192 0 93.5 0Z"
+        fill="white"
+        opacity="0.15"
+      />
+    </svg>
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="20"
+      viewBox="0 0 22 20"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+        fill="white"
+      />
+    </svg>
+    <svg
+      class="emotion-2"
+      fill="none"
+      height="47"
+      viewBox="0 0 66 47"
+      width="66"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M-27.5 47L32 47C36.692 47 40.5 43.1716 40.5 38.4545C40.5 33.7375 36.692 29.9091 32 29.9091L23.5 29.9091L23.5 29.8963C20.0448 29.8194 17.2567 26.9908 17.2567 23.5C17.2567 20.0049 20.0405 17.1764 23.5 17.1037L23.5 17.0909L57.5 17.0909C62.192 17.0909 66 13.2625 66 8.54545C66 3.82836 62.192 -3.32906e-07 57.5 -7.43094e-07L-6.25 -6.3163e-06C-10.942 -6.72648e-06 -14.75 3.82835 -14.75 8.54545C-14.75 13.2625 -10.942 17.0909 -6.25 17.0909C-2.731 17.0909 0.125002 19.9622 0.125002 23.5C0.125002 27.0378 -2.731 29.9091 -6.25 29.9091L-27.5 29.9091C-32.192 29.9091 -36 33.7374 -36 38.4545C-36 43.1716 -32.192 47 -27.5 47Z"
+        fill="white"
+        opacity="0.15"
+      />
+    </svg>
+    <svg
+      class="emotion-3"
+      fill="none"
+      height="89"
+      viewBox="0 0 76 89"
+      width="76"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M76 0H21.28C16.5814 0 12.768 3.79733 12.768 8.47619C12.768 13.155 16.5814 16.9524 21.28 16.9524H46.816C50.34 16.9524 53.2 19.7961 53.2 23.3095C53.2 26.8187 50.34 29.6667 46.816 29.6667H40.432C34.5545 29.6667 29.792 34.4091 29.792 40.2619C29.792 46.1147 34.5545 50.8571 40.432 50.8571H59.584C63.108 50.8571 65.968 53.7051 65.968 57.2143C65.968 60.7234 63.108 63.5714 59.584 63.5714H12.768C5.71581 63.5714 0 69.2674 0 76.2857C0 83.3082 5.71581 89 12.768 89H76V0Z"
+        fill="white"
+        opacity="0.15"
+      />
+    </svg>
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-4"
+      >
+        <h1>
+          OVERBOOKING GAME
+        </h1>
+      </div>
+      <a
+        class="emotion-5"
+        href="/instructions"
+      >
+        NEW GAME
+      </a>
+      <a
+        class="emotion-6"
+        href="/ranking"
+      >
+        Leaderboard
+      </a>
+    </div>
+  </main>
+  .emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.emotion-5 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 295px;
+  margin: auto;
+}
+
+.emotion-8 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-7 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-7:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-9"
+  >
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-0"
+      >
+        <i
+          class="fas fa-home"
+        />
+      </div>
+      <div
+        class="emotion-2"
+        id="divFlight"
+      >
+        <label
+          class="emotion-1"
+        >
+          Flight 1/7
+        </label>
+      </div>
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <img
+        alt="operator"
+        height="140"
+        src="boss.png"
+        width="140"
+      />
+    </div>
+    <div>
+      <div
+        class="emotion-5"
+      >
+        <h1>
+          Welcome
+        </h1>
+      </div>
+      <p
+        class="emotion-6"
+      >
+        Today you have to program the next 7 flights. Please make sure to do it well. Your decisions could make a lot of money for the company, but it could also make the company lose lots of money. Choose carefully.
+      </p>
+    </div>
+    <div
+      class="emotion-8"
+    >
+      <a
+        class="emotion-7"
+        href="/flight-details"
+      >
+        Next
+      </a>
+    </div>
+  </div>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-6 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-4 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-17 {
+  width: 100%;
+}
+
+.emotion-16 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-9 {
+  border-bottom: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-9:last-child {
+  border-right: none;
+}
+
+.emotion-7 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-8 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-18 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-18:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-0"
+      >
+        <i
+          class="fas fa-home"
+        />
+      </div>
+      <div
+        class="emotion-2"
+        id="divFlight"
+      >
+        <label
+          class="emotion-1"
+        >
+          Flight 1/7
+        </label>
+      </div>
+    </div>
+    <div
+      class="emotion-5"
+    >
+      <img
+        alt="airplane"
+        class="emotion-4"
+        height="140"
+        src="plane.png"
+        width="140"
+      />
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-6"
+      >
+        <h1>
+          Flight 1
+        </h1>
+      </div>
+      <div
+        class="emotion-16"
+      >
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Destination
+          </div>
+          <div
+            class="emotion-8"
+          >
+            domestic
+          </div>
+        </div>
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Capacity
+          </div>
+          <div
+            class="emotion-8"
+          >
+            75
+          </div>
+        </div>
+        <div
+          class="emotion-9"
+        >
+          <div
+            class="emotion-7"
+          >
+            Date
+          </div>
+          <div
+            class="emotion-8"
+          >
+            Monday, Aug 1st 2019
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-19"
+    >
+      <a
+        class="emotion-18"
+        href="/critical-ratio"
+      >
+        Start
+      </a>
+    </div>
+  </div>
+  .emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-6 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-4 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-7 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-8 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-24 {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-19 {
+  width: 100%;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-13 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-9 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-9:last-child {
+  border-right: none;
+}
+
+.emotion-18 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.emotion-15 {
+  font-size: 11px;
+  color: #7e879a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.emotion-16 {
+  border: 0;
+  border-bottom: 1px solid #e7eaf1;
+  font-size: 32px;
+  text-align: center;
+}
+
+.emotion-16:focus {
+  outline: none;
+  border-bottom: 1px solid #0074ff;
+}
+
+.emotion-20 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-20:focus {
+  outline: none;
+}
+
+.emotion-22 {
+  font-size: 13px;
+  text-align: center;
+  color: #70798B;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+<form
+    class="emotion-24"
+  >
+    <div
+      class="emotion-23"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-0"
+        >
+          <i
+            class="fas fa-home"
+          />
+        </div>
+        <div
+          class="emotion-2"
+          id="divFlight"
+        >
+          <label
+            class="emotion-1"
+          >
+            Flight 1/7
+          </label>
+        </div>
+      </div>
+      <div
+        class="emotion-5"
+      >
+        <img
+          alt="airplane"
+          class="emotion-4"
+          height="140"
+          src="plane.png"
+          width="140"
+        />
+      </div>
+      <div
+        class="emotion-19"
+      >
+        <div
+          class="emotion-6"
+        >
+          <h1>
+            Critial Ratio
+          </h1>
+        </div>
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-13"
+          >
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-7"
+              >
+                Cost of Overbooking
+              </div>
+              <div
+                class="emotion-8"
+              >
+                600
+              </div>
+            </div>
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-7"
+              >
+                Underage Cost
+              </div>
+              <div
+                class="emotion-8"
+              >
+                300
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-18"
+        >
+          <div
+            class="emotion-17"
+          >
+            <label
+              class="emotion-15"
+              for="critical-ratio"
+            >
+              Calculate the Critical Ratio*
+            </label>
+            <input
+              aria-label="enter critical ratio"
+              autocomplete="off"
+              class="emotion-16"
+              id="critical-ratio"
+              max="1"
+              min="0"
+              name="critical-ratio"
+              placeholder="0.0"
+              required=""
+              step="any"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <button
+          class="emotion-20"
+          disabled=""
+          type="submit"
+        >
+          Set Critical Ratio
+        </button>
+      </div>
+      <p
+        class="emotion-22"
+      >
+        *Should be greater than 0 and less than 1
+      </p>
+    </div>
+  </form>
+  .emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      <i
+        class="fas fa-home"
+      />
+    </div>
+    <div
+      class="emotion-2"
+      id="divFlight"
+    >
+      <label
+        class="emotion-1"
+      >
+        Flight 1/7
+      </label>
+    </div>
+  </div>
+  .emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-4 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-10 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-5 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-5:last-child {
+  border-right: none;
+}
+
+.emotion-20 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-20:focus {
+  outline: none;
+}
+
+.emotion-23 {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-15 {
+  width: 100%;
+}
+
+.emotion-19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-16 {
+  font-size: 32px;
+}
+
+.emotion-17 {
+  margin-bottom: 8px;
+  margin-top: 16px;
+  width: 80%;
+}
+
+.emotion-17::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: black;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.emotion-17::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: black;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.emotion-17::-webkit-slider-thumb {
+  border: 0px solid black;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.emotion-17::-moz-range-thumb {
+  border: 0px solid black;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.emotion-18 {
+  font-size: 13px;
+  text-align: center;
+  color: #70798B;
+}
+
+<form
+    class="emotion-23"
+  >
+    <div
+      class="emotion-22"
+    >
+      <div
+        class="emotion-1"
+      >
+        <img
+          alt="airplane"
+          class="emotion-0"
+          height="140"
+          src="plane.png"
+          width="140"
+        />
+      </div>
+      <div
+        class="emotion-15"
+      >
+        <div
+          class="emotion-2"
+        >
+          <h1>
+            Overbooking
+          </h1>
+        </div>
+        <div
+          class="emotion-10"
+        >
+          <div
+            class="emotion-9"
+          >
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                Critical Ratio
+              </div>
+              <div
+                class="emotion-4"
+              >
+                0
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <div
+                class="emotion-3"
+              >
+                Suggested Overbooking
+              </div>
+              <div
+                class="emotion-4"
+              >
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-5"
+          >
+            <div
+              class="emotion-3"
+            >
+              Total Revenue
+            </div>
+            <div
+              class="emotion-4"
+            >
+              $ 15000
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-19"
+      >
+        <span
+          class="emotion-16"
+          id="rs-bullet"
+        >
+          0
+        </span>
+        <input
+          class="emotion-17"
+          id="rs-range-line"
+          max="75"
+          min="0"
+          type="range"
+          value="0"
+        />
+        <p
+          class="emotion-18"
+        >
+          Choose your overbooking
+        </p>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <button
+          class="emotion-20"
+          type="submit"
+        >
+          Set overbooking
+        </button>
+      </div>
+    </div>
+  </form>
+  .emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      <i
+        class="fas fa-home"
+      />
+    </div>
+    <div
+      class="emotion-2"
+      id="divFlight"
+    >
+      <label
+        class="emotion-1"
+      >
+        Flight 1/7
+      </label>
+    </div>
+  </div>
+  .emotion-0 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 72px;
+}
+
+<div
+    class="emotion-0"
+  >
+    <h1>
+      Cancellations
+    </h1>
+  </div>
+  .emotion-0 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-1 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-2 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-2:last-child {
+  border-right: none;
+}
+
+.emotion-7 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+<div
+    class="emotion-7"
+  >
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-0"
+        >
+          Overbooked seats
+        </div>
+        <div
+          class="emotion-1"
+        >
+          0
+        </div>
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-0"
+        >
+          Total cancellations
+        </div>
+        <div
+          class="emotion-1"
+        >
+          8
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-0 {
+  font-size: 24px;
+}
+
+.emotion-1 {
+  font-size: 11px;
+  text-transform: uppercase;
+  word-spacing: 100px;
+}
+
+<div
+    class="emotion-12"
+  >
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        0k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Total revenue
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        0.0k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Overbooking cost
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        2.4k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Underage cost
+      </span>
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-0"
+      >
+        -2.4k
+      </span>
+      <span
+        class="emotion-1"
+      >
+        Net revenue
+      </span>
+    </div>
+  </div>
+  .emotion-1 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.emotion-0 {
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 295px;
+  margin: auto;
+}
+
+<div
+    class="emotion-1"
+  >
+    <p
+      class="emotion-0"
+    />
+  </div>
+  .emotion-1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-1"
+  >
+    <button
+      class="emotion-0"
+    >
+      Next Flight
+    </button>
+  </div>
+  .emotion-1 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      <i
+        class="fas fa-home"
+      />
+    </div>
+  </div>
+  .emotion-1 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-16 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-9 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.emotion-2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-3 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-4 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-4:last-child {
+  border-right: none;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.emotion-12 {
+  border: 0;
+  border-bottom: 1px solid #e7eaf1;
+  font-size: 32px;
+  text-align: center;
+}
+
+.emotion-12:focus {
+  outline: none;
+  border-bottom: 1px solid #0074ff;
+}
+
+.emotion-25 {
+  width: 100%;
+}
+
+.emotion-0 {
+  margin-top: 18px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40%;
+}
+
+.emotion-10 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.emotion-11 {
+  font-size: 11px;
+  color: #7e879a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.emotion-15 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.emotion-15:focus {
+  outline: none;
+}
+
+.emotion-24 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-18 {
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+.emotion-19 {
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+<main
+    class="emotion-25"
+  >
+    <div
+      class="emotion-1"
+    >
+      <h1
+        class="emotion-0"
+      >
+        Final Score
+      </h1>
+    </div>
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-8"
+      >
+        <div
+          class="emotion-4"
+        >
+          <div
+            class="emotion-2"
+          >
+            TOTAL REVENUE
+          </div>
+          <div
+            class="emotion-3"
+          >
+            $ 0
+          </div>
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <div
+            class="emotion-2"
+          >
+            ACCURACY (C.R.)
+          </div>
+          <div
+            class="emotion-3"
+          >
+            0/7
+          </div>
+        </div>
+      </div>
+    </div>
+    <form
+      class="emotion-17"
+    >
+      <section
+        class="emotion-10"
+      >
+        Save your score and see your position in the leaderboard
+      </section>
+      <div
+        class="emotion-14"
+      >
+        <div
+          class="emotion-13"
+        >
+          <label
+            class="emotion-11"
+            for="critical-ratio"
+          >
+            Name
+          </label>
+          <input
+            aria-label="Enter your name"
+            autocomplete="off"
+            class="emotion-12"
+            id="username"
+            name="username"
+            required=""
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-16"
+      >
+        <button
+          class="emotion-15"
+          type="submit"
+        >
+          SAVE MY SCORE
+        </button>
+      </div>
+    </form>
+    <div
+      class="emotion-24"
+    >
+      <div
+        class="emotion-20"
+      >
+        <a
+          aria-current="page"
+          class="emotion-18"
+          href="/"
+        >
+          <i
+            class="fas fa-redo fa-lg"
+          />
+        </a>
+        <span
+          class="emotion-19"
+        >
+          Play again
+        </span>
+      </div>
+      <div
+        class="emotion-20"
+      >
+        <a
+          class="emotion-18"
+          href="/ranking"
+        >
+          <i
+            class="fas fa-list fa-lg"
+          />
+        </a>
+        <span
+          class="emotion-19"
+        >
+          Leaderboard
+        </span>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

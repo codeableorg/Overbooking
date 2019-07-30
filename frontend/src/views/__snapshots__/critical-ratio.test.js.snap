@@ -2,62 +2,397 @@
 
 exports[`CriticalRatio component 1`] = `
 <DocumentFragment>
-  <form
-    class="css-1gf3fd4-CriticalRatio"
+  .emotion-24 {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.emotion-2 {
+  width: 109px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  padding: 8px;
+  width: 67px;
+  height: 14px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.emotion-4 {
+  display: block;
+  margin: auto;
+}
+
+.emotion-19 {
+  width: 100%;
+}
+
+.emotion-6 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-14 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-13 > * {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.emotion-9 {
+  border-right: 1px solid #E7EAF1;
+  padding: 16px;
+}
+
+.emotion-9:last-child {
+  border-right: none;
+}
+
+.emotion-7 {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #7E879A;
+}
+
+.emotion-8 {
+  font-size: 18px;
+  color: #211F1F;
+  text-transform: capitalize;
+}
+
+.emotion-18 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px rgba(0,0,0,0.12);
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.emotion-15 {
+  font-size: 11px;
+  color: #7e879a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.emotion-16 {
+  border: 0;
+  border-bottom: 1px solid #e7eaf1;
+  font-size: 32px;
+  text-align: center;
+}
+
+.emotion-16:focus {
+  outline: none;
+  border-bottom: 1px solid #0074ff;
+}
+
+.emotion-21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-20 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-20:focus {
+  outline: none;
+}
+
+.emotion-22 {
+  font-size: 13px;
+  text-align: center;
+  color: #70798B;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+<form
+    class="emotion-24"
   >
-    <img
-      alt="plane"
-      class="css-1d6aglg-CriticalRatio"
-      src="plane.png"
-    />
     <div
-      class="css-1pgmn93-CriticalRatio"
-    >
-      Flight PDR456
-    </div>
-    <div
-      class="css-bgusvs-CriticalRatio"
+      class="emotion-23"
     >
       <div
-        class="css-miwez1-CriticalRatio"
+        class="emotion-3"
       >
-        Cost of Overbooking
-        <p>
-          600
-        </p>
+        <div
+          class="emotion-0"
+        >
+          <i
+            class="fas fa-home"
+          />
+        </div>
+        <div
+          class="emotion-2"
+          id="divFlight"
+        >
+          <label
+            class="emotion-1"
+          >
+            Flight 1/7
+          </label>
+        </div>
       </div>
       <div
-        class="css-miwez1-CriticalRatio"
+        class="emotion-5"
       >
-        Underage Cost
-        <p>
-          300
-        </p>
+        <img
+          alt="airplane"
+          class="emotion-4"
+          height="140"
+          src="plane.png"
+          width="140"
+        />
       </div>
+      <div
+        class="emotion-19"
+      >
+        <div
+          class="emotion-6"
+        >
+          <h1>
+            Critial Ratio
+          </h1>
+        </div>
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-13"
+          >
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-7"
+              >
+                Cost of Overbooking
+              </div>
+              <div
+                class="emotion-8"
+              >
+                600
+              </div>
+            </div>
+            <div
+              class="emotion-9"
+            >
+              <div
+                class="emotion-7"
+              >
+                Underage Cost
+              </div>
+              <div
+                class="emotion-8"
+              >
+                300
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-18"
+        >
+          <div
+            class="emotion-17"
+          >
+            <label
+              class="emotion-15"
+              for="critical-ratio"
+            >
+              Calculate the Critical Ratio*
+            </label>
+            <input
+              aria-label="enter critical ratio"
+              autocomplete="off"
+              class="emotion-16"
+              id="critical-ratio"
+              max="1"
+              min="0"
+              name="critical-ratio"
+              placeholder="0.0"
+              required=""
+              step="any"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-21"
+      >
+        <button
+          class="emotion-20"
+          disabled=""
+          type="submit"
+        >
+          Set Critical Ratio
+        </button>
+      </div>
+      <p
+        class="emotion-22"
+      >
+        *Should be greater than 0 and less than 1
+      </p>
     </div>
-    <div
-      class="css-1pgmn93-CriticalRatio"
-    >
-      Calculate the Critical Ratio
-    </div>
-    <input
-      aria-label="enter critical ratio"
-      autocomplete="off"
-      class="css-7j0mhv-CriticalRatio"
-      id="critical-ratio"
-      name="critical-ratio"
-      placeholder="enter the critical ratio"
-      required=""
-      type="number"
-      value=""
-    />
-    <button
-      class="css-1kbyqv2-CriticalRatio"
-      disabled=""
-      type="submit"
-    >
-      Set Critical Ratio
-    </button>
   </form>
 </DocumentFragment>
 `;

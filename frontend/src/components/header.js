@@ -13,7 +13,15 @@ function Header({ show }) {
 
   const [shouldShow, setShouldShow] = React.useState(true);
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
-  const $portal = React.useMemo(() => document.getElementById("portal"), []);
+  const $portal = React.useMemo(() => {
+    let $portal = document.getElementById("portal");
+    if (!$portal) {
+      $portal = document.createElement("div");
+      $portal.setAttribute("id", "portal");
+      document.body.appendChild($portal);
+    }
+    return $portal;
+  }, []);
 
   const reset = useReset();
 
