@@ -6,7 +6,12 @@ import { useGame, useCurrentGame } from "../selectors";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
 import { useSpring, animated, interpolate } from "react-spring";
-import { useSetCurrentGame, useAddNetRevenue } from "../action-hooks";
+import {
+  useSetCurrentGame,
+  useAddNetRevenue,
+  useAddMoneyLeft
+} from "../action-hooks";
+import PictureBoss from "./../components/picture-boss";
 
 import {
   Button,
@@ -14,10 +19,12 @@ import {
   TitleView,
   Card,
   LabelValue,
-  Center
+  Center,
+  ColumnEvenly
 } from "../components/ui";
 
 function FlightDetails() {
+  const addMoneyLeft = useAddMoneyLeft();
   let current = useCurrentGame();
   const game = useGame(current);
   const {
@@ -30,15 +37,11 @@ function FlightDetails() {
   } = game;
   const seatsStatus = cancellations - overbookingNumber;
   const currentTotalRevenue = totalRevenue / 1000;
-  const [currentOverbookingCost, setOverbookingCost] = React.useState(
-    seatsStatus < 0 ? (seatsStatus * overbookingCost) / -1000 : 0
-  );
-  const [currentUnderageCost, setUnderageCost] = React.useState(
-    seatsStatus > 0 ? (seatsStatus * underageCost) / 1000 : 0
-  );
-  const [netRevenue, setNetRevenue] = React.useState(
-    currentTotalRevenue - currentOverbookingCost - currentUnderageCost
-  );
+  const currentOverbookingCost =
+    seatsStatus < 0 ? (seatsStatus * overbookingCost) / -1000 : 0;
+  const currentUnderageCost =
+    seatsStatus > 0 ? (seatsStatus * underageCost) / 1000 : 0;
+  const netRevenue = currentTotalRevenue - currentOverbookingCost;
 
   const numCancellations = useSpring({
     number: cancellations,
@@ -71,12 +74,14 @@ function FlightDetails() {
 
   function changeCurrentGame(event) {
     addNetRevenue(netRevenue.toFixed(1) * 1);
+    addMoneyLeft(currentUnderageCost * 1000);
     setCurrentGame(++current);
     navigate("/flight-details");
   }
 
   function goToScore(event) {
     addNetRevenue(netRevenue.toFixed(1) * 1);
+    addMoneyLeft(currentUnderageCost * 1000);
     setCurrentGame(1);
     navigate("/score");
   }
@@ -98,10 +103,13 @@ function FlightDetails() {
   }
   const cssProgressStatus = {
     borderRadius: 8,
-    width: 140,
+    width: 100,
     height: 8,
     marginBottom: 10,
-    backgroundColor: "#e7eaf1"
+    backgroundColor: "#e7eaf1",
+    "@media (min-width: 375px)": {
+      width: 140
+    }
   };
 
   const cssProgressBar = {
@@ -116,11 +124,13 @@ function FlightDetails() {
 
   const cssP = {
     padding: 16,
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 1.5,
-    textAlign: "center",
     maxWidth: 295,
-    margin: "auto"
+    margin: "auto",
+    "@media (min-width: 375px)": {
+      fontSize: 16
+    }
   };
 
   function cancelBar() {
@@ -138,46 +148,48 @@ function FlightDetails() {
   }
 
   return (
-    <>
+    <ColumnEvenly>
       <Header show={true} />
-      <TitleView styles={{ marginTop: 72 }}>
-        <h1>Cancellations</h1>
-      </TitleView>
+      <div>
+        <TitleView>
+          <h1>Flight Performance</h1>
+        </TitleView>
 
-      <Card styles={{ marginBottom: 48 }}>
-        <Row>
-          <LabelValue
-            label="Overbooked seats"
-            value={overbookingNumber}
-            border="Right"
-          />
-          <div
-            css={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center"
-            }}
-          >
+        <Card>
+          <Row>
             <LabelValue
-              label="Total cancellations"
-              value={animateValue(numCancellations, false)}
+              label="Overbooked seats"
+              value={overbookingNumber}
               border="Right"
             />
-            <div id="Progress_Status" css={cssProgressStatus}>
-              <div
-                ref={myProgressBar}
-                id="myprogressBar"
-                css={cssProgressBar}
-              />
+            <div
+              css={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center"
+              }}
+            >
+              <LabelValue
+                label="Total cancellations"
+                value={animateValue(numCancellations, false)}
+                border="Right"
+              >
+                <div id="Progress_Status" css={cssProgressStatus}>
+                  <div
+                    ref={myProgressBar}
+                    id="myprogressBar"
+                    css={cssProgressBar}
+                  />
+                </div>
+              </LabelValue>
             </div>
-          </div>
-        </Row>
-      </Card>
+          </Row>
+        </Card>
+      </div>
       <div
         css={{
           display: "flex",
-          justifyContent: "space-between",
-          marginBottom: 40
+          justifyContent: "space-between"
         }}
       >
         <ValueCancelation
@@ -197,9 +209,29 @@ function FlightDetails() {
           label="Net revenue"
         />
       </div>
-      <Card styles={{ marginBottom: 40 }}>
-        <p css={cssP}>{feedback}</p>
-      </Card>
+      <div
+        css={{
+          display: "flex",
+          alignItems: "flex-start"
+        }}
+      >
+        <PictureBoss
+          styles={{
+            margin: 0,
+            marginRight: 5,
+            flex: "0 0 40px",
+            width: "auto",
+            height: "auto",
+            "@media (min-width: 375px)": {
+              width: "auto",
+              height: "auto"
+            }
+          }}
+        />
+        <Card>
+          <p css={cssP}>{feedback}</p>
+        </Card>
+      </div>
 
       <Center>
         {current < 7 ? (
@@ -208,7 +240,7 @@ function FlightDetails() {
           <Button onClick={goToScore}>My Score</Button>
         )}
       </Center>
-    </>
+    </ColumnEvenly>
   );
 }
 

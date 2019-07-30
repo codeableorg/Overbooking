@@ -7,9 +7,26 @@ import { createPortal } from "react-dom";
 import { Button } from "./ui";
 import { navigate } from "@reach/router";
 import { useReset } from "../action-hooks";
+import iconHome from "./../images/home.svg";
 
-function Header({ show }) {
+function Header({ show, direction }) {
   const current = useCurrentGame();
+  const iconPlane = Array.from({ length: 7 }, (_, index) => (
+    <svg
+      key={index}
+      css={{ transform: "rotate(-45deg)", marginRight: 1 }}
+      width="14"
+      height="13"
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+        fill={index < current ? "#006dff" : "#a9a9ab"}
+      />
+    </svg>
+  ));
 
   const [shouldShow, setShouldShow] = React.useState(true);
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
@@ -32,7 +49,11 @@ function Header({ show }) {
     setIsDialogOpen(false);
   }
   function handleOpenModal(event) {
-    setIsDialogOpen(true);
+    if (!direction) {
+      setIsDialogOpen(true);
+    } else {
+      resetProgress();
+    }
   }
 
   const dialogContent = {
@@ -60,6 +81,7 @@ function Header({ show }) {
         }}
       >
         <div
+          onClick={handleOpenModal}
           css={{
             display: "flex",
             alignItems: "center",
@@ -67,16 +89,17 @@ function Header({ show }) {
             width: 36,
             height: 36,
             backgroundColor: "#ffffff",
-            borderRadius: 18
+            borderRadius: 18,
+            cursor: "pointer"
           }}
         >
-          <i className="fas fa-home" onClick={handleOpenModal} />
+          <img src={iconHome} />
         </div>
         {shouldShow ? (
           <div
             id="divFlight"
             css={{
-              width: 109,
+              padding: "0 11px",
               height: 36,
               borderRadius: 18,
               backgroundColor: "#ffffff",
@@ -85,23 +108,7 @@ function Header({ show }) {
               justifyContent: "center"
             }}
           >
-            <label
-              css={{
-                padding: 8,
-                width: 67,
-                height: 14,
-                fontFamily: "Rubik",
-                fontSize: 14,
-                fontWeight: 500,
-                fontStyle: "normal",
-                fontStretch: "normal",
-                lineHeight: 1,
-                letterSpacing: "normal",
-                color: "#000000"
-              }}
-            >
-              Flight {current}/7
-            </label>
+            <div css={{ marginRight: -4 }}>{iconPlane}</div>
           </div>
         ) : (
           <></>
@@ -113,7 +120,7 @@ function Header({ show }) {
           onDismiss={handleCloseModal}
           css={{
             display: "flex",
-            backgroundColor: "rgba(239, 245, 255, 0.75)"
+            backgroundColor: "rgba(0,0,0, 0.75)"
           }}
         >
           <Dialog
@@ -121,14 +128,17 @@ function Header({ show }) {
             onDismiss={handleCloseModal}
             css={{
               ...dialogContent,
-              width: 343,
+              width: "80%",
               margin: "auto",
               left: 0,
               right: 0,
               top: 0,
               bottom: 0,
               borderRadius: 8,
-              overflow: "hidden"
+              overflow: "hidden",
+              "@media (min-width: 375px)": {
+                width: 343
+              }
             }}
           >
             <p
@@ -136,13 +146,18 @@ function Header({ show }) {
                 fontSize: 18,
                 lineHeight: 1.5,
                 textAlign: "center",
-                maxWidth: 295,
-                marginBottom: 24
+                maxWidth: 295
               }}
             >
               You will lose all your progress, Are you sure?
             </p>
-            <div css={{ display: "flex", padding: "10px" }}>
+            <div
+              css={{
+                display: "flex",
+                padding: "10px",
+                justifyContent: "center"
+              }}
+            >
               <Button
                 onClick={handleCloseModal}
                 styles={{

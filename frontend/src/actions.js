@@ -23,6 +23,13 @@ function addLastGameComplete(lastgame) {
   };
 }
 
+function addMoneyLeft(money) {
+  return {
+    type: "ADD_MONEY_LEFT",
+    payload: money
+  }
+}
+
 function suggestOverbookingNumber(criticalRatio) {
   return {
     type: "SUGGEST_OVERBOOKING",
@@ -73,6 +80,7 @@ export {
   addCriticalRatio,
   suggestOverbookingNumber,
   addOverbookingNumber,
+  addMoneyLeft,
   setTotalRevenue,
   setCurrentGame,
   submitScore,

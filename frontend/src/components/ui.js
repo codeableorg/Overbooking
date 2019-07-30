@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { AutoFocusInside } from "react-focus-lock";
 
 const buttonStyles = {
   height: 48,
@@ -22,9 +21,6 @@ const buttonStyles = {
   transition: "all 0.25s",
   boxSizing: "border-box",
   cursor: "pointer",
-  "&:hover": {
-    // background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
-  },
   "&:focus": {
     outline: "none"
   }
@@ -34,7 +30,7 @@ function Button({ styles, ...props }) {
   return <button {...props} css={{ ...buttonStyles, ...styles }} />;
 }
 
-function LabelValue({ styles, children, ...props }) {
+function LabelValue({ styles, styleLabel, children, stylesValue, ...props }) {
   // props required = label, value
   const border = `border${props.border}`;
   const cssItems = {
@@ -45,16 +41,33 @@ function LabelValue({ styles, children, ...props }) {
   };
 
   return (
-    <div css={{ ...cssItems, padding: 16, ...styles }}>
-      <div css={{ fontSize: 11, textTransform: "uppercase", color: "#7E879A" }}>
+    <section css={{ ...cssItems, padding: 14, ...styles }}>
+      <p
+        css={{
+          fontSize: 9,
+          textTransform: "uppercase",
+          color: "#6E6E6E",
+          ...styleLabel,
+          "@media (min-width: 375px)": {
+            fontSize: 12
+          }
+        }}
+      >
         {props.label}
-      </div>
-      <div
-        css={{ fontSize: 18, color: "#211F1F", textTransform: "capitalize" }}
+      </p>
+      <strong
+        css={{
+          fontSize: 18,
+          color: "#211F1F",
+          textTransform: "capitalize",
+          fontWeight: 400,
+          ...stylesValue
+        }}
       >
         {props.value}
-      </div>
-    </div>
+      </strong>
+      {children}
+    </section>
   );
 }
 
@@ -79,10 +92,13 @@ function TitleView({ children, styles }) {
     <div
       css={{
         fontWeight: 500,
-        fontSize: 24,
+        fontSize: 20,
         textAlign: "center",
         marginBottom: "1rem",
-        ...styles
+        ...styles,
+        "@media (min-width: 375px)": {
+          fontSize: 24
+        }
       }}
     >
       {children}

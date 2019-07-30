@@ -10,8 +10,12 @@ import {
 import { navigate } from "@reach/router";
 import Header from "../components/header";
 import { Dialog, DialogOverlay } from "@reach/dialog";
+import CurrencyFormat from "react-currency-format";
 import "@reach/dialog/styles.css";
 import PicturePlane from "./../components/picture-plane";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
+
 import {
   Button,
   Row,
@@ -24,6 +28,7 @@ import {
 } from "../components/ui";
 
 import { createPortal } from "react-dom";
+import PictureBoss from "../components/picture-boss";
 
 function OverbookingNumber() {
   const msgRatio = {
@@ -57,7 +62,6 @@ function OverbookingNumber() {
     }
   };
 
-  const [value, setValue] = React.useState(0);
   const current = useCurrentGame();
   const game = useGame(current);
   const {
@@ -68,6 +72,7 @@ function OverbookingNumber() {
     criticalRatio,
     cancellations
   } = game;
+  const [value, setValue] = React.useState(0);
   const addOverbookingNumber = useAddOverbookingNumber();
   const setTotalRevenue = useSetTotalRevenue();
   const addFeedback = useAddFeedback();
@@ -129,12 +134,19 @@ function OverbookingNumber() {
     return msg;
   }
 
-  function handleChange(event) {
-    event.preventDefault();
-    const data = event.target.value;
-    setValue(data);
+  function handleChange(value) {
+    setValue(value);
   }
+
   const revenue = value * pricePerSeat + totalSeats * pricePerSeat;
+  const currencyRevenue = (
+    <CurrencyFormat
+      value={revenue}
+      displayType={"text"}
+      thousandSeparator={true}
+      prefix={"$"}
+    />
+  );
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -153,58 +165,22 @@ function OverbookingNumber() {
     navigate("/cancellations");
   }
 
-  const sliderCSS = {
-    marginTop: "16px",
-    width: "80%",
-    "&::-webkit-slider-runnable-track": {
-      width: "100%",
-      height: "2px",
-      cursor: "pointer",
-      boxShadow: "none",
-      background: "black",
-      borderRadius: "0px",
-      border: "0px solid #010101"
-    },
-    "&::-moz-range-track": {
-      width: "100%",
-      height: "2px",
-      cursor: "pointer",
-      boxShadow: "none",
-      background: "black",
-      borderRadius: "0px",
-      border: "0px solid #010101"
-    },
-    "&::-webkit-slider-thumb": {
-      border: "0px solid black",
-      boxShadow: "0px 10px 10px rgba(0, 0, 0, 0.25)",
-      height: "42px",
-      width: "42px",
-      borderRadius: "50%",
-      background: "black",
-      cursor: "pointer",
-      marginTop: "-10px"
-    },
-    "&::-moz-range-thumb": {
-      border: "0px solid black",
-      boxShadow: "0px 10px 10px rgba(0, 0, 0, 0.25)",
-      height: "42px",
-      width: "42px",
-      borderRadius: "50%",
-      background: "black",
-      cursor: "pointer",
-      marginTop: "-10px"
-    }
-  };
-
   const dialogContent = {
     position: "absolute",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    width: "100%",
-    height: "30%",
     boxSizing: "border-box",
-    margin: 0
+    width: "90%",
+    margin: "auto",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    borderRadius: 8,
+    height: 268,
+    "@media (min-width: 375px)": {
+      width: 343
+    }
   };
 
   return (
@@ -218,10 +194,10 @@ function OverbookingNumber() {
         }}
       >
         <ColumnEvenly>
-          <PicturePlane />
+          <PicturePlane css={{ height: 30 }} />
           <div css={{ width: "100%" }}>
             <TitleView>
-              <h1>Overbooking</h1>
+              <h1>Set Overbooking Target</h1>
             </TitleView>
             <Card styles={{ marginBottom: 16 }}>
               <Row>
@@ -229,6 +205,9 @@ function OverbookingNumber() {
                   label="Critical Ratio"
                   value={myCriticalRatio}
                   border="Right"
+                  styleLabel={{
+                    maxWidth: 30
+                  }}
                 />
                 <LabelValue
                   label="Suggested Overbooking"
@@ -240,8 +219,14 @@ function OverbookingNumber() {
             <Card>
               <LabelValue
                 label="Total Revenue"
-                value={`$ ${revenue}`}
+                value={currencyRevenue}
                 border="Right"
+                styleLabel={{ display: "flex", justifyContent: "center" }}
+                stylesValue={{
+                  display: "flex",
+                  justifyContent: "center",
+                  fontWeight: 700
+                }}
               />
             </Card>
           </div>
@@ -253,20 +238,43 @@ function OverbookingNumber() {
               flexDirection: "column"
             }}
           >
-            <span id="rs-bullet" css={{ fontSize: 32 }}>
+            <span id="rs-bullet" css={{ fontSize: 32, marginBottom: 8 }}>
               {value}
             </span>
-
-            <input
-              id="rs-range-line"
-              type="range"
-              min="0"
-              max={totalSeats}
-              value={value}
-              onChange={handleChange}
-              css={{ marginBottom: 8, ...sliderCSS }}
-            />
-            <WhisperText>Choose your overbooking</WhisperText>
+            <div
+              css={{
+                width: "100%",
+                padding: "0 40px",
+                boxSizing: "border-box",
+                marginBottom: 16
+              }}
+            >
+              <Slider
+                min={0}
+                max={totalSeats / 3}
+                defaultValue={0}
+                onChange={handleChange}
+                railStyle={{ backgroundColor: "#CBCFD6", height: 8 }}
+                trackStyle={{
+                  background:
+                    "linear-gradient(90deg, #01A4FE 0%, #0047FF 100%)",
+                  height: 8
+                }}
+                handleStyle={{
+                  width: 8,
+                  height: 8,
+                  borderRadius: "50%",
+                  backgroundColor: "#0047FF",
+                  boxSizing: "content-box",
+                  border: "12px solid white",
+                  marginLeft: -12,
+                  marginTop: -12,
+                  opacity: 0.85,
+                  boxShadow: "0 0 13px -3px #092457"
+                }}
+              />
+            </div>
+            <WhisperText>Number of Seats Overbooked</WhisperText>
           </div>
 
           <Center>
@@ -283,34 +291,43 @@ function OverbookingNumber() {
           onDismiss={handleCloseModal}
           css={{
             display: "flex",
-            backgroundColor: "rgba(239, 245, 255, 0.75)"
+            alignItems: "center",
+            backgroundColor: "rgba(0,0,0, 0.75)"
           }}
         >
           <Dialog
             isOpen={isDialogOpen}
             onDismiss={handleCloseModal}
             css={{
-              ...dialogContent,
-              width: 343,
-              margin: "auto",
-              left: 0,
-              right: 0,
-              top: 0,
-              bottom: 0,
-              borderRadius: 8,
-              overflow: "hidden"
+              ...dialogContent
             }}
           >
+            <PictureBoss
+              styles={{
+                margin: "auto",
+                marginTop: 0,
+                marginBottom: 16,
+                width: 64,
+                height: 64,
+                backgroundColor: "#F4F6FA",
+                "@media (min-width: 375px)": {
+                  width: 64,
+                  height: 64
+                }
+              }}
+            />
             <p
               css={{
-                fontSize: 18,
+                fontSize: 16,
                 lineHeight: 1.5,
                 textAlign: "center",
                 maxWidth: 295,
-                marginBottom: 24
+                width: "80%",
+                margin: "auto",
+                marginBottom: 8
               }}
             >
-              You Are setting {value} seats for overbooking
+              You will overbook {value} seats on this flight
             </p>
 
             <div css={{ display: "flex", padding: "10px" }}>

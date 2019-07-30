@@ -1,0 +1,798 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home page 1`] = `
+<DocumentFragment>
+  @keyframes animation-0 {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: -610px;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: -610px;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: -610px;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: -610px;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: -610px;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    margin-left: 180px;
+  }
+
+  100% {
+    margin-left: -610px;
+  }
+}
+
+@keyframes animation-1 {
+  from, 0%, to {
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0,-30px,0);
+    -ms-transform: translate3d(0,-30px,0);
+    transform: translate3d(0,-30px,0);
+  }
+}
+
+.emotion-15 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.emotion-14 {
+  height: 100vh;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(180deg,#F8FAFB 0%,#E7EAF1 100%);
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .emotion-14 {
+    border-radius: 8px;
+    max-width: 375px;
+    max-height: 812px;
+  }
+}
+
+.emotion-13 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg,#0047FF 0%,#01A4FE 100%);
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 1.65%;
+  left: 45.33%;
+  -webkit-animation: animation-0 18s linear infinite;
+  animation: animation-0 18s linear infinite;
+}
+
+.emotion-1 {
+  position: absolute;
+  top: 18.14%;
+  right: 80.27%;
+  -webkit-animation: animation-1 4s ease infinite;
+  animation: animation-1 4s ease infinite;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 42.43%;
+  left: 27.47%;
+  -webkit-animation: animation-0 12s linear infinite;
+  animation: animation-0 12s linear infinite;
+}
+
+.emotion-3 {
+  position: absolute;
+  top: 33.88%;
+  left: 72.53%;
+  -webkit-animation: animation-0 15s linear infinite;
+  animation: animation-0 15s linear infinite;
+}
+
+.emotion-4 {
+  position: absolute;
+  top: 16.04%;
+  left: 79.73%;
+  -webkit-animation: animation-0 20s linear infinite;
+  animation: animation-0 20s linear infinite;
+}
+
+.emotion-5 {
+  position: absolute;
+  top: 86.21%;
+  left: 30.13%;
+  -webkit-animation: animation-0 16s linear infinite;
+  animation: animation-0 16s linear infinite;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 65.07%;
+  left: 72.8%;
+  -webkit-animation: animation-0 10s linear infinite;
+  animation: animation-0 10s linear infinite;
+}
+
+.emotion-12 {
+  top: 150px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+@media (min-width:375px) {
+  .emotion-12 {
+    top: 190px;
+  }
+}
+
+.emotion-7 {
+  font-weight: bold;
+  font-size: 37px;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emotion-8 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: #084B8A;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 135px;
+}
+
+.emotion-8:focus {
+  outline: none;
+}
+
+.emotion-9 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(255,255,255,0.35);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 24px;
+  position: relative;
+}
+
+.emotion-9:focus {
+  outline: none;
+}
+
+.emotion-11 {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.emotion-10 {
+  opacity: 0.65;
+}
+
+<div
+    class="emotion-15"
+  >
+    <div
+      class="emotion-14"
+      role="group"
+      style="outline: none;"
+      tabindex="-1"
+    >
+      <main
+        class="emotion-13"
+      >
+        <img
+          alt="cloud"
+          class="emotion-0"
+          src="cloud1.svg"
+        />
+        <img
+          alt="plane"
+          class="emotion-1"
+          src="icon-plane.svg"
+        />
+        <img
+          alt="cloud"
+          class="emotion-2"
+          src="cloud2.svg"
+        />
+        <img
+          alt="cloud"
+          class="emotion-3"
+          src="cloud3.svg"
+        />
+        <img
+          alt="cloud"
+          class="emotion-4"
+          src="cloud4.svg"
+        />
+        <img
+          alt="cloud"
+          class="emotion-5"
+          src="cloud5.svg"
+        />
+        <img
+          alt="cloud"
+          class="emotion-6"
+          src="cloud5.svg"
+        />
+        <div
+          class="emotion-12"
+        >
+          <h1
+            class="emotion-7"
+          >
+            OVERBOOKING
+          </h1>
+          <a
+            class="emotion-8"
+            href="/instructions"
+          >
+            NEW GAME
+          </a>
+          <a
+            class="emotion-9"
+            href="/ranking"
+          >
+            Leaderboard
+          </a>
+          <p
+            class="emotion-11"
+          >
+            <span
+              class="emotion-10"
+            >
+              Developed By
+            </span>
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`instructions page 1`] = `
+<DocumentFragment>
+  .emotion-21 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.emotion-20 {
+  height: 100vh;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(180deg,#F8FAFB 0%,#E7EAF1 100%);
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .emotion-20 {
+    border-radius: 8px;
+    max-width: 375px;
+    max-height: 812px;
+  }
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-10 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px,10px,10px,10px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.emotion-9 {
+  padding: 0 11px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-8 {
+  margin-right: -4px;
+}
+
+.emotion-1 {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-right: 1px;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 15px;
+}
+
+@media (min-width:375px) {
+  .emotion-12 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.emotion-11 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-13 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width:375px) {
+  .emotion-13 {
+    font-size: 24px;
+  }
+}
+
+.emotion-14 {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 295px;
+  margin: 1em auto;
+}
+
+@media (min-width:375px) {
+  .emotion-14 {
+    font-size: 15px;
+  }
+}
+
+.emotion-18 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.emotion-17 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  max-width: 226px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(180deg,#01A4FE 0%,#0047FF 100%);
+  box-shadow: 0px 4px 4px rgba(0,102,255,0.2);
+  border-radius: 24px;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-17:focus {
+  outline: none;
+}
+
+<div
+    class="emotion-21"
+  >
+    <div
+      class="emotion-20"
+      role="group"
+      style="outline: none;"
+      tabindex="-1"
+    >
+      <div
+        class="emotion-19"
+      >
+        <div
+          class="emotion-10"
+        >
+          <div
+            class="emotion-0"
+          >
+            <img
+              src="home.svg"
+            />
+          </div>
+          <div
+            class="emotion-9"
+            id="divFlight"
+          >
+            <div
+              class="emotion-8"
+            >
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#006dff"
+                />
+              </svg>
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#a9a9ab"
+                />
+              </svg>
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#a9a9ab"
+                />
+              </svg>
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#a9a9ab"
+                />
+              </svg>
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#a9a9ab"
+                />
+              </svg>
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#a9a9ab"
+                />
+              </svg>
+              <svg
+                class="emotion-1"
+                fill="none"
+                height="13"
+                viewBox="0 0 22 20"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+                  fill="#a9a9ab"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-12"
+        >
+          <img
+            alt="operator"
+            class="emotion-11"
+            src="boss.png"
+          />
+        </div>
+        <div>
+          <div
+            class="emotion-13"
+          >
+            <h1>
+              Welcome
+            </h1>
+          </div>
+          <p
+            class="emotion-14"
+          >
+            The airline's revenue management team is short-staffed and you've been asked to support them this week.
+          </p>
+          <p
+            class="emotion-14"
+          >
+            Since cancellations are common, you can maximize revenue by overbooking. However, if the cancellations don't materialize you may end up paying to compensate bumped travelers.
+          </p>
+          <p
+            class="emotion-14"
+          >
+            You'll manage one flight each day while competing with your peers to see who generated the most revenue. Good luck!
+          </p>
+        </div>
+        <div
+          class="emotion-18"
+        >
+          <a
+            class="emotion-17"
+            href="/flight-details"
+          >
+            Next
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
