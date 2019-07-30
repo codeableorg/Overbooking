@@ -141,7 +141,7 @@ function FlightDetails() {
     <>
       <Header show={true} />
       <TitleView styles={{ marginTop: 72 }}>
-        <h1>Cancellations</h1>
+        <h1>Flight Performance</h1>
       </TitleView>
 
       <Card styles={{ marginBottom: 48 }}>

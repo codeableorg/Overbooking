@@ -38,7 +38,7 @@ function Ranking({ id }) {
         </div>
         <div>
           <TitleView>
-            <h1>Top5</h1>
+            <h1>Leaderboard</h1>
           </TitleView>
           <div>
             {ranking.map((user, i) => (

@@ -119,7 +119,7 @@ function Score() {
               marginBottom: "5%"
             }}
           >
-            Save your score and see your position in the leaderboard
+            Save your score and see your position on the leaderboard
           </section>
           <Card styles={{ marginBottom: 24 }}>
             <div

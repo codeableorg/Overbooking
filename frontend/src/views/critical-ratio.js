@@ -50,7 +50,7 @@ function CriticalRatio() {
 
         <div css={{ width: "100%" }}>
           <TitleView>
-            <h1>Critial Ratio</h1>
+            <h1>Calculate Critical Ratio</h1>
           </TitleView>
           <Card styles={{ marginBottom: 16 }}>
             <Row>
