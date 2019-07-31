@@ -121,7 +121,7 @@ function Header({ show }) {
             onDismiss={handleCloseModal}
             css={{
               ...dialogContent,
-              width: 343,
+              width: "80%",
               margin: "auto",
               left: 0,
               right: 0,
@@ -136,13 +136,18 @@ function Header({ show }) {
                 fontSize: 18,
                 lineHeight: 1.5,
                 textAlign: "center",
-                maxWidth: 295,
-                marginBottom: 24
+                maxWidth: 295
               }}
             >
               You will lose all your progress, Are you sure?
             </p>
-            <div css={{ display: "flex", padding: "10px" }}>
+            <div
+              css={{
+                display: "flex",
+                padding: "10px",
+                justifyContent: "center"
+              }}
+            >
               <Button
                 onClick={handleCloseModal}
                 styles={{

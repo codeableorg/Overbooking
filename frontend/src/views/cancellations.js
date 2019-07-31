@@ -116,11 +116,28 @@ function FlightDetails() {
 
   const cssP = {
     padding: 16,
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 1.5,
     textAlign: "center",
     maxWidth: 295,
-    margin: "auto"
+    margin: "auto",
+    "@media (min-width: 375px)": {
+      fontSize: 16
+    }
+  };
+
+  const containerCss = {
+    height: "calc(100% - 68px)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    paddingTop: 68,
+    fontSize: 14,
+    "@media (min-width: 375px)": {
+      height: "calc(100% - 76px)",
+      paddingTop: 76,
+      fontSize: 16
+    }
   };
 
   function cancelBar() {
@@ -138,9 +155,9 @@ function FlightDetails() {
   }
 
   return (
-    <>
+    <main css={containerCss}>
       <Header show={true} />
-      <TitleView styles={{ marginTop: 72 }}>
+      <TitleView>
         <h1>Flight Performance</h1>
       </TitleView>
 
@@ -208,7 +225,7 @@ function FlightDetails() {
           <Button onClick={goToScore}>My Score</Button>
         )}
       </Center>
-    </>
+    </main>
   );
 }
 

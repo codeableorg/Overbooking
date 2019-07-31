@@ -8,10 +8,19 @@ function PicturePlane({ styles = {} }) {
     <div css={{ ...styles }}>
       <img
         src={planeImage}
-        width="140"
-        height="140"
         alt="airplane"
-        css={{ display: "block", margin: "auto" }}
+        css={{
+          width: 120,
+          height: 120,
+          display: "block",
+          margin: "auto",
+          marginTop: 15,
+          ...styles,
+          "@media (min-width: 375px)": {
+            width: 170,
+            height: 170
+          }
+        }}
       />
     </div>
   );

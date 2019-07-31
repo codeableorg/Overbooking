@@ -76,6 +76,19 @@ function Score() {
     justifyContent: "space-around",
     marginTop: 25
   };
+  const containerCss = {
+    height: "calc(100% - 60px)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    paddingTop: 60,
+    fontSize: 14,
+    "@media (min-width: 375px)": {
+      height: "calc(100% - 76px)",
+      paddingTop: 76,
+      fontSize: 16
+    }
+  };
 
   const totalAmount = (
     <CurrencyFormat
@@ -88,124 +101,120 @@ function Score() {
   const accuracyNumber = `${correct}/7`;
 
   return (
-    <>
+    <main css={containerCss}>
       <Header show={false} />
-      <main css={{ width: "100%" }}>
-        <TitleView>
-          <h1 css={{ marginTop: 18 }}>Final Score</h1>
-        </TitleView>
+      <TitleView>
+        <h1>Final Score</h1>
+      </TitleView>
 
-        <Card>
-          <Row>
-            <LabelValue
-              label="TOTAL REVENUE"
-              value={totalAmount}
-              border="Right"
-              css={{ margin: "10px 0px" }}
-            />
-            <LabelValue
-              label="ACCURACY (C.R.)"
-              value={accuracyNumber}
-              border="Right"
-            />
-          </Row>
-        </Card>
-        <form
-          onSubmit={handleSubmit}
+      <Card>
+        <Row>
+          <LabelValue
+            label="TOTAL REVENUE"
+            value={totalAmount}
+            border="Right"
+            css={{ margin: "10px 0px" }}
+          />
+          <LabelValue
+            label="ACCURACY (C.R.)"
+            value={accuracyNumber}
+            border="Right"
+          />
+        </Row>
+      </Card>
+      <form
+        onSubmit={handleSubmit}
+        css={{
+          display: "flex",
+          flexDirection: "column",
+          textAlign: "center",
+          marginTop: "35"
+        }}
+      >
+        <section
           css={{
-            display: "flex",
-            flexDirection: "column",
+            width: "80%",
             textAlign: "center",
-            marginTop: "40%"
+            margin: "0 auto",
+            marginBottom: "5%"
           }}
         >
-          <section
+          Save your score and see your position on the leaderboard
+        </section>
+        <Card styles={{ marginBottom: 24 }}>
+          <div css={{ display: "flex", flexDirection: "column", padding: 16 }}>
+            <label
+              htmlFor="critical-ratio"
+              css={{
+                fontSize: 11,
+                color: "#7e879a",
+                textTransform: "uppercase",
+                textAlign: "center",
+                marginBottom: 8
+              }}
+            >
+              Name
+            </label>
+            <Input
+              aria-label="Enter your name"
+              id="username"
+              name="username"
+              required
+              autoComplete="off"
+              type="text"
+              onChange={handleChange}
+              autoFocus
+            />
+          </div>
+        </Card>
+
+        <Center>
+          <Button css={{ marginTop: 16 }} type="submit">
+            SAVE MY SCORE
+          </Button>
+        </Center>
+      </form>
+      <div css={bottomButtonsCss}>
+        <div css={buttonLabelCss}>
+          <Link
+            to="/"
             css={{
-              width: "80%",
-              textAlign: "center",
-              margin: "0 auto",
-              marginBottom: "5%"
+              background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)",
+              width: 48,
+              height: 48,
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "white"
             }}
           >
-            Save your score and see your position on the leaderboard
-          </section>
-          <Card styles={{ marginBottom: 24 }}>
-            <div
-              css={{ display: "flex", flexDirection: "column", padding: 16 }}
-            >
-              <label
-                htmlFor="critical-ratio"
-                css={{
-                  fontSize: 11,
-                  color: "#7e879a",
-                  textTransform: "uppercase",
-                  textAlign: "center",
-                  marginBottom: 8
-                }}
-              >
-                Name
-              </label>
-              <Input
-                aria-label="Enter your name"
-                id="username"
-                name="username"
-                required
-                autoComplete="off"
-                type="text"
-                onChange={handleChange}
-                autoFocus
-              />
-            </div>
-          </Card>
-
-          <Center>
-            <Button css={{ marginTop: 24 }} type="submit">
-              SAVE MY SCORE
-            </Button>
-          </Center>
-        </form>
-        <div css={bottomButtonsCss}>
-          <div css={buttonLabelCss}>
-            <Link
-              to="/"
-              css={{
-                background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)",
-                width: 48,
-                height: 48,
-                borderRadius: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textDecoration: "none",
-                color: "white"
-              }}
-            >
-              <i className="fas fa-redo fa-lg" />
-            </Link>
-            <span css={{ flexShrink: 1 }}>Play again</span>
-          </div>
-          <div css={buttonLabelCss}>
-            <Link
-              to="/ranking"
-              css={{
-                background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)",
-                width: 48,
-                height: 48,
-                borderRadius: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textDecoration: "none",
-                color: "white"
-              }}
-            >
-              <i className="fas fa-list fa-lg" />
-            </Link>
-            <span css={{ flexShrink: 1 }}>Leaderboard</span>
-          </div>
+            <i className="fas fa-redo fa-lg" />
+          </Link>
+          <span css={{ flexShrink: 1 }}>Play again</span>
         </div>
-      </main>
-    </>
+        <div css={buttonLabelCss}>
+          <Link
+            to="/ranking"
+            css={{
+              background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)",
+              width: 48,
+              height: 48,
+              borderRadius: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "white"
+            }}
+          >
+            <i className="fas fa-list fa-lg" />
+          </Link>
+          <span css={{ flexShrink: 1 }}>Leaderboard</span>
+        </div>
+      </div>
+    </main>
   );
 }
 

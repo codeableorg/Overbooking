@@ -46,7 +46,16 @@ function LabelValue({ styles, children, ...props }) {
 
   return (
     <div css={{ ...cssItems, padding: 16, ...styles }}>
-      <div css={{ fontSize: 11, textTransform: "uppercase", color: "#7E879A" }}>
+      <div
+        css={{
+          fontSize: 9,
+          textTransform: "uppercase",
+          color: "#7E879A",
+          "@media (min-width: 375px)": {
+            fontSize: 11
+          }
+        }}
+      >
         {props.label}
       </div>
       <div
@@ -79,10 +88,13 @@ function TitleView({ children, styles }) {
     <div
       css={{
         fontWeight: 500,
-        fontSize: 24,
+        fontSize: 20,
         textAlign: "center",
         marginBottom: "1rem",
-        ...styles
+        ...styles,
+        "@media (min-width: 375px)": {
+          fontSize: 24
+        }
       }}
     >
       {children}

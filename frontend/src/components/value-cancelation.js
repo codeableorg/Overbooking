@@ -13,12 +13,24 @@ function ValueCancelation({ value, label }) {
         flex: "1 1 0"
       }}
     >
-      <span css={{ fontSize: 24 }}>{value}k</span>
       <span
         css={{
-          fontSize: 11,
+          fontSize: 22,
+          "@media (min-width: 375px)": {
+            fontSize: 24
+          }
+        }}
+      >
+        {value}k
+      </span>
+      <span
+        css={{
+          fontSize: 9,
           textTransform: "uppercase",
-          wordSpacing: 100
+          wordSpacing: 100,
+          "@media (min-width: 375px)": {
+            fontSize: 11
+          }
         }}
       >
         {label}
