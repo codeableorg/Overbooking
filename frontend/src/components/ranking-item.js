@@ -39,7 +39,7 @@ function RankingItem({ factorColor, index, user, resalt }) {
             padding: 16
           }}
         >
-          {user.scores[0].totalRevenue}
+          {user.scores ? user.scores[0].totalRevenue : ""}
         </span>
       </Card>
     );

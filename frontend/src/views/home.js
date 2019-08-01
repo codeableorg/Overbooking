@@ -2,9 +2,16 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 import { Link } from "@reach/router";
-import { TitleView, buttonStyles } from "../components/ui";
+import { buttonStyles } from "../components/ui";
 
 function Home() {
+  const titleCss = {
+    fontWeight: "bold",
+    fontSize: 37,
+    color: "white",
+    textAlign: "center",
+    marginBottom: "1rem"
+  };
   return (
     <main
       css={{
@@ -71,16 +78,19 @@ function Home() {
           fill="white"
         />
       </svg>
-      <div css={{ paddingTop: 168 }}>
-        <TitleView
-          styles={{
-            color: "white",
-            fontSize: 37,
-            fontWeight: "bold"
-          }}
-        >
-          <h1>OVERBOOKING</h1>
-        </TitleView>
+      <div
+        css={{
+          top: 150,
+          bottom: 0,
+          right: 0,
+          left: 0,
+          position: "absolute",
+          "@media (min-width: 375px)": {
+            top: 190
+          }
+        }}
+      >
+        <h1 css={titleCss}>OVERBOOKING</h1>
         <Link
           to="/instructions"
           css={{
@@ -88,7 +98,7 @@ function Home() {
             background: "white",
             margin: "0 auto",
             marginTop: 135,
-            color: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
+            color: "#0176FF"
           }}
         >
           NEW GAME
@@ -96,7 +106,12 @@ function Home() {
 
         <Link
           to="/ranking"
-          css={{ ...buttonStyles, margin: "0 auto", marginTop: 24 }}
+          css={{
+            ...buttonStyles,
+            margin: "0 auto",
+            marginTop: 24,
+            background: "rgba(255,255,255,0.35)"
+          }}
         >
           Leaderboard
         </Link>

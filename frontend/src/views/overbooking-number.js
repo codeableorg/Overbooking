@@ -291,7 +291,7 @@ function OverbookingNumber() {
             onDismiss={handleCloseModal}
             css={{
               ...dialogContent,
-              width: 343,
+              width: "90%",
               margin: "auto",
               left: 0,
               right: 0,
