@@ -14,11 +14,14 @@ import {
 
 function Instructions() {
   const paragraphCss = {
-    fontSize: 15,
+    fontSize: 14,
     lineHeight: 1.5,
     textAlign: "center",
     maxWidth: 295,
-    margin: "auto"
+    margin: "auto",
+    "@media (min-width: 375px)": {
+      fontSize: 15
+    }
   };
   return (
     <ColumnEvenly>

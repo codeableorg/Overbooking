@@ -36,12 +36,14 @@ function App() {
       <div css={cssWrapper}>
         <Router
           css={{
-            width: 375,
-            height: 667,
+            maxWidth: 375,
+            height: "100vh",
+            overflow: "hidden",
             padding: 16,
             boxSizing: "border-box",
             position: "relative",
-            background: "linear-gradient(180deg, #F8FAFB 0%, #E7EAF1 100%)"
+            background: "linear-gradient(180deg, #F8FAFB 0%, #E7EAF1 100%)",
+            width: "100%"
           }}
         >
           <Home path="/" />
