@@ -60,6 +60,7 @@ function Header({ show }) {
         }}
       >
         <div
+          onClick={handleOpenModal}
           css={{
             display: "flex",
             alignItems: "center",
@@ -67,10 +68,11 @@ function Header({ show }) {
             width: 36,
             height: 36,
             backgroundColor: "#ffffff",
-            borderRadius: 18
+            borderRadius: 18,
+            cursor: "pointer"
           }}
         >
-          <i className="fas fa-home" onClick={handleOpenModal} />
+          <i className="fas fa-home" />
         </div>
         {shouldShow ? (
           <div
@@ -128,7 +130,10 @@ function Header({ show }) {
               top: 0,
               bottom: 0,
               borderRadius: 8,
-              overflow: "hidden"
+              overflow: "hidden",
+              "@media (min-width: 375px)": {
+                width: 343
+              }
             }}
           >
             <p
