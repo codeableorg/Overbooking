@@ -41,7 +41,7 @@ function FlightDetails() {
       </div>
       <Center>
         <Link to="/critical-ratio" css={buttonStyles}>
-          Start
+          Start Game
         </Link>
       </Center>
     </ColumnEvenly>
