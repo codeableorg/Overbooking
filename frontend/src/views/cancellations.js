@@ -98,10 +98,13 @@ function FlightDetails() {
   }
   const cssProgressStatus = {
     borderRadius: 8,
-    width: 140,
+    width: 100,
     height: 8,
     marginBottom: 10,
-    backgroundColor: "#e7eaf1"
+    backgroundColor: "#e7eaf1",
+    "@media (min-width: 375px)": {
+      width: 140
+    }
   };
 
   const cssProgressBar = {
@@ -179,14 +182,15 @@ function FlightDetails() {
               label="Total cancellations"
               value={animateValue(numCancellations, false)}
               border="Right"
-            />
-            <div id="Progress_Status" css={cssProgressStatus}>
-              <div
-                ref={myProgressBar}
-                id="myprogressBar"
-                css={cssProgressBar}
-              />
-            </div>
+            >
+              <div id="Progress_Status" css={cssProgressStatus}>
+                <div
+                  ref={myProgressBar}
+                  id="myprogressBar"
+                  css={cssProgressBar}
+                />
+              </div>
+            </LabelValue>
           </div>
         </Row>
       </Card>

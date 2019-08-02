@@ -24,6 +24,7 @@ import {
 } from "../components/ui";
 
 import { createPortal } from "react-dom";
+import PictureBoss from "../components/picture-boss";
 
 function OverbookingNumber() {
   const msgRatio = {
@@ -200,11 +201,18 @@ function OverbookingNumber() {
     position: "absolute",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
-    width: "100%",
-    height: "30%",
+    height: "50%",
     boxSizing: "border-box",
-    margin: 0
+    width: "90%",
+    margin: "auto",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    borderRadius: 8,
+    "@media (min-width: 375px)": {
+      width: 343
+    }
   };
 
   return (
@@ -218,7 +226,7 @@ function OverbookingNumber() {
         }}
       >
         <ColumnEvenly>
-          <PicturePlane />
+          <PicturePlane css={{ height: 30 }} />
           <div css={{ width: "100%" }}>
             <TitleView>
               <h1>Set Overbooking Target</h1>
@@ -242,6 +250,11 @@ function OverbookingNumber() {
                 label="Total Revenue"
                 value={`$ ${revenue}`}
                 border="Right"
+                styleLabel={{ display: "flex", justifyContent: "center" }}
+                stylesValue={{
+                  display: "flex",
+                  justifyContent: "center"
+                }}
               />
             </Card>
           </div>
@@ -291,24 +304,26 @@ function OverbookingNumber() {
             isOpen={isDialogOpen}
             onDismiss={handleCloseModal}
             css={{
-              ...dialogContent,
-              width: "90%",
-              margin: "auto",
-              left: 0,
-              right: 0,
-              top: 0,
-              bottom: 0,
-              borderRadius: 8,
-              overflow: "hidden"
+              ...dialogContent
             }}
           >
+            <PictureBoss
+              styles={{
+                margin: "auto",
+                marginTop: 0,
+                marginBottom: 10
+              }}
+            />
             <p
               css={{
-                fontSize: 18,
+                fontSize: 15,
                 lineHeight: 1.5,
                 textAlign: "center",
                 maxWidth: 295,
-                marginBottom: 24
+                marginBottom: 24,
+                "@media (min-width: 375px)": {
+                  fontSize: 18
+                }
               }}
             >
               You will overbook {value} seats on this flight

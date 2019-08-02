@@ -22,9 +22,6 @@ const buttonStyles = {
   transition: "all 0.25s",
   boxSizing: "border-box",
   cursor: "pointer",
-  "&:hover": {
-    // background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
-  },
   "&:focus": {
     outline: "none"
   }
@@ -34,7 +31,7 @@ function Button({ styles, ...props }) {
   return <button {...props} css={{ ...buttonStyles, ...styles }} />;
 }
 
-function LabelValue({ styles, children, ...props }) {
+function LabelValue({ styles, styleLabel, children, stylesValue, ...props }) {
   // props required = label, value
   const border = `border${props.border}`;
   const cssItems = {
@@ -45,12 +42,13 @@ function LabelValue({ styles, children, ...props }) {
   };
 
   return (
-    <div css={{ ...cssItems, padding: 16, ...styles }}>
+    <div css={{ ...cssItems, padding: 14, ...styles }}>
       <div
         css={{
           fontSize: 9,
           textTransform: "uppercase",
           color: "#6E6E6E",
+          ...styleLabel,
           "@media (min-width: 375px)": {
             fontSize: 12
           }
@@ -59,10 +57,16 @@ function LabelValue({ styles, children, ...props }) {
         {props.label}
       </div>
       <div
-        css={{ fontSize: 18, color: "#211F1F", textTransform: "capitalize" }}
+        css={{
+          fontSize: 18,
+          color: "#211F1F",
+          textTransform: "capitalize",
+          ...stylesValue
+        }}
       >
         {props.value}
       </div>
+      {children}
     </div>
   );
 }
