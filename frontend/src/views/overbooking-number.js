@@ -259,6 +259,7 @@ function OverbookingNumber() {
 
             <input
               id="rs-range-line"
+              aria-label="Overbooking number"
               type="range"
               min="0"
               max={totalSeats}

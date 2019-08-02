@@ -50,9 +50,9 @@ function LabelValue({ styles, children, ...props }) {
         css={{
           fontSize: 9,
           textTransform: "uppercase",
-          color: "#7E879A",
+          color: "#6E6E6E",
           "@media (min-width: 375px)": {
-            fontSize: 11
+            fontSize: 12
           }
         }}
       >
