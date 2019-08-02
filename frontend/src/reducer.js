@@ -1,9 +1,26 @@
 /* eslint-disable no-fallthrough */
+
+import newYork from "./images/domestic/new-york.svg";
+import southDakota from "./images/domestic/south-dakota.svg";
+import lasVegas from "./images/domestic/las-vegas-nevada.svg";
+import losAngeles from "./images/domestic/los-angeles-california.svg";
+import washington from "./images/domestic/washington-dc.svg";
+import giza from "./images/international/giza-egypt.svg";
+import london from "./images/international/london-england.svg";
+import rio from "./images/international/rio-de-Janeiro-brazil.svg";
+
 const initialState = {
   lastGameComplete: {},
   currentGame: 1,
   games: {
     1: {
+      flightNumber: "QF3421",
+      journey: {
+        originName: "Las Vegas",
+        destinationName: "Los Angeles",
+        originImage: lasVegas,
+        destinationImage: losAngeles
+      },
       destination: "domestic",
       totalSeats: 75,
       pricePerSeat: 200,
@@ -21,6 +38,13 @@ const initialState = {
       dateFlight: "Monday, Aug 1st 2019"
     },
     2: {
+      flightNumber: "PT0509",
+      journey: {
+        originName: "New York",
+        destinationName: "South Dakota",
+        originImage: newYork,
+        destinationImage: southDakota
+      },
       destination: "domestic",
       totalSeats: 75,
       pricePerSeat: 200,
@@ -38,6 +62,13 @@ const initialState = {
       dateFlight: "Tuesday, Aug 2nd 2019"
     },
     3: {
+      flightNumber: "VAL0202",
+      journey: {
+        originName: "Washington DC",
+        destinationName: "Los Angeles",
+        originImage: washington,
+        destinationImage: losAngeles
+      },
       destination: "domestic",
       totalSeats: 75,
       pricePerSeat: 200,
@@ -55,6 +86,13 @@ const initialState = {
       dateFlight: "Wednesday, Aug 3rd 2019"
     },
     4: {
+      flightNumber: "CHI1608",
+      journey: {
+        originName: "Las Vegas",
+        destinationName: "South Dakota",
+        originImage: lasVegas,
+        destinationImage: southDakota
+      },
       destination: "Domestic",
       totalSeats: 150,
       pricePerSeat: 200,
@@ -72,6 +110,13 @@ const initialState = {
       dateFlight: "Thursday, Aug 4th 2019"
     },
     5: {
+      flightNumber: "LET8655",
+      journey: {
+        originName: "New York",
+        destinationName: "London",
+        originImage: newYork,
+        destinationImage: london
+      },
       destination: "International",
       totalSeats: 150,
       pricePerSeat: 200,
@@ -89,6 +134,13 @@ const initialState = {
       dateFlight: "Friday, Aug 5th 2019"
     },
     6: {
+      flightNumber: "CON9264",
+      journey: {
+        originName: "Washington DC",
+        destinationName: "Giza",
+        originImage: washington,
+        destinationImage: giza
+      },
       destination: "International",
       totalSeats: 150,
       pricePerSeat: 200,
@@ -106,6 +158,13 @@ const initialState = {
       dateFlight: "Saturday, Aug 6th 2019"
     },
     7: {
+      flightNumber: "QQ1234",
+      journey: {
+        originName: "Las Vegas",
+        destinationName: "Rio de Janeiro",
+        originImage: lasVegas,
+        destinationImage: rio
+      },
       destination: "International",
       totalSeats: 75,
       pricePerSeat: 200,
