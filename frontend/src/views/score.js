@@ -147,7 +147,7 @@ function Score() {
               htmlFor="critical-ratio"
               css={{
                 fontSize: 11,
-                color: "#7e879a",
+                color: "#6E6E6E",
                 textTransform: "uppercase",
                 textAlign: "center",
                 marginBottom: 8

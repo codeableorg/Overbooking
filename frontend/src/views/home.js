@@ -135,7 +135,7 @@ function Home() {
             background: "white",
             margin: "0 auto",
             marginTop: 135,
-            color: "#0176FF"
+            color: "#084B8A"
           }}
         >
           NEW GAME
