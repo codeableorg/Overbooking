@@ -14,25 +14,22 @@ function PictureBoss({ styles = {} }) {
         borderRadius: "50%",
         backgroundColor: "white",
         marginTop: 15,
-        ...styles,
         "@media (min-width: 375px)": {
           width: 140,
           height: 140,
           borderRadius: "50%",
           display: "flex",
           justifyContent: "center"
-        }
+        },
+        ...styles
       }}
     >
       <img
         src={bossImage}
         css={{
-          width: 100,
-          height: 100,
-          "@media (min-width: 375px)": {
-            width: 140,
-            height: 140
-          }
+          display: "block",
+          width: "100%",
+          height: "100%"
         }}
         alt="operator"
       />

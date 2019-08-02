@@ -201,7 +201,6 @@ function OverbookingNumber() {
     position: "absolute",
     display: "flex",
     flexDirection: "column",
-    height: "50%",
     boxSizing: "border-box",
     width: "90%",
     margin: "auto",
@@ -210,6 +209,7 @@ function OverbookingNumber() {
     top: 0,
     bottom: 0,
     borderRadius: 8,
+    height: 268,
     "@media (min-width: 375px)": {
       width: 343
     }
@@ -298,6 +298,7 @@ function OverbookingNumber() {
           onDismiss={handleCloseModal}
           css={{
             display: "flex",
+            alignItems: "center",
             backgroundColor: "rgba(239, 245, 255, 0.75)"
           }}
         >
@@ -312,19 +313,25 @@ function OverbookingNumber() {
               styles={{
                 margin: "auto",
                 marginTop: 0,
-                marginBottom: 10
+                marginBottom: 16,
+                width: 64,
+                height: 64,
+                backgroundColor: "#F4F6FA",
+                "@media (min-width: 375px)": {
+                  width: 64,
+                  height: 64
+                }
               }}
             />
             <p
               css={{
-                fontSize: 15,
+                fontSize: 16,
                 lineHeight: 1.5,
                 textAlign: "center",
                 maxWidth: 295,
-                marginBottom: 24,
-                "@media (min-width: 375px)": {
-                  fontSize: 18
-                }
+                width: "80%",
+                margin: "auto",
+                marginBottom: 8
               }}
             >
               You will overbook {value} seats on this flight

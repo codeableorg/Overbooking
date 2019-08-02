@@ -109,7 +109,7 @@ function CriticalRatio() {
         </Center>
 
         <WhisperText
-          styles={{ position: "absolute", bottom: 0, width: "100%" }}
+          styles={{ position: "absolute", bottom: 8, width: "100%" }}
         >
           *Should be greater than 0 and less than 1
         </WhisperText>
