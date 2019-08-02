@@ -253,7 +253,8 @@ function OverbookingNumber() {
                 styleLabel={{ display: "flex", justifyContent: "center" }}
                 stylesValue={{
                   display: "flex",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  fontWeight: 700
                 }}
               />
             </Card>

@@ -2,7 +2,7 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 import { useSubmitScore, useAddLastGameComplete } from "../action-hooks";
-import { useGame, useGames, useCurrentGame } from "../selectors";
+import { useGames } from "../selectors";
 import { Link, navigate } from "@reach/router";
 import {
   Button,
@@ -18,8 +18,6 @@ import CurrencyFormat from "react-currency-format";
 
 function Score() {
   const [username, setUsername] = React.useState("");
-  const current = useCurrentGame();
-  const game = useGame(current);
   const games = useGames();
   const submitScore = useSubmitScore();
   const addLastGameComplete = useAddLastGameComplete();
@@ -174,7 +172,7 @@ function Score() {
           </Button>
         </Center>
       </form>
-      <div css={bottomButtonsCss}>
+      <section css={bottomButtonsCss}>
         <div css={buttonLabelCss}>
           <Link
             to="/"
@@ -187,12 +185,22 @@ function Score() {
               justifyContent: "center",
               alignItems: "center",
               textDecoration: "none",
-              color: "white"
+              color: "white",
+              fontSize: 15
             }}
           >
             <i className="fas fa-redo fa-lg" />
           </Link>
-          <span css={{ flexShrink: 1 }}>Play again</span>
+          <span
+            css={{
+              flexShrink: 1,
+              fontSize: 14,
+              marginTop: "0.5em",
+              color: "#6B7285"
+            }}
+          >
+            Play again
+          </span>
         </div>
         <div css={buttonLabelCss}>
           <Link
@@ -206,14 +214,24 @@ function Score() {
               justifyContent: "center",
               alignItems: "center",
               textDecoration: "none",
-              color: "white"
+              color: "white",
+              fontSize: 15
             }}
           >
             <i className="fas fa-list fa-lg" />
           </Link>
-          <span css={{ flexShrink: 1 }}>Leaderboard</span>
+          <span
+            css={{
+              flexShrink: 1,
+              fontSize: 14,
+              marginTop: "0.5em",
+              color: "#6B7285"
+            }}
+          >
+            Leaderboard
+          </span>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

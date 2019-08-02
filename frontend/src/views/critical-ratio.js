@@ -48,7 +48,7 @@ function CriticalRatio() {
         <Header show={true} />
         <PicturePlane />
 
-        <div css={{ width: "100%" }}>
+        <section css={{ width: "100%" }}>
           <TitleView>
             <h1>Calculate Critical Ratio</h1>
           </TitleView>
@@ -100,7 +100,7 @@ function CriticalRatio() {
               />
             </div>
           </Card>
-        </div>
+        </section>
 
         <Center>
           <Button type="submit" disabled={!isEnabled}>
