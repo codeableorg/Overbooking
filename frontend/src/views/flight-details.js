@@ -20,23 +20,21 @@ function FlightDetails() {
   return (
     <ColumnEvenly>
       <Header show={true} />
-      <div>
-        <TitleView>
-          <h1>Flight {game.flightNumber}</h1>
-          <span
-            css={{
-              textTransform: "uppercase",
-              color: "#596275",
-              fontWeight: 400,
-              fontSize: 12,
-              display: "block",
-              marginTop: 4
-            }}
-          >
-            {game.destination}
-          </span>
-        </TitleView>
-      </div>
+      <TitleView>
+        <h1>Flight {game.flightNumber}</h1>
+        <span
+          css={{
+            textTransform: "uppercase",
+            color: "#596275",
+            fontWeight: 400,
+            fontSize: 12,
+            display: "block",
+            marginTop: 4
+          }}
+        >
+          {game.destination}
+        </span>
+      </TitleView>
       <section css={{ width: "100%" }}>
         <div
           css={{
