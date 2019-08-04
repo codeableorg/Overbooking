@@ -67,7 +67,7 @@ function RankingItem({ factorColor, index, user, resalt }) {
           color: `${resalt ? "white" : "inherit"}`
         }}
       >
-        {index != "none" && (
+        {index !== "none" && (
           <Center
             styles={{
               fontSize: 22,

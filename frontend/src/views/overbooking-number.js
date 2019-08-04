@@ -13,6 +13,9 @@ import { Dialog, DialogOverlay } from "@reach/dialog";
 import CurrencyFormat from "react-currency-format";
 import "@reach/dialog/styles.css";
 import PicturePlane from "./../components/picture-plane";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
+
 import {
   Button,
   Row,
@@ -59,7 +62,6 @@ function OverbookingNumber() {
     }
   };
 
-  const [value, setValue] = React.useState(0);
   const current = useCurrentGame();
   const game = useGame(current);
   const {
@@ -70,6 +72,7 @@ function OverbookingNumber() {
     criticalRatio,
     cancellations
   } = game;
+  const [value, setValue] = React.useState(0);
   const addOverbookingNumber = useAddOverbookingNumber();
   const setTotalRevenue = useSetTotalRevenue();
   const addFeedback = useAddFeedback();
@@ -131,11 +134,10 @@ function OverbookingNumber() {
     return msg;
   }
 
-  function handleChange(event) {
-    event.preventDefault();
-    const data = event.target.value;
-    setValue(data);
+  function handleChange(value) {
+    setValue(value);
   }
+
   const revenue = value * pricePerSeat + totalSeats * pricePerSeat;
   const currencyRevenue = (
     <CurrencyFormat
@@ -162,49 +164,6 @@ function OverbookingNumber() {
     addFeedback(firstAdvice() + secondAdvice(parseInt(value)));
     navigate("/cancellations");
   }
-
-  const sliderCSS = {
-    marginTop: "16px",
-    width: "80%",
-    "&::-webkit-slider-runnable-track": {
-      width: "100%",
-      height: "2px",
-      cursor: "pointer",
-      boxShadow: "none",
-      background: "black",
-      borderRadius: "0px",
-      border: "0px solid #010101"
-    },
-    "&::-moz-range-track": {
-      width: "100%",
-      height: "2px",
-      cursor: "pointer",
-      boxShadow: "none",
-      background: "black",
-      borderRadius: "0px",
-      border: "0px solid #010101"
-    },
-    "&::-webkit-slider-thumb": {
-      border: "0px solid black",
-      boxShadow: "0px 10px 10px rgba(0, 0, 0, 0.25)",
-      height: "42px",
-      width: "42px",
-      borderRadius: "50%",
-      background: "black",
-      cursor: "pointer",
-      marginTop: "-10px"
-    },
-    "&::-moz-range-thumb": {
-      border: "0px solid black",
-      boxShadow: "0px 10px 10px rgba(0, 0, 0, 0.25)",
-      height: "42px",
-      width: "42px",
-      borderRadius: "50%",
-      background: "black",
-      cursor: "pointer",
-      marginTop: "-10px"
-    }
-  };
 
   const dialogContent = {
     position: "absolute",
@@ -276,20 +235,42 @@ function OverbookingNumber() {
               flexDirection: "column"
             }}
           >
-            <span id="rs-bullet" css={{ fontSize: 32 }}>
+            <span id="rs-bullet" css={{ fontSize: 32, marginBottom: 8 }}>
               {value}
             </span>
-
-            <input
-              id="rs-range-line"
-              aria-label="Overbooking number"
-              type="range"
-              min="0"
-              max={totalSeats}
-              value={value}
-              onChange={handleChange}
-              css={{ marginBottom: 8, ...sliderCSS }}
-            />
+            <div
+              css={{
+                width: "100%",
+                padding: "0 40px",
+                boxSizing: "border-box",
+                marginBottom: 16
+              }}
+            >
+              <Slider
+                min={0}
+                max={totalSeats / 3}
+                defaultValue={0}
+                onChange={handleChange}
+                railStyle={{ backgroundColor: "#CBCFD6", height: 8 }}
+                trackStyle={{
+                  background:
+                    "linear-gradient(90deg, #01A4FE 0%, #0047FF 100%)",
+                  height: 8
+                }}
+                handleStyle={{
+                  width: 8,
+                  height: 8,
+                  borderRadius: "50%",
+                  backgroundColor: "#0047FF",
+                  boxSizing: "content-box",
+                  border: "12px solid white",
+                  marginLeft: -12,
+                  marginTop: -12,
+                  opacity: 0.85,
+                  boxShadow: "0 0 13px -3px #092457"
+                }}
+              />
+            </div>
             <WhisperText>Number of Seats Overbooked</WhisperText>
           </div>
 

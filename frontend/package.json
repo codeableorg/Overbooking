@@ -9,6 +9,7 @@
     "@testing-library/react": "^8.0.4",
     "emotion-reset": "^2.0.1",
     "jest-emotion": "^10.0.14",
+    "rc-slider": "^8.6.13",
     "react": "^16.8.6",
     "react-currency-format": "^1.0.0",
     "react-dom": "^16.8.6",
