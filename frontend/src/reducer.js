@@ -35,7 +35,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Monday, Aug 1st 2019"
+      dateFlight: "Monday, Aug 1st 2019",
+      moneyLeft: 0
     },
     2: {
       flightNumber: "PT0509",
@@ -59,7 +60,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Tuesday, Aug 2nd 2019"
+      dateFlight: "Tuesday, Aug 2nd 2019",
+      moneyLeft: 0
     },
     3: {
       flightNumber: "VAL0202",
@@ -83,7 +85,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Wednesday, Aug 3rd 2019"
+      dateFlight: "Wednesday, Aug 3rd 2019",
+      moneyLeft: 0
     },
     4: {
       flightNumber: "CHI1608",
@@ -107,7 +110,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Thursday, Aug 4th 2019"
+      dateFlight: "Thursday, Aug 4th 2019",
+      moneyLeft: 0
     },
     5: {
       flightNumber: "LET8655",
@@ -131,7 +135,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Friday, Aug 5th 2019"
+      dateFlight: "Friday, Aug 5th 2019",
+      moneyLeft: 0
     },
     6: {
       flightNumber: "CON9264",
@@ -155,7 +160,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Saturday, Aug 6th 2019"
+      dateFlight: "Saturday, Aug 6th 2019",
+      moneyLeft: 0
     },
     7: {
       flightNumber: "QQ1234",
@@ -179,7 +185,8 @@ const initialState = {
       totalRevenue: 0,
       netRevenue: 0,
       feedback: "",
-      dateFlight: "Sunday, Aug 7th 2019"
+      dateFlight: "Sunday, Aug 7th 2019",
+      moneyLeft: 0
     }
   }
 };
@@ -259,6 +266,18 @@ function reducer(state = initialState, action = {}) {
           [state.currentGame]: {
             ...state.games[state.currentGame],
             overbookingNumber: action.payload
+          }
+        }
+      };
+    }
+    case "ADD_MONEY_LEFT": {
+      return {
+        ...state,
+        games: {
+          ...state.games,
+          [state.currentGame]: {
+            ...state.games[state.currentGame],
+            moneyLeft: action.payload
           }
         }
       };

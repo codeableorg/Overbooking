@@ -6,7 +6,11 @@ import { useGame, useCurrentGame } from "../selectors";
 import { navigate } from "@reach/router";
 import Header from "../components/header";
 import { useSpring, animated, interpolate } from "react-spring";
-import { useSetCurrentGame, useAddNetRevenue } from "../action-hooks";
+import {
+  useSetCurrentGame,
+  useAddNetRevenue,
+  useAddMoneyLeft
+} from "../action-hooks";
 
 import {
   Button,
@@ -18,6 +22,7 @@ import {
 } from "../components/ui";
 
 function FlightDetails() {
+  const addMoneyLeft = useAddMoneyLeft();
   let current = useCurrentGame();
   const game = useGame(current);
   const {
@@ -30,15 +35,11 @@ function FlightDetails() {
   } = game;
   const seatsStatus = cancellations - overbookingNumber;
   const currentTotalRevenue = totalRevenue / 1000;
-  const [currentOverbookingCost, setOverbookingCost] = React.useState(
-    seatsStatus < 0 ? (seatsStatus * overbookingCost) / -1000 : 0
-  );
-  const [currentUnderageCost, setUnderageCost] = React.useState(
-    seatsStatus > 0 ? (seatsStatus * underageCost) / 1000 : 0
-  );
-  const [netRevenue, setNetRevenue] = React.useState(
-    currentTotalRevenue - currentOverbookingCost - currentUnderageCost
-  );
+  const currentOverbookingCost =
+    seatsStatus < 0 ? (seatsStatus * overbookingCost) / -1000 : 0;
+  const currentUnderageCost =
+    seatsStatus > 0 ? (seatsStatus * underageCost) / 1000 : 0;
+  const netRevenue = currentTotalRevenue - currentOverbookingCost;
 
   const numCancellations = useSpring({
     number: cancellations,
@@ -71,12 +72,14 @@ function FlightDetails() {
 
   function changeCurrentGame(event) {
     addNetRevenue(netRevenue.toFixed(1) * 1);
+    addMoneyLeft(currentUnderageCost * 1000);
     setCurrentGame(++current);
     navigate("/flight-details");
   }
 
   function goToScore(event) {
     addNetRevenue(netRevenue.toFixed(1) * 1);
+    addMoneyLeft(currentUnderageCost * 1000);
     setCurrentGame(1);
     navigate("/score");
   }

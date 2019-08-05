@@ -98,6 +98,10 @@ function Score() {
   );
   const accuracyNumber = `${correct}/7`;
 
+  const cashLeft = gamesArray.reduce((acc, round) => {
+    return acc + round.moneyLeft;
+  }, 0);
+
   return (
     <main css={containerCss}>
       <Header />
@@ -119,6 +123,25 @@ function Score() {
             border="Right"
           />
         </Row>
+      </Card>
+      <Card>
+        <LabelValue
+          label="Cash left on the table"
+          value={
+            <CurrencyFormat
+              value={cashLeft}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"$"}
+            />
+          }
+          border="Right"
+          styleLabel={{ display: "flex", justifyContent: "center" }}
+          stylesValue={{
+            display: "flex",
+            justifyContent: "center"
+          }}
+        />
       </Card>
       <form
         onSubmit={handleSubmit}

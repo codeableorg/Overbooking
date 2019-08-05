@@ -5,6 +5,7 @@ import {
   reset,
   addCriticalRatio,
   addOverbookingNumber,
+  addMoneyLeft,
   suggestOverbookingNumber,
   setTotalRevenue,
   setCurrentGame,
@@ -33,6 +34,11 @@ export function useAddCriticalRatio() {
     criticalRatio => dispatch(addCriticalRatio(criticalRatio)),
     [dispatch]
   );
+}
+
+export function useAddMoneyLeft() {
+  const dispatch = useDispatch();
+  return React.useCallback(money => dispatch(addMoneyLeft(money)), [dispatch]);
 }
 
 export function useSetCurrentGame() {
