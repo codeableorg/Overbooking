@@ -39,7 +39,16 @@ function RankingItem({ factorColor, index, user, resalt }) {
             padding: 16
           }}
         >
-          {user.scores ? user.scores[0].totalRevenue : ""}
+          {user.scores ? (
+            <CurrencyFormat
+              value={user.scores[0].totalRevenue}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"$"}
+            />
+          ) : (
+            ""
+          )}
         </span>
       </Card>
     );
