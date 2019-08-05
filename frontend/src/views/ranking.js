@@ -28,10 +28,10 @@ function Ranking({ id }) {
   return (
     <>
       <ColumnEvenly styles={{ alignItems: "stretch" }}>
-        <Header />
+        <Header direction={true} />
         <div>
           <TitleView>
-            <h1>Your score</h1>
+            <h1>Your Score</h1>
           </TitleView>
           {outOfRank && <RankingItem index={"none"} user={lastGame} />}
         </div>

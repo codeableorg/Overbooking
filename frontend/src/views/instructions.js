@@ -25,7 +25,7 @@ function Instructions() {
   };
   return (
     <ColumnEvenly>
-      <Header show={true} />
+      <Header show={true} direction={true} />
       <PictureBoss />
       <div>
         <TitleView>

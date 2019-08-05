@@ -205,6 +205,9 @@ function OverbookingNumber() {
                   label="Critical Ratio"
                   value={myCriticalRatio}
                   border="Right"
+                  styleLabel={{
+                    maxWidth: 30
+                  }}
                 />
                 <LabelValue
                   label="Suggested Overbooking"

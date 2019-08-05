@@ -100,7 +100,7 @@ function Score() {
 
   return (
     <main css={containerCss}>
-      <Header show={false} />
+      <Header />
       <TitleView>
         <h1>Final Score</h1>
       </TitleView>
