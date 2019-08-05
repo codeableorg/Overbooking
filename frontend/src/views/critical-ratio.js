@@ -48,7 +48,7 @@ function CriticalRatio() {
         <Header show={true} />
         <PicturePlane />
 
-        <div css={{ width: "100%" }}>
+        <section css={{ width: "100%" }}>
           <TitleView>
             <h1>Calculate Critical Ratio</h1>
           </TitleView>
@@ -100,7 +100,7 @@ function CriticalRatio() {
               />
             </div>
           </Card>
-        </div>
+        </section>
 
         <Center>
           <Button type="submit" disabled={!isEnabled}>
@@ -109,7 +109,7 @@ function CriticalRatio() {
         </Center>
 
         <WhisperText
-          styles={{ position: "absolute", bottom: 0, width: "100%" }}
+          styles={{ position: "absolute", bottom: 8, width: "100%" }}
         >
           *Should be greater than 0 and less than 1
         </WhisperText>

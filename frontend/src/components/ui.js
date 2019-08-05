@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { AutoFocusInside } from "react-focus-lock";
 
 const buttonStyles = {
   height: 48,
@@ -42,8 +41,8 @@ function LabelValue({ styles, styleLabel, children, stylesValue, ...props }) {
   };
 
   return (
-    <div css={{ ...cssItems, padding: 14, ...styles }}>
-      <div
+    <section css={{ ...cssItems, padding: 14, ...styles }}>
+      <p
         css={{
           fontSize: 9,
           textTransform: "uppercase",
@@ -55,19 +54,20 @@ function LabelValue({ styles, styleLabel, children, stylesValue, ...props }) {
         }}
       >
         {props.label}
-      </div>
-      <div
+      </p>
+      <strong
         css={{
           fontSize: 18,
           color: "#211F1F",
           textTransform: "capitalize",
+          fontWeight: 400,
           ...stylesValue
         }}
       >
         {props.value}
-      </div>
+      </strong>
       {children}
-    </div>
+    </section>
   );
 }
 
