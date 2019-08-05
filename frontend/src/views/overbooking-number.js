@@ -10,6 +10,7 @@ import {
 import { navigate } from "@reach/router";
 import Header from "../components/header";
 import { Dialog, DialogOverlay } from "@reach/dialog";
+import CurrencyFormat from "react-currency-format";
 import "@reach/dialog/styles.css";
 import PicturePlane from "./../components/picture-plane";
 import {
@@ -136,6 +137,14 @@ function OverbookingNumber() {
     setValue(data);
   }
   const revenue = value * pricePerSeat + totalSeats * pricePerSeat;
+  const currencyRevenue = (
+    <CurrencyFormat
+      value={revenue}
+      displayType={"text"}
+      thousandSeparator={true}
+      prefix={"$"}
+    />
+  );
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -248,7 +257,7 @@ function OverbookingNumber() {
             <Card>
               <LabelValue
                 label="Total Revenue"
-                value={`$ ${revenue}`}
+                value={currencyRevenue}
                 border="Right"
                 styleLabel={{ display: "flex", justifyContent: "center" }}
                 stylesValue={{
