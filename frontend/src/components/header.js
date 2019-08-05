@@ -8,7 +8,7 @@ import { Button } from "./ui";
 import { navigate } from "@reach/router";
 import { useReset } from "../action-hooks";
 
-function Header({ show }) {
+function Header({ show, direction }) {
   const current = useCurrentGame();
 
   const [shouldShow, setShouldShow] = React.useState(true);
@@ -32,7 +32,11 @@ function Header({ show }) {
     setIsDialogOpen(false);
   }
   function handleOpenModal(event) {
-    setIsDialogOpen(true);
+    if (!direction) {
+      setIsDialogOpen(true);
+    } else {
+      resetProgress();
+    }
   }
 
   const dialogContent = {
