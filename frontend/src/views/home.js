@@ -2,16 +2,23 @@
 import React from "react";
 import { jsx, keyframes } from "@emotion/core";
 import { Link } from "@reach/router";
-import { buttonStyles } from "../components/ui";
+import { buttonStyles, WhisperText } from "../components/ui";
 import iconPlane from "./../images/icon-plane.svg";
+import { Dialog, DialogOverlay } from "@reach/dialog";
+import { createPortal } from "react-dom";
 import cloud1 from "./../images/cloud1.svg";
 import cloud2 from "./../images/cloud2.svg";
 import cloud3 from "./../images/cloud3.svg";
 import cloud4 from "./../images/cloud4.svg";
 import cloud5 from "./../images/cloud5.svg";
 import cloud6 from "./../images/cloud5.svg";
+import codeable from "./../images/codeable.svg";
+import twitter from "./../images/twitter.png";
 
 function Home() {
+  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
+  const $portal = React.useMemo(() => document.getElementById("portal"), []);
+
   const titleCss = {
     fontWeight: "bold",
     fontSize: 37,
@@ -19,7 +26,16 @@ function Home() {
     textAlign: "center",
     marginBottom: "1rem"
   };
-
+  const dialogContent = {
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    width: "100%",
+    height: 210,
+    boxSizing: "border-box",
+    margin: 0
+  };
   const upAndDown = keyframes`
     from 0%, to {
       transform: translate3d(0,0,0);
@@ -33,6 +49,14 @@ function Home() {
     0% {margin-left: 380px}
     100% {margin-left: -410px}
   `;
+
+  function handleOpenModal() {
+    setIsDialogOpen(true);
+  }
+
+  function handleCloseModal(event) {
+    setIsDialogOpen(false);
+  }
 
   return (
     <main
@@ -148,13 +172,95 @@ function Home() {
             margin: "0 auto",
             marginTop: 24,
             background: "rgba(255,255,255,0.35)",
-            position: "relative",
-            zIndex: 2
+            position: "relative"
           }}
         >
           Leaderboard
         </Link>
+        <WhisperText
+          styles={{
+            position: "absolute",
+            bottom: 8,
+            width: "100%",
+            color: "white",
+            marginBottom: 10
+          }}
+        >
+          <p onClick={handleOpenModal}>Developed By</p>
+        </WhisperText>
       </div>
+      {createPortal(
+        <DialogOverlay
+          isOpen={isDialogOpen}
+          onDismiss={handleCloseModal}
+          css={{
+            display: "flex",
+            backgroundColor: "rgba(239, 245, 255, 0.75)"
+          }}
+        >
+          <Dialog
+            isOpen={isDialogOpen}
+            onDismiss={handleCloseModal}
+            css={{
+              ...dialogContent,
+              width: "80%",
+              margin: "auto",
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
+              borderRadius: 8,
+              overflow: "hidden",
+              "@media (min-width: 375px)": {
+                width: 343
+              }
+            }}
+          >
+            <div
+              css={{
+                lineHeight: 1.5,
+                textAlign: "center",
+                maxWidth: 295,
+                color: "black",
+                fontFamily: "monospace",
+                fontSize: 12,
+                "@media (min-width: 375px)": {
+                  fontSize: 14
+                }
+              }}
+            >
+              <span
+                css={{ color: "#737373", marginBottom: 16, display: "block" }}
+              >
+                With <b css={{ fontWeight: 400, color: "red" }}>❤</b> by
+              </span>
+              <ul
+                css={{
+                  textAlign: "left",
+                  marginBottom: 20,
+                  color: "#299FBB",
+                  marginLeft: "20%",
+                  "@media (min-width: 375px)": {
+                    marginLeft: "25%"
+                  }
+                }}
+              >
+                <li
+                  css={{
+                    marginBottom: 4
+                  }}
+                >
+                  @valevstech
+                </li>
+                <li css={{ marginBottom: 4 }}>@yummta</li>
+                <li css={{ marginBottom: 4 }}>@christopher_roa</li>
+              </ul>
+              <img src={codeable} width="76" alt="operator" />
+            </div>
+          </Dialog>
+        </DialogOverlay>,
+        $portal
+      )}
     </main>
   );
 }
