@@ -11,6 +11,7 @@ import {
   useAddNetRevenue,
   useAddMoneyLeft
 } from "../action-hooks";
+import PictureBoss from "./../components/picture-boss";
 
 import {
   Button,
@@ -221,9 +222,29 @@ function FlightDetails() {
           label="Net revenue"
         />
       </div>
-      <Card styles={{ marginBottom: 40 }}>
-        <p css={cssP}>{feedback}</p>
-      </Card>
+      <div
+        css={{
+          display: "flex",
+          alignItems: "flex-start"
+        }}
+      >
+        <PictureBoss
+          styles={{
+            margin: 0,
+            marginRight: 5,
+            flex: "0 0 40px",
+            width: "auto",
+            height: "auto",
+            "@media (min-width: 375px)": {
+              width: "auto",
+              height: "auto"
+            }
+          }}
+        />
+        <Card styles={{ marginBottom: 40 }}>
+          <p css={cssP}>{feedback}</p>
+        </Card>
+      </div>
 
       <Center>
         {current < 7 ? (
