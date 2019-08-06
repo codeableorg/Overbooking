@@ -13,7 +13,6 @@ import cloud4 from "./../images/cloud4.svg";
 import cloud5 from "./../images/cloud5.svg";
 import cloud6 from "./../images/cloud5.svg";
 import codeable from "./../images/codeable.svg";
-import twitter from "./../images/twitter.png";
 
 function Home() {
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
