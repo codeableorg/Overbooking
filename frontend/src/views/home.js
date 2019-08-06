@@ -182,10 +182,12 @@ function Home() {
             bottom: 8,
             width: "100%",
             color: "white",
-            marginBottom: 10
+            marginBottom: 8
           }}
         >
-          <p onClick={handleOpenModal}>Developed By</p>
+          <span css={{ opacity: 0.65 }} onClick={handleOpenModal}>
+            Developed By
+          </span>
         </WhisperText>
       </div>
       {createPortal(
