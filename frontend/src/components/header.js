@@ -7,9 +7,25 @@ import { createPortal } from "react-dom";
 import { Button } from "./ui";
 import { navigate } from "@reach/router";
 import { useReset } from "../action-hooks";
+import iconHome from "./../images/home.svg";
 
 function Header({ show, direction }) {
   const current = useCurrentGame();
+  const iconPlane = Array.from({ length: 7 }, (_, index) => (
+    <svg
+      css={{ transform: "rotate(-45deg)", marginRight: 1 }}
+      width="14"
+      height="13"
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22 10C22 9.1579 21.23 8.42105 20.35 8.42105L14.3 8.42105L8.8 0L6.6 0L9.35 8.42105L3.3 8.42105L1.65 6.31579H0L1.1 10L0 13.6842H1.65L3.3 11.5789L9.35 11.5789L6.6 20H8.8L14.3 11.5789L20.35 11.5789C21.23 11.5789 22 10.8421 22 10Z"
+        fill={index < current ? "#006dff" : "#a9a9ab"}
+      />
+    </svg>
+  ));
 
   const [shouldShow, setShouldShow] = React.useState(true);
   const [isDialogOpen, setIsDialogOpen] = React.useState(false);
@@ -76,13 +92,13 @@ function Header({ show, direction }) {
             cursor: "pointer"
           }}
         >
-          <i className="fas fa-home" />
+          <img src={iconHome} />
         </div>
         {shouldShow ? (
           <div
             id="divFlight"
             css={{
-              width: 109,
+              padding: "0 11px",
               height: 36,
               borderRadius: 18,
               backgroundColor: "#ffffff",
@@ -91,23 +107,7 @@ function Header({ show, direction }) {
               justifyContent: "center"
             }}
           >
-            <label
-              css={{
-                padding: 8,
-                width: 67,
-                height: 14,
-                fontFamily: "Rubik",
-                fontSize: 14,
-                fontWeight: 500,
-                fontStyle: "normal",
-                fontStretch: "normal",
-                lineHeight: 1,
-                letterSpacing: "normal",
-                color: "#000000"
-              }}
-            >
-              Flight {current}/7
-            </label>
+            <div css={{ marginRight: -4 }}>{iconPlane}</div>
           </div>
         ) : (
           <></>
