@@ -292,7 +292,7 @@ function OverbookingNumber() {
           css={{
             display: "flex",
             alignItems: "center",
-            backgroundColor: "rgba(239, 245, 255, 0.75)"
+            backgroundColor: "rgba(0,0,0, 0.75)"
           }}
         >
           <Dialog

@@ -33,8 +33,16 @@ function CriticalRatio() {
   const { overbookingCost, underageCost } = game;
 
   function onChangeInputCriticalRatio(event) {
-    setCriticalRatio(event.target.value);
-    setIsEnabled(criticalRatio);
+    const CRValue = event.target.value;
+    if (CRValue.length > 6) {
+      return false;
+    }
+    setCriticalRatio(CRValue);
+    if (CRValue.match(/0\.\d{1,4}$/)) {
+      setIsEnabled(true);
+    } else {
+      setIsEnabled(false);
+    }
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -96,14 +104,17 @@ function CriticalRatio() {
                 step="any"
                 min="0"
                 max="1"
-                autoFocus
               />
             </div>
           </Card>
         </section>
 
         <Center>
-          <Button type="submit" disabled={!isEnabled}>
+          <Button
+            type="submit"
+            disabled={!isEnabled}
+            css={{ opacity: isEnabled ? 1 : 0.7 }}
+          >
             Set Critical Ratio
           </Button>
         </Center>

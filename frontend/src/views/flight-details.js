@@ -14,13 +14,16 @@ import {
   Row
 } from "../components/ui";
 
+import { Frame } from "framer";
+
 function FlightDetails() {
   const current = useCurrentGame();
   const game = useGame(current);
+
   return (
     <ColumnEvenly>
       <Header show={true} />
-      <TitleView>
+      <TitleView styles={{ marginBottom: 90 }}>
         <h1>Flight {game.flightNumber}</h1>
         <span
           css={{
@@ -46,19 +49,36 @@ function FlightDetails() {
           }}
         >
           <Center>
-            <img
-              src={[game.journey.originImage]}
-              alt={game.journey.originName}
-            />
+            <Frame
+              initial={{ bottom: -80 }}
+              animate={{ bottom: 0 }}
+              height={80}
+              width={80}
+              style={{ background: "transparent" }}
+            >
+              <img
+                src={[game.journey.originImage]}
+                alt={game.journey.originName}
+              />
+            </Frame>
           </Center>
           <Center>
-            <img
-              src={[game.journey.destinationImage]}
-              alt={game.journey.destinationName}
-            />
+            <Frame
+              initial={{ bottom: -80 }}
+              animate={{ bottom: 0 }}
+              height={80}
+              width={80}
+              style={{ background: "transparent" }}
+            >
+              <img
+                src={[game.journey.destinationImage]}
+                alt={game.journey.destinationName}
+              />
+            </Frame>
           </Center>
         </div>
-        <div css={{ width: "100%", position: "relative", zIndex: 1 }}>
+
+        <div css={{ width: "100%", position: "relative" }}>
           <Card>
             <Row styles={{ borderBottom: "1px solid #E7EAF1" }}>
               <LabelValue
@@ -81,7 +101,7 @@ function FlightDetails() {
           </Card>
         </div>
       </section>
-
+      <div />
       <Center>
         <Link to="/critical-ratio" css={buttonStyles}>
           Start Game

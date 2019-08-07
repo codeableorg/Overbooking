@@ -45,8 +45,8 @@ function Home() {
   `;
 
   const movingCloud = keyframes`
-    0% {margin-left: 380px}
-    100% {margin-left: -410px}
+    0% {margin-left: 180px}
+    100% {margin-left: -610px}
   `;
 
   function handleOpenModal() {
@@ -65,7 +65,7 @@ function Home() {
         right: 0,
         top: 0,
         bottom: 0,
-        background: "linear-gradient(180deg, #01A4FE 0%, #0047FF 100%)"
+        background: "linear-gradient(180deg, #0047FF 0%, #01A4FE 100%)"
       }}
     >
       <img
@@ -196,7 +196,7 @@ function Home() {
           onDismiss={handleCloseModal}
           css={{
             display: "flex",
-            backgroundColor: "rgba(239, 245, 255, 0.75)"
+            backgroundColor: "rgba(0,0,0, 0.75)"
           }}
         >
           <Dialog
@@ -237,13 +237,9 @@ function Home() {
               </span>
               <ul
                 css={{
-                  textAlign: "left",
+                  textAlign: "center",
                   marginBottom: 20,
-                  color: "#299FBB",
-                  marginLeft: "20%",
-                  "@media (min-width: 375px)": {
-                    marginLeft: "25%"
-                  }
+                  color: "#299FBB"
                 }}
               >
                 <li
@@ -251,10 +247,32 @@ function Home() {
                     marginBottom: 4
                   }}
                 >
-                  @valevstech
+                  <a
+                    css={{ color: "inherit", textDecoration: "none" }}
+                    href="https://twitter.com/valevstech"
+                    target="_blank"
+                  >
+                    @valevstech
+                  </a>
                 </li>
-                <li css={{ marginBottom: 4 }}>@yummta</li>
-                <li css={{ marginBottom: 4 }}>@christopher_roa</li>
+                <li css={{ marginBottom: 4 }}>
+                  <a
+                    css={{ color: "inherit", textDecoration: "none" }}
+                    href="https://twitter.com/Christopher_roa"
+                    target="_blank"
+                  >
+                    @christopher_roa
+                  </a>
+                </li>
+                <li css={{ marginBottom: 4 }}>
+                  <a
+                    css={{ color: "inherit", textDecoration: "none" }}
+                    href="https://twitter.com/yummta"
+                    target="_blank"
+                  >
+                    @yummta
+                  </a>
+                </li>
               </ul>
               <img src={codeable} width="76" alt="operator" />
             </div>

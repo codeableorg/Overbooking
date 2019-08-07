@@ -19,7 +19,8 @@ import {
   TitleView,
   Card,
   LabelValue,
-  Center
+  Center,
+  ColumnEvenly
 } from "../components/ui";
 
 function FlightDetails() {
@@ -125,24 +126,9 @@ function FlightDetails() {
     padding: 16,
     fontSize: 14,
     lineHeight: 1.5,
-    textAlign: "center",
     maxWidth: 295,
     margin: "auto",
     "@media (min-width: 375px)": {
-      fontSize: 16
-    }
-  };
-
-  const containerCss = {
-    height: "calc(100% - 68px)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    paddingTop: 68,
-    fontSize: 14,
-    "@media (min-width: 375px)": {
-      height: "calc(100% - 76px)",
-      paddingTop: 76,
       fontSize: 16
     }
   };
@@ -162,47 +148,48 @@ function FlightDetails() {
   }
 
   return (
-    <main css={containerCss}>
+    <ColumnEvenly>
       <Header show={true} />
-      <TitleView>
-        <h1>Flight Performance</h1>
-      </TitleView>
+      <div>
+        <TitleView>
+          <h1>Flight Performance</h1>
+        </TitleView>
 
-      <Card styles={{ marginBottom: 48 }}>
-        <Row>
-          <LabelValue
-            label="Overbooked seats"
-            value={overbookingNumber}
-            border="Right"
-          />
-          <div
-            css={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center"
-            }}
-          >
+        <Card>
+          <Row>
             <LabelValue
-              label="Total cancellations"
-              value={animateValue(numCancellations, false)}
+              label="Overbooked seats"
+              value={overbookingNumber}
               border="Right"
+            />
+            <div
+              css={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center"
+              }}
             >
-              <div id="Progress_Status" css={cssProgressStatus}>
-                <div
-                  ref={myProgressBar}
-                  id="myprogressBar"
-                  css={cssProgressBar}
-                />
-              </div>
-            </LabelValue>
-          </div>
-        </Row>
-      </Card>
+              <LabelValue
+                label="Total cancellations"
+                value={animateValue(numCancellations, false)}
+                border="Right"
+              >
+                <div id="Progress_Status" css={cssProgressStatus}>
+                  <div
+                    ref={myProgressBar}
+                    id="myprogressBar"
+                    css={cssProgressBar}
+                  />
+                </div>
+              </LabelValue>
+            </div>
+          </Row>
+        </Card>
+      </div>
       <div
         css={{
           display: "flex",
-          justifyContent: "space-between",
-          marginBottom: 40
+          justifyContent: "space-between"
         }}
       >
         <ValueCancelation
@@ -241,7 +228,7 @@ function FlightDetails() {
             }
           }}
         />
-        <Card styles={{ marginBottom: 40 }}>
+        <Card>
           <p css={cssP}>{feedback}</p>
         </Card>
       </div>
@@ -253,7 +240,7 @@ function FlightDetails() {
           <Button onClick={goToScore}>My Score</Button>
         )}
       </Center>
-    </main>
+    </ColumnEvenly>
   );
 }
 
