@@ -44,7 +44,7 @@ function RankingItem({ factorColor, index, user, resalt }) {
               value={user.scores[0].totalRevenue}
               displayType={"text"}
               thousandSeparator={true}
-              prefix={"$"}
+              prefix={"$ "}
             />
           ) : (
             ""
@@ -107,7 +107,7 @@ function RankingItem({ factorColor, index, user, resalt }) {
             value={user.totalRevenue}
             displayType={"text"}
             thousandSeparator={true}
-            prefix={"$"}
+            prefix={"$ "}
           />
         </span>
       </Card>

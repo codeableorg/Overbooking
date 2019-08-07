@@ -11,6 +11,7 @@ import {
   Row,
   TitleView,
   Center,
+  ColumnEvenly,
   Input
 } from "../components/ui";
 import Header from "../components/header";
@@ -74,19 +75,6 @@ function Score() {
     justifyContent: "space-around",
     marginTop: 25
   };
-  const containerCss = {
-    height: "calc(100% - 60px)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    paddingTop: 60,
-    fontSize: 14,
-    "@media (min-width: 375px)": {
-      height: "calc(100% - 76px)",
-      paddingTop: 76,
-      fontSize: 16
-    }
-  };
 
   const totalAmount = (
     <CurrencyFormat
@@ -103,7 +91,7 @@ function Score() {
   }, 0);
 
   return (
-    <main css={containerCss}>
+    <ColumnEvenly>
       <Header />
       <TitleView>
         <h1>Final Score</h1>
@@ -123,8 +111,6 @@ function Score() {
             border="Right"
           />
         </Row>
-      </Card>
-      <Card>
         <LabelValue
           label="Cash left on the table"
           value={
@@ -141,15 +127,18 @@ function Score() {
             display: "flex",
             justifyContent: "center"
           }}
+          styles={{ borderTop: "1px solid #E7EAF1" }}
         />
       </Card>
+
       <form
         onSubmit={handleSubmit}
         css={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
-          marginTop: "35"
+          marginTop: 35,
+          width: "100%"
         }}
       >
         <section
@@ -255,7 +244,7 @@ function Score() {
           </span>
         </div>
       </section>
-    </main>
+    </ColumnEvenly>
   );
 }
 

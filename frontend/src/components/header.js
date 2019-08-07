@@ -13,6 +13,7 @@ function Header({ show, direction }) {
   const current = useCurrentGame();
   const iconPlane = Array.from({ length: 7 }, (_, index) => (
     <svg
+      key={index}
       css={{ transform: "rotate(-45deg)", marginRight: 1 }}
       width="14"
       height="13"
@@ -119,7 +120,7 @@ function Header({ show, direction }) {
           onDismiss={handleCloseModal}
           css={{
             display: "flex",
-            backgroundColor: "rgba(239, 245, 255, 0.75)"
+            backgroundColor: "rgba(0,0,0, 0.75)"
           }}
         >
           <Dialog

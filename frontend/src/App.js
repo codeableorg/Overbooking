@@ -19,7 +19,7 @@ function App() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#ffffff"
+    backgroundColor: "#000000"
   };
 
   return (
@@ -36,14 +36,19 @@ function App() {
       <div css={cssWrapper}>
         <Router
           css={{
-            maxWidth: 375,
             height: "100vh",
             overflow: "hidden",
             padding: 16,
             boxSizing: "border-box",
             position: "relative",
             background: "linear-gradient(180deg, #F8FAFB 0%, #E7EAF1 100%)",
-            width: "100%"
+            width: "100%",
+            overflow: "hidden",
+            "@media screen and (min-width: 768px)": {
+              borderRadius: 8,
+              maxWidth: 375,
+              maxHeight: 812
+            }
           }}
         >
           <Home path="/" />
